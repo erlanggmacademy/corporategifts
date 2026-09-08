@@ -2325,18 +2325,22 @@ section,
 .hero-2 .hero-media {
   position: relative;
   z-index: 2;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 440px;
+  margin: 0 auto;
 }
 
 .hero-2 .hero-media .media-main {
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 18px 40px color-mix(in srgb, var(--default-color), transparent 85%);
+  box-shadow: 0 16px 36px color-mix(in srgb, var(--default-color), transparent 86%);
   background: #ffffff;
   width: 100%;
-  margin: 0;
+  max-width: 440px;
+  max-height: 440px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2345,6 +2349,8 @@ section,
 .hero-2 .hero-media .media-main img {
   width: 100%;
   height: auto;
+  max-height: 440px;
+  object-fit: contain;
   display: block;
 }
 

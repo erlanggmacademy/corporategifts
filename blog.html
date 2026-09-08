@@ -50,104 +50,124 @@
   <meta name="theme-color" content="#16a34a">
 
   <!-- ======= SCHEMA MARKUP (JSON-LD) ======= -->
+  <!-- Schema.org: LocalBusiness & Organization -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@graph": [
+    "@type": "LocalBusiness",
+    "@id": "https://corporategifts.id/#localbusiness",
+    "name": "CorporateGifts.ID",
+    "alternateName": "Vendor Corporate Gift Souvenir Perusahaan",
+    "url": "https://corporategifts.id/",
+    "logo": "https://corporategifts.id/assets/img/logo-header.png",
+    "image": [
+      "https://corporategifts.id/assets/img/services/vendor-souvenir-perusahaan.webp",
+      "https://corporategifts.id/assets/img/portfolio/souvenir-set.webp",
+      "https://corporategifts.id/assets/img/gallery/Botol-Minum-Custom-Logo.webp",
+      "https://corporategifts.id/assets/img/gallery/Hampers-Eksklusif-Desain-Spesial.webp"
+    ],
+    "description": "Vendor corporate gift, souvenir perusahaan premium, merchandise kantor eksklusif, hampers, dan seminar kit dengan kustomisasi logo perusahaan di Surabaya, melayani pengiriman ke seluruh Indonesia.",
+    "telephone": "+62895639068080",
+    "email": "info@corporategifts.id",
+    "priceRange": "Rp15.000 - Rp750.000",
+    "paymentAccepted": "Cash, Bank Transfer, Invoice B2B",
+    "currenciesAccepted": "IDR",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+62895639068080",
+      "contactType": "customer service",
+      "areaServed": "ID",
+      "availableLanguage": ["Indonesian", "English"]
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Jl. Basuki Rahmat No. 12-18, Tegalsari",
+      "addressLocality": "Surabaya",
+      "addressRegion": "Jawa Timur",
+      "postalCode": "60261",
+      "addressCountry": "ID"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -7.2575,
+      "longitude": 112.7521
+    },
+    "openingHoursSpecification": [
       {
-        "@type": "LocalBusiness",
-        "@id": "https://corporategifts.id/#organization",
-        "name": "CorporateGifts.ID",
-        "alternateName": "CorporateGifts Indonesia",
-        "url": "https://corporategifts.id/",
-        "logo": {
-          "@type": "ImageObject",
-          "@id": "https://corporategifts.id/#logo",
-          "url": "https://corporategifts.id/assets/img/logo-header.png",
-          "caption": "Logo CorporateGifts.ID"
-        },
-        "image": "https://corporategifts.id/assets/img/services/vendor-souvenir-perusahaan.webp",
-        "description": "Vendor resmi pengadaan souvenir kantor, merchandise promosi perusahaan, seminar kit, dan hampers korporat bergaransi di Jawa Timur & seluruh Indonesia.",
-        "telephone": "+62895639068080",
-        "priceRange": "$$",
-        "address": {
-          "@type": "PostalAddress",
-          "addressRegion": "Jawa Timur",
-          "addressCountry": "ID"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": -7.257500,
-          "longitude": 112.752100
-        },
-        "areaServed": [
-          {"@type": "AdministrativeArea", "name": "Jawa Timur"},
-          {"@type": "Country", "name": "Indonesia"}
-        ],
-        "serviceType": [
-          "Vendor Corporate Gift",
-          "Souvenir Kantor Custom",
-          "Merchandise Perusahaan",
-          "Paket Seminar Kit",
-          "Hampers Perusahaan"
-        ]
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:30",
+        "closes": "17:30"
       },
       {
-        "@type": "Blog",
-        "@id": "https://corporategifts.id/blog.html#blog",
-        "url": "https://corporategifts.id/blog.html",
-        "name": "Blog & Panduan Pengadaan CorporateGifts.ID",
-        "description": "Kumpulan artikel edukatif, panduan pengadaan souvenir kantor, dan strategi branding korporat.",
-        "inLanguage": "id-ID",
-        "publisher": {
-          "@id": "https://corporategifts.id/#organization"
-        },
-        "breadcrumb": {
-          "@id": "https://corporategifts.id/blog.html#breadcrumb"
-        }
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday"],
+        "opens": "09:00",
+        "closes": "15:00"
+      }
+    ],
+    "areaServed": {
+      "@type": "Country",
+      "name": "Indonesia"
+    },
+    "sameAs": [
+      "https://wa.me/62895639068080",
+      "https://www.instagram.com/corporategifts.id",
+      "https://www.facebook.com/corporategiftsid",
+      "https://www.tiktok.com/@corporategifts.id",
+      "https://www.souvenirkantor.biz.id",
+      "https://corporategifts.biz.id"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Katalog Souvenir & Corporate Gift",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Souvenir Kantor Custom"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Merchandise Perusahaan"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Corporate Gift Eksklusif"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Seminar Kit"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Hampers Perusahaan"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Souvenir Promosi"}}
+      ]
+    }
+  }
+  </script>
+
+  <!-- Schema.org: Blog -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "@id": "https://corporategifts.id/blog.html#blog",
+    "url": "https://corporategifts.id/blog.html",
+    "name": "Blog & Panduan Pengadaan Corporate Gift - CorporateGifts.ID",
+    "description": "Kumpulan artikel edukatif, panduan pengadaan souvenir kantor, tips memilih corporate gift eksklusif, dan strategi branding korporat.",
+    "inLanguage": "id-ID",
+    "publisher": {
+      "@type": "Organization",
+      "name": "CorporateGifts.ID",
+      "url": "https://corporategifts.id/"
+    }
+  }
+  </script>
+
+  <!-- Schema.org: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Beranda",
+        "item": "https://corporategifts.id/"
       },
       {
-        "@type": "BreadcrumbList",
-        "@id": "https://corporategifts.id/blog.html#breadcrumb",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Beranda",
-            "item": "https://corporategifts.id/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Blog",
-            "item": "https://corporategifts.id/blog.html"
-          }
-        ]
-      },
-      {
-        "@type": "ItemList",
-        "@id": "https://corporategifts.id/blog.html#articles",
-        "name": "Daftar Artikel Terbaru CorporateGifts.ID",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "url": "https://corporategifts.id/blog/panduan-memilih-souvenir-kantor-vip.html",
-            "name": "Panduan Memilih Souvenir Kantor Mewah & Berkesan untuk Klien VIP"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "url": "https://corporategifts.id/blog/panduan-memilih-souvenir-kantor-vip.html",
-            "name": "7 Ide Seminar Kit Unik & Bermanfaat yang Disukai Peserta Acara"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "url": "https://corporategifts.id/blog/panduan-memilih-souvenir-kantor-vip.html",
-            "name": "Tips Memilih Hampers Lebaran & Parsel Akhir Tahun untuk Mitra Bisnis"
-          }
-        ]
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://corporategifts.id/blog.html"
       }
     ]
   }
