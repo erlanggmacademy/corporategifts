@@ -15,21 +15,33 @@
   <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
+    <!-- Fonts Preconnect & DNS-Prefetch -->
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600;700;800&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  </noscript>
 
   <!-- Vendor CSS Files -->
+    <!-- Core Stylesheets (Preload & Blocking for Critical Layout) -->
+  <link rel="preload" href="../assets/vendor/bootstrap/css/bootstrap.min.css" as="style">
+  <link rel="preload" href="../assets/css/main.min.css" as="style">
   <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/css/main.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"></noscript>
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="../assets/vendor/aos/aos.css" rel="stylesheet"></noscript>
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"></noscript>
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet"></noscript>
 
-  <!-- Main CSS File -->
-  <link href="../assets/css/main.css" rel="stylesheet">
+  
 
   <link rel="canonical" href="https://corporategifts.id/produk/seminar-kit.html">
 
@@ -271,7 +283,7 @@
 
       <a href="/" class="logo d-flex align-items-center me-auto me-xl-0">
         <img src="../assets/img/logo-header.png"
-          alt="CorporateGifts.ID - Vendor Corporate Gift &amp; Souvenir Perusahaan" style="max-height:50px;width:auto;">
+          alt="CorporateGifts.ID - Vendor Corporate Gift &amp; Souvenir Perusahaan" style="max-height:50px;width:auto;" width="268" height="50" loading="lazy">
       </a>
 
       <nav id="navmenu" class="navmenu mx-xl-auto">
@@ -346,9 +358,7 @@
 
     <!-- Service Details Section -->
     <section id="service-details" class="service-details section">
-
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="row gy-5">
 
           <!-- Sidebar -->
@@ -387,7 +397,7 @@
             <div class="detail">
 
               <img src="../assets/img/services/Goodie-Bag-Seminar-Pameran.webp" alt="Paket Seminar Kit &amp; Event"
-                class="hero-img img-fluid">
+                class="hero-img img-fluid" width="640" height="393" loading="lazy">
 
               <h2>Sukseskan Acara &amp; Konferensi Anda dengan Paket Seminar Kit Siap Pakai</h2>
               <p class="lead">Kesan pertama peserta konferensi dan pelatihan dimulai saat mereka menerima tas seminar
@@ -423,7 +433,7 @@
                 <div class="col-md-6">
                   <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
                     <img src="../assets/img/gallery/Goodie-Bag-Seminar-Pameran.webp" class="card-img-top"
-                      alt="Goodie Bag Seminar" style="height:220px;object-fit:cover;">
+                      alt="Goodie Bag Seminar" style="height:220px;object-fit:cover;" width="640" height="393" loading="lazy">
                     <div class="card-body p-4">
                       <h5 class="card-title fw-bold">Goodie Bag Blacu / Spunbond</h5>
                       <p class="card-text text-muted small">Tersedia bahan spunbond ramah lingkungan atau blacu katun
@@ -439,7 +449,7 @@
                 <div class="col-md-6">
                   <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
                     <img src="../assets/img/gallery/Lanyard-Custom-Logo.webp" class="card-img-top"
-                      alt="Lanyard Printing & ID Card" style="height:220px;object-fit:cover;">
+                      alt="Lanyard Printing & ID Card" style="height:220px;object-fit:cover;" width="640" height="592" loading="lazy">
                     <div class="card-body p-4">
                       <h5 class="card-title fw-bold">Lanyard Tissue Printing &amp; ID Card</h5>
                       <p class="card-text text-muted small">Bahan tissue lembut tidak gatal di leher, cetak sublimasi
@@ -455,7 +465,7 @@
                 <div class="col-md-6">
                   <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
                     <img src="../assets/img/gallery/notebook.webp" class="card-img-top" alt="Blocknote Seminar"
-                      style="height:220px;object-fit:cover;">
+                      style="height:220px;object-fit:cover;" width="640" height="595" loading="lazy">
                     <div class="card-body p-4">
                       <h5 class="card-title fw-bold">Blocknote Spiral &amp; Pulpen Promosi</h5>
                       <p class="card-text text-muted small">Buku catatan ring jilid spiral ukuran A5 cetak sampul full
@@ -471,7 +481,7 @@
                 <div class="col-md-6">
                   <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
                     <img src="../assets/img/services/flashdisk.webp" class="card-img-top" alt="Flashdisk Kartu Materi"
-                      style="height:220px;object-fit:cover;">
+                      style="height:220px;object-fit:cover;" width="640" height="594" loading="lazy">
                     <div class="card-body p-4">
                       <h5 class="card-title fw-bold">Flashdisk Kartu Materi Seminar</h5>
                       <p class="card-text text-muted small">Model kartu tipis muat di dompet, cetak print UV 2 sisi,
@@ -567,7 +577,7 @@
           <a href="/" class="logo d-inline-flex align-items-center bg-white py-2 px-3 rounded mb-3">
             <img src="../assets/img/logo-header.png"
               alt="CorporateGifts.ID - Vendor Corporate Gift &amp; Souvenir Perusahaan"
-              style="max-height:36px;width:auto;">
+              style="max-height:36px;width:auto;" width="193" height="36" loading="lazy">
           </a>
           <p>Vendor corporate gift, souvenir perusahaan premium, dan merchandise kantor eksklusif untuk branding dan
             promosi bisnis Anda. Melayani seluruh Indonesia.</p>
@@ -584,7 +594,7 @@
         </div>
 
         <div class="col-lg-2 col-6 footer-links">
-          <h4>Halaman</h4>
+          <h3>Halaman</h3>
           <ul>
             <li><a href="/">Beranda</a></li>
             <li><a href="../tentang-kami.html">Tentang Kami</a></li>
@@ -597,7 +607,7 @@
         </div>
 
         <div class="col-lg-2 col-6 footer-links">
-          <h4>Produk</h4>
+          <h3>Produk</h3>
           <ul>
             <li><a href="souvenir-kantor.html">Souvenir Kantor</a></li>
             <li><a href="souvenir-custom.html">Souvenir Custom</a></li>
@@ -609,7 +619,7 @@
         </div>
 
         <div class="col-lg-4 col-md-12 footer-contact text-center text-md-start">
-          <h4>Hubungi Kami</h4>
+          <h3>Hubungi Kami</h3>
           <p>Jawa Timur, Indonesia</p>
           <p class="mt-3"><strong>WhatsApp:</strong>
             <a href="https://wa.me/62895639068080" target="_blank" rel="noopener" style="color:inherit;"> +62
@@ -660,18 +670,16 @@
     aria-label="Kembali ke atas"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../assets/vendor/php-email-form/validate.js"></script>
-  <script src="../assets/vendor/aos/aos.js"></script>
-  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+  <script src="../assets/vendor/aos/aos.js" defer></script>
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js" defer></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js" defer></script>
+  <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js" defer></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js" defer></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js" defer></script>
 
   <!-- Main JS File -->
-  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/main.min.js" defer></script>
 
   <!-- Auto-update copyright year -->
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>

@@ -15,21 +15,33 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
+    <!-- Fonts Preconnect & DNS-Prefetch -->
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600;700;800&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  </noscript>
 
   <!-- Vendor CSS Files -->
+    <!-- Core Stylesheets (Preload & Blocking for Critical Layout) -->
+  <link rel="preload" href="assets/vendor/bootstrap/css/bootstrap.min.css" as="style">
+  <link rel="preload" href="assets/css/main.min.css" as="style">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/css/main.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"></noscript>
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="assets/vendor/aos/aos.css" rel="stylesheet"></noscript>
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"></noscript>
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet"></noscript>
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  
 
   <link rel="canonical" href="https://corporategifts.id/minta-penawaran.html">
 
@@ -187,7 +199,7 @@
 
       <a href="/" class="logo d-flex align-items-center me-auto me-xl-0">
         <img src="assets/img/logo-header.png" alt="CorporateGifts.ID - Vendor Corporate Gift &amp; Souvenir Perusahaan"
-          style="max-height:50px;width:auto;">
+          style="max-height:50px;width:auto;" width="268" height="50" loading="lazy">
       </a>
 
       <nav id="navmenu" class="navmenu mx-xl-auto">
@@ -375,7 +387,7 @@
 
               <!-- Success Message Modal/Alert Box -->
               <div id="rfqSuccessAlert" class="alert alert-success mt-4 d-none rounded-3" role="alert">
-                <h5 class="alert-heading fw-bold mb-1"><i class="bi bi-check-circle-fill me-1"></i> Permintaan Penawaran Berhasil Dikirim!</h5>
+                <h3 class="alert-heading fw-bold mb-1" style="font-size: 1.15rem;"><i class="bi bi-check-circle-fill me-1"></i> Permintaan Penawaran Berhasil Dikirim!</h3>
                 <p class="small mb-2">Terima kasih atas kepercayaan Anda. Tim CorporateGifts.ID akan segera menghubungi Anda via WhatsApp/Email kantor yang didaftarkan untuk menyerahkan dokumen Quotation resmi beserta mockup desain.</p>
                 <div class="pt-2 border-top">
                   <a id="rfqWaDirectLink" href="#" target="_blank" rel="noopener" class="btn btn-sm btn-success rounded-pill px-3">
@@ -577,7 +589,7 @@
           <a href="/" class="logo d-inline-flex align-items-center bg-white py-2 px-3 rounded mb-3">
             <img src="assets/img/logo-header.png"
               alt="CorporateGifts.ID - Vendor Corporate Gift &amp; Souvenir Perusahaan"
-              style="max-height:36px;width:auto;">
+              style="max-height:36px;width:auto;" width="193" height="36" loading="lazy">
           </a>
           <p>Vendor corporate gift, souvenir perusahaan premium, dan merchandise kantor eksklusif untuk branding dan
             promosi bisnis Anda. Melayani seluruh Indonesia.</p>
@@ -594,7 +606,7 @@
         </div>
 
         <div class="col-lg-2 col-6 footer-links">
-          <h4>Halaman</h4>
+          <h3>Halaman</h3>
           <ul>
             <li><a href="/">Beranda</a></li>
             <li><a href="tentang-kami.html">Tentang Kami</a></li>
@@ -607,7 +619,7 @@
         </div>
 
         <div class="col-lg-2 col-6 footer-links">
-          <h4>Produk</h4>
+          <h3>Produk</h3>
           <ul>
             <li><a href="produk/souvenir-kantor.html">Souvenir Kantor</a></li>
             <li><a href="produk/souvenir-custom.html">Souvenir Custom</a></li>
@@ -619,7 +631,7 @@
         </div>
 
         <div class="col-lg-4 col-md-12 footer-contact text-center text-md-start">
-          <h4>Hubungi Kami</h4>
+          <h3>Hubungi Kami</h3>
           <p>Jawa Timur, Indonesia</p>
           <p class="mt-3"><strong>WhatsApp:</strong>
             <a href="https://wa.me/62895639068080" target="_blank" rel="noopener" style="color:inherit;"> +62
@@ -671,12 +683,12 @@
     aria-label="Kembali ke atas"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+  <script src="assets/vendor/aos/aos.js" defer></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js" defer></script>
 
   <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.min.js" defer></script>
 
   <!-- RFQ Handling Script -->
   <script>

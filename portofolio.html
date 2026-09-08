@@ -15,21 +15,33 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
+    <!-- Fonts Preconnect & DNS-Prefetch -->
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600;700;800&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  </noscript>
 
   <!-- Vendor CSS Files -->
+    <!-- Core Stylesheets (Preload & Blocking for Critical Layout) -->
+  <link rel="preload" href="assets/vendor/bootstrap/css/bootstrap.min.css" as="style">
+  <link rel="preload" href="assets/css/main.min.css" as="style">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/css/main.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"></noscript>
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="assets/vendor/aos/aos.css" rel="stylesheet"></noscript>
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"></noscript>
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet"></noscript>
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  
 
   <link rel="canonical" href="https://corporategifts.id/portofolio.html">
 
@@ -186,7 +198,7 @@
 
       <a href="/" class="logo d-flex align-items-center me-auto me-xl-0">
         <img src="assets/img/logo-header.png" alt="CorporateGifts.ID - Vendor Corporate Gift & Souvenir Perusahaan"
-          style="max-height:50px;width:auto;">
+          style="max-height:50px;width:auto;" width="268" height="50" loading="lazy">
       </a>
 
       <nav id="navmenu" class="navmenu mx-xl-auto">
@@ -257,7 +269,7 @@
             <div class="visual-block">
               <div class="main-image-wrapper">
                 <img src="assets/img/portfolio/corporate-gift-exclusive.webp" class="img-fluid rounded shadow-sm"
-                  alt="Koleksi Corporate Gift Eksklusif">
+                  alt="Koleksi Corporate Gift Eksklusif" width="639" height="592" loading="lazy">
               </div>
               <div class="floating-card" data-aos="zoom-in" data-aos-delay="300">
                 <span class="metric-number">500+</span>
@@ -266,11 +278,11 @@
               <div class="row g-3 mt-3">
                 <div class="col-6">
                   <img src="assets/img/portfolio/executive-kit.webp" class="img-fluid rounded shadow-sm"
-                    alt="Executive Kit">
+                    alt="Executive Kit" width="640" height="595" loading="lazy">
                 </div>
                 <div class="col-6">
                   <img src="assets/img/portfolio/souvenir-set.webp" class="img-fluid rounded shadow-sm"
-                    alt="Souvenir Set">
+                    alt="Souvenir Set" width="640" height="402" loading="lazy">
                 </div>
               </div>
             </div>
@@ -347,7 +359,7 @@
             <div class="col-lg-3 col-md-6 isotope-item filter-kantor">
               <div class="gallery-item">
                 <img src="assets/img/portfolio/souvenir-set.webp" class="img-fluid glightbox"
-                  alt="Souvenir Set Kantor BUMN" loading="lazy">
+                  alt="Souvenir Set Kantor BUMN" loading="lazy" width="640" height="402">
                 <div class="gallery-caption">
                   <h4>Souvenir Set Kantor</h4>
                   <p>Paket tumbler dan agenda kerja pesanan BUMN energi.</p>
@@ -358,7 +370,7 @@
             <div class="col-lg-3 col-md-6 isotope-item filter-merchandise">
               <div class="gallery-item">
                 <img src="assets/img/portfolio/merchandise-perusahaan.webp" class="img-fluid glightbox"
-                  alt="Merchandise Perusahaan Swasta" loading="lazy">
+                  alt="Merchandise Perusahaan Swasta" loading="lazy" width="640" height="398">
                 <div class="gallery-caption">
                   <h4>Merchandise Perusahaan</h4>
                   <p>Koleksi apparel dan aksesoris branding korporat.</p>
@@ -369,7 +381,7 @@
             <div class="col-lg-3 col-md-6 isotope-item filter-hampers">
               <div class="gallery-item">
                 <img src="assets/img/portfolio/Hampers-Eksklusif-Desain-Spesial.webp" class="img-fluid glightbox"
-                  alt="Hampers Eksklusif Direksi" loading="lazy">
+                  alt="Hampers Eksklusif Direksi" loading="lazy" width="640" height="396">
                 <div class="gallery-caption">
                   <h4>Hampers Eksklusif</h4>
                   <p>Gift box mewah untuk relasi perbankan nasional.</p>
@@ -380,7 +392,7 @@
             <div class="col-lg-3 col-md-6 isotope-item filter-seminar">
               <div class="gallery-item">
                 <img src="assets/img/portfolio/Goodie-Bag-Seminar-Pameran.webp" class="img-fluid glightbox"
-                  alt="Goodie Bag Seminar & Pameran" loading="lazy">
+                  alt="Goodie Bag Seminar & Pameran" loading="lazy" width="640" height="393">
                 <div class="gallery-caption">
                   <h4>Goodie Bag Seminar</h4>
                   <p>Tas blacu sablon rapi untuk konferensi internasional.</p>
@@ -391,7 +403,7 @@
             <div class="col-lg-3 col-md-6 isotope-item filter-kantor">
               <div class="gallery-item">
                 <img src="assets/img/portfolio/Botol-Minum-Custom-Logo.webp" class="img-fluid glightbox"
-                  alt="Tumbler Vacuum Insulated Custom" loading="lazy">
+                  alt="Tumbler Vacuum Insulated Custom" loading="lazy" width="639" height="394">
                 <div class="gallery-caption">
                   <h4>Tumbler Custom Logo</h4>
                   <p>Grafir laser presisi tahan panas &amp; dingin hingga 12 jam.</p>
@@ -402,7 +414,7 @@
             <div class="col-lg-3 col-md-6 isotope-item filter-merchandise">
               <div class="gallery-item">
                 <img src="assets/img/portfolio/T-Shirt-Branding-Event.webp" class="img-fluid glightbox"
-                  alt="Kaos Polo Event Perusahaan" loading="lazy">
+                  alt="Kaos Polo Event Perusahaan" loading="lazy" width="640" height="396">
                 <div class="gallery-caption">
                   <h4>Kaos Polo Event</h4>
                   <p>Bahan katun pique bordir komputer untuk annual gathering.</p>
@@ -413,7 +425,7 @@
             <div class="col-lg-3 col-md-6 isotope-item filter-hampers">
               <div class="gallery-item">
                 <img src="assets/img/portfolio/executive-kit.webp" class="img-fluid glightbox"
-                  alt="Executive Kit Klien VIP" loading="lazy">
+                  alt="Executive Kit Klien VIP" loading="lazy" width="640" height="595">
                 <div class="gallery-caption">
                   <h4>Executive Kit VIP</h4>
                   <p>Set cinderamata mewah berbalut hard box berlogo foil.</p>
@@ -424,7 +436,7 @@
             <div class="col-lg-3 col-md-6 isotope-item filter-seminar">
               <div class="gallery-item">
                 <img src="assets/img/portfolio/Lanyard-Custom-Logo.webp" class="img-fluid glightbox"
-                  alt="Lanyard Custom & ID Card" loading="lazy">
+                  alt="Lanyard Custom & ID Card" loading="lazy" width="640" height="592">
                 <div class="gallery-caption">
                   <h4>Lanyard &amp; ID Card</h4>
                   <p>Tali tissue full-color dengan stopper &amp; pengait kait kuat.</p>
@@ -435,7 +447,7 @@
             <div class="col-lg-3 col-md-6 isotope-item filter-kantor">
               <div class="gallery-item">
                 <img src="assets/img/portfolio/Powerbank-Promosi-Logo.webp" class="img-fluid glightbox"
-                  alt="Powerbank Promosi Logo" loading="lazy">
+                  alt="Powerbank Promosi Logo" loading="lazy" width="639" height="592">
                 <div class="gallery-caption">
                   <h4>Powerbank Promosi</h4>
                   <p>Kapasitas 10.000mAh real capacity cetak sablon UV.</p>
@@ -446,7 +458,7 @@
             <div class="col-lg-3 col-md-6 isotope-item filter-merchandise">
               <div class="gallery-item">
                 <img src="assets/img/portfolio/Tote-Bag-Promosi.webp" class="img-fluid glightbox"
-                  alt="Tote Bag Canvas Promosi" loading="lazy">
+                  alt="Tote Bag Canvas Promosi" loading="lazy" width="640" height="592">
                 <div class="gallery-caption">
                   <h4>Tote Bag Canvas</h4>
                   <p>Bahan kanvas tebal ramah lingkungan untuk merchandise.</p>
@@ -457,7 +469,7 @@
             <div class="col-lg-3 col-md-6 isotope-item filter-hampers">
               <div class="gallery-item">
                 <img src="assets/img/portfolio/Gift-Set-Premium-untuk-Karyawan.webp" class="img-fluid glightbox"
-                  alt="Gift Set Karyawan" loading="lazy">
+                  alt="Gift Set Karyawan" loading="lazy" width="639" height="396">
                 <div class="gallery-caption">
                   <h4>Gift Set Karyawan</h4>
                   <p>Paket apresiasi masa kerja dan reward karyawan berprestasi.</p>
@@ -468,7 +480,7 @@
             <div class="col-lg-3 col-md-6 isotope-item filter-seminar">
               <div class="gallery-item">
                 <img src="assets/img/portfolio/office-starter-kit.webp" class="img-fluid glightbox"
-                  alt="Onboarding Kit Karyawan" loading="lazy">
+                  alt="Onboarding Kit Karyawan" loading="lazy" width="640" height="594">
                 <div class="gallery-caption">
                   <h4>Onboarding Starter Kit</h4>
                   <p>Welcome pack lengkap menyambut tim baru perusahaan.</p>
@@ -520,7 +532,7 @@
           <a href="/" class="logo d-inline-flex align-items-center bg-white py-2 px-3 rounded mb-3">
             <img src="assets/img/logo-header.png"
               alt="CorporateGifts.ID - Vendor Corporate Gift &amp; Souvenir Perusahaan"
-              style="max-height:36px;width:auto;">
+              style="max-height:36px;width:auto;" width="193" height="36" loading="lazy">
           </a>
           <p>Vendor corporate gift, souvenir perusahaan premium, dan merchandise kantor eksklusif untuk branding dan
             promosi bisnis Anda. Melayani seluruh Indonesia.</p>
@@ -537,7 +549,7 @@
         </div>
 
         <div class="col-lg-2 col-6 footer-links">
-          <h4>Halaman</h4>
+          <h3>Halaman</h3>
           <ul>
             <li><a href="/">Beranda</a></li>
             <li><a href="tentang-kami.html">Tentang Kami</a></li>
@@ -550,7 +562,7 @@
         </div>
 
         <div class="col-lg-2 col-6 footer-links">
-          <h4>Produk</h4>
+          <h3>Produk</h3>
           <ul>
             <li><a href="produk/souvenir-kantor.html">Souvenir Kantor</a></li>
             <li><a href="produk/souvenir-custom.html">Souvenir Custom</a></li>
@@ -562,7 +574,7 @@
         </div>
 
         <div class="col-lg-4 col-md-12 footer-contact text-center text-md-start">
-          <h4>Hubungi Kami</h4>
+          <h3>Hubungi Kami</h3>
           <p>Jawa Timur, Indonesia</p>
           <p class="mt-3"><strong>WhatsApp:</strong>
             <a href="https://wa.me/62895639068080" target="_blank" rel="noopener" style="color:inherit;"> +62
@@ -614,18 +626,16 @@
     aria-label="Kembali ke atas"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+  <script src="assets/vendor/aos/aos.js" defer></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js" defer></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js" defer></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js" defer></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js" defer></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js" defer></script>
 
   <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.min.js" defer></script>
 
   <!-- Auto-update copyright year -->
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
