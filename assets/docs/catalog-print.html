@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>E-Katalog CorporateGifts.ID 2026</title>
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 10mm 12mm;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: #1e293b;
+      background: #ffffff;
+      line-height: 1.45;
+      font-size: 11pt;
+    }
+    .page {
+      page-break-after: always;
+      position: relative;
+      min-height: 275mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 4mm 2mm;
+    }
+    .page:last-child {
+      page-break-after: avoid;
+    }
+
+    /* Header & Footer on printed pages */
+    .page-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #16a34a;
+      margin-bottom: 16px;
+    }
+    .page-header .brand {
+      font-size: 14pt;
+      font-weight: 800;
+      color: #15803d;
+    }
+    .page-header .doc-title {
+      font-size: 9pt;
+      font-weight: 600;
+      color: #64748b;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .page-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 8px;
+      border-top: 1px solid #e2e8f0;
+      margin-top: 16px;
+      font-size: 8.5pt;
+      color: #64748b;
+    }
+
+    /* Cover Page */
+    .cover-container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: linear-gradient(145deg, #f0fdf4 0%, #e6f7ec 50%, #dcfce7 100%);
+      border-radius: 16px;
+      padding: 30px;
+      border: 1px solid #bbf7d0;
+    }
+    .cover-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .cover-badge {
+      display: inline-block;
+      background: #16a34a;
+      color: #ffffff;
+      padding: 5px 14px;
+      border-radius: 20px;
+      font-size: 9pt;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    .cover-content {
+      margin: 30px 0;
+    }
+    .cover-title {
+      font-size: 28pt;
+      font-weight: 800;
+      color: #0f172a;
+      line-height: 1.15;
+      margin-bottom: 12px;
+    }
+    .cover-title span {
+      color: #16a34a;
+    }
+    .cover-subtitle {
+      font-size: 13pt;
+      color: #334155;
+      font-weight: 500;
+      margin-bottom: 24px;
+      line-height: 1.5;
+    }
+    .cover-features {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+    .feature-chip {
+      background: #ffffff;
+      padding: 10px 14px;
+      border-radius: 10px;
+      border: 1px solid #cbd5e1;
+      font-size: 9.5pt;
+      font-weight: 600;
+      color: #1e293b;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .feature-chip .check {
+      color: #16a34a;
+      font-weight: 800;
+    }
+    .cover-bottom {
+      border-top: 1px solid #cbd5e1;
+      padding-top: 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      font-size: 9.5pt;
+    }
+    .cover-contact strong {
+      display: block;
+      color: #0f172a;
+      font-size: 10.5pt;
+      margin-bottom: 3px;
+    }
+
+    /* Product Grid */
+    .section-headline {
+      margin-bottom: 14px;
+    }
+    .section-headline h2 {
+      font-size: 16pt;
+      font-weight: 800;
+      color: #0f172a;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .section-headline h2 span {
+      color: #16a34a;
+    }
+    .section-headline p {
+      font-size: 9.5pt;
+      color: #64748b;
+    }
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      flex: 1;
+    }
+    .prod-card {
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 10px;
+      background: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .prod-image {
+      width: 100%;
+      height: 120px;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 8px;
+      background: #f1f5f9;
+    }
+    .prod-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .prod-info h3 {
+      font-size: 11pt;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 3px;
+    }
+    .prod-info .spec {
+      font-size: 8pt;
+      font-weight: 700;
+      color: #16a34a;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+    }
+    .prod-info p {
+      font-size: 8.5pt;
+      color: #475569;
+      line-height: 1.35;
+      margin-bottom: 8px;
+    }
+    .prod-foot {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 6px;
+      border-top: 1px dashed #e2e8f0;
+      font-size: 8.5pt;
+    }
+    .prod-moq {
+      font-weight: 600;
+      color: #64748b;
+    }
+    .prod-tag {
+      background: #f0fdf4;
+      color: #15803d;
+      padding: 2px 8px;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 8pt;
+    }
+
+    /* Workflow & Terms Page */
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin: 16px 0 24px;
+    }
+    .step-card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 12px 10px;
+      text-align: center;
+    }
+    .step-num {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: #16a34a;
+      color: #ffffff;
+      font-weight: 800;
+      font-size: 11pt;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 8px;
+    }
+    .step-card h4 {
+      font-size: 9.5pt;
+      font-weight: 700;
+      margin-bottom: 4px;
+      color: #0f172a;
+    }
+    .step-card p {
+      font-size: 8pt;
+      color: #64748b;
+      line-height: 1.3;
+    }
+
+    .info-boxes {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .info-box {
+      border: 1px solid #cbd5e1;
+      border-radius: 10px;
+      padding: 14px;
+      background: #f8fafc;
+    }
+    .info-box h3 {
+      font-size: 10.5pt;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 6px;
+    }
+    .info-box p {
+      font-size: 8.5pt;
+      color: #475569;
+      line-height: 1.4;
+    }
+
+    .cta-banner {
+      background: #15803d;
+      color: #ffffff;
+      border-radius: 12px;
+      padding: 20px 24px;
+      text-align: center;
+      margin-top: auto;
+    }
+    .cta-banner h2 {
+      font-size: 15pt;
+      font-weight: 800;
+      margin-bottom: 4px;
+    }
+    .cta-banner p {
+      font-size: 9.5pt;
+      opacity: 0.9;
+      margin-bottom: 12px;
+    }
+    .cta-contacts {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      font-size: 10pt;
+      font-weight: 700;
+    }
+    .cta-contacts span {
+      background: rgba(255, 255, 255, 0.2);
+      padding: 4px 14px;
+      border-radius: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==================== PAGE 1: COVER ==================== -->
+  <div class="page">
+    <div class="cover-container">
+      <div class="cover-top">
+        <img src="../img/logo-header.png" alt="CorporateGifts.ID Logo" style="max-height:48px;">
+        <span class="cover-badge">Katalog Resmi 2026</span>
+      </div>
+
+      <div class="cover-content">
+        <h1 class="cover-title">Katalog Pengadaan<br><span>Corporate Gift</span> &amp;<br>Souvenir Perusahaan</h1>
+        <p class="cover-subtitle">
+          Solusi terintegrasi pembuatan souvenir kantor custom logo, merchandise promosi,
+          paket seminar kit, dan hampers eksekutif untuk instansi pemerintah, BUMN &amp; korporasi.
+        </p>
+
+        <div class="cover-features">
+          <div class="feature-chip"><span class="check">&#10003;</span> Legalitas Resmi &amp; Faktur Pajak</div>
+          <div class="feature-chip"><span class="check">&#10003;</span> Free Sample Pra-Produksi (Dummy)</div>
+          <div class="feature-chip"><span class="check">&#10003;</span> Free Mockup &amp; Desain Custom Logo</div>
+          <div class="feature-chip"><span class="check">&#10003;</span> Jaminan Garansi Retur 100% Cacat</div>
+          <div class="feature-chip"><span class="check">&#10003;</span> Kapasitas Massal Puluhan Ribu Pcs</div>
+          <div class="feature-chip"><span class="check">&#10003;</span> Distribusi Aman ke Seluruh Nusantara</div>
+        </div>
+      </div>
+
+      <div class="cover-bottom">
+        <div class="cover-contact">
+          <strong>CorporateGifts.ID</strong>
+          <span>Jawa Timur &bull; Melayani Pengiriman Seluruh Indonesia</span><br>
+          <span>Website: https://corporategifts.id</span>
+        </div>
+        <div style="text-align: right;">
+          <span style="font-weight: 700; color: #15803d; font-size: 11pt;">WhatsApp: +62 895-6390-68080</span><br>
+          <span style="color: #64748b; font-size: 8.5pt;">Konsultasi Online &amp; Fast Response</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== PAGE 2: SOUVENIR KANTOR & EKSEKUTIF ==================== -->
+  <div class="page">
+    <div class="page-header">
+      <span class="brand">CorporateGifts.ID</span>
+      <span class="doc-title">Katalog &mdash; Souvenir Kantor &amp; Eksekutif</span>
+    </div>
+
+    <div class="section-headline">
+      <h2>01. Souvenir Kantor &amp; <span>Gift Set Eksekutif</span></h2>
+      <p>Perlengkapan kerja fungsional bermutu tinggi untuk meningkatkan brand identity dan apresiasi klien VIP.</p>
+    </div>
+
+    <div class="products-grid">
+      <!-- Item 1 -->
+      <div class="prod-card">
+        <div class="prod-image">
+          <img src="../img/portfolio/Botol-Minum-Custom-Logo.webp" alt="Tumbler Stainless Steel">
+        </div>
+        <div class="prod-info">
+          <h3>Tumbler Stainless Vacuum 500ml</h3>
+          <div class="spec">SUS 304 &bull; Grafir Laser / UV Print</div>
+          <p>Tahan panas dan dingin hingga 12 jam. Finishing grafir laser presisi tinggi tahan luntur permanen.</p>
+        </div>
+        <div class="prod-foot">
+          <span class="prod-moq">Min. Order: 50 Pcs</span>
+          <span class="prod-tag">Best Seller</span>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="prod-card">
+        <div class="prod-image">
+          <img src="../img/portfolio/notebook.webp" alt="Notebook Agenda Kulit">
+        </div>
+        <div class="prod-info">
+          <h3>Buku Agenda Kulit Sintetis A5</h3>
+          <div class="spec">Hard Cover &bull; Deboss Logo &bull; HVS 80gr</div>
+          <p>Cover kulit sintetis PU premium dengan logo embos deboss atau hot print gold/silver elegan.</p>
+        </div>
+        <div class="prod-foot">
+          <span class="prod-moq">Min. Order: 50 Pcs</span>
+          <span class="prod-tag">Favorit HR</span>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="prod-card">
+        <div class="prod-image">
+          <img src="../img/portfolio/souvenir-set.webp" alt="Executive Souvenir Set">
+        </div>
+        <div class="prod-info">
+          <h3>Executive Gift Set 3-in-1</h3>
+          <div class="spec">Tumbler + Agenda + Pulpen Metal</div>
+          <p>Kombinasi 3 perlengkapan kerja esensial dalam kotak hard box beludru berpita kado eksklusif.</p>
+        </div>
+        <div class="prod-foot">
+          <span class="prod-moq">Min. Order: 30 Set</span>
+          <span class="prod-tag">VIP Directorial</span>
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="prod-card">
+        <div class="prod-image">
+          <img src="../img/portfolio/Powerbank-Promosi-Logo.webp" alt="Powerbank Promosi Logo">
+        </div>
+        <div class="prod-info">
+          <h3>Powerbank Fast Charging 10.000mAh</h3>
+          <div class="spec">Real Capacity &bull; Full-Color UV Print</div>
+          <p>Dilengkapi proteksi ganda baterai lithium-polymer bergaransi resmi untuk cinderamata teknologi.</p>
+        </div>
+        <div class="prod-foot">
+          <span class="prod-moq">Min. Order: 50 Pcs</span>
+          <span class="prod-tag">Tech Souvenir</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <span>CorporateGifts.ID &bull; E-Katalog Pengadaan Korporat</span>
+      <span>Halaman 2 dari 4</span>
+    </div>
+  </div>
+
+  <!-- ==================== PAGE 3: MERCHANDISE & SEMINAR KIT ==================== -->
+  <div class="page">
+    <div class="page-header">
+      <span class="brand">CorporateGifts.ID</span>
+      <span class="doc-title">Katalog &mdash; Merchandise &amp; Seminar Kit</span>
+    </div>
+
+    <div class="section-headline">
+      <h2>02. Merchandise Promosi &amp; <span>Seminar Kit</span></h2>
+      <p>Media branding efektif untuk acara konferensi, pameran expo, seragam kerja, dan welcome kit karyawan.</p>
+    </div>
+
+    <div class="products-grid">
+      <!-- Item 1 -->
+      <div class="prod-card">
+        <div class="prod-image">
+          <img src="../img/portfolio/T-Shirt-Branding-Event.webp" alt="Kaos Polo Bordir">
+        </div>
+        <div class="prod-info">
+          <h3>Kaos Polo Shirt Katun Pique</h3>
+          <div class="spec">Bordir Komputer &bull; Sablon Plastisol</div>
+          <p>Bahan sejuk dan menyerap keringat. Tersedia beragam pilihan warna matching pantone korporasi Anda.</p>
+        </div>
+        <div class="prod-foot">
+          <span class="prod-moq">Min. Order: 36 Pcs</span>
+          <span class="prod-tag">Seragam &amp; Event</span>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="prod-card">
+        <div class="prod-image">
+          <img src="../img/portfolio/Goodie-Bag-Seminar-Pameran.webp" alt="Goodie Bag Seminar">
+        </div>
+        <div class="prod-info">
+          <h3>Goodie Bag Kanvas / Blacu Custom</h3>
+          <div class="spec">Eco-Friendly &bull; Sablon Presisi</div>
+          <p>Tas jinjing ramah lingkungan yang kuat memuat buku, binder, dan materi seminar berhari-hari.</p>
+        </div>
+        <div class="prod-foot">
+          <span class="prod-moq">Min. Order: 100 Pcs</span>
+          <span class="prod-tag">MICE &amp; Expo</span>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="prod-card">
+        <div class="prod-image">
+          <img src="../img/portfolio/Lanyard-Custom-Logo.webp" alt="Lanyard Custom & ID Card">
+        </div>
+        <div class="prod-info">
+          <h3>Tali Lanyard Tissue &amp; Card Holder</h3>
+          <div class="spec">Printing Full-Color &bull; Kait Stopper</div>
+          <p>Tali cetak halus tidak membuat leher gatal dengan holder kulit sintetis atau mika transparan presisi.</p>
+        </div>
+        <div class="prod-foot">
+          <span class="prod-moq">Min. Order: 100 Pcs</span>
+          <span class="prod-tag">Seminar Kit</span>
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="prod-card">
+        <div class="prod-image">
+          <img src="../img/portfolio/office-starter-kit.webp" alt="Onboarding Kit Karyawan">
+        </div>
+        <div class="prod-info">
+          <h3>Welcome Kit Karyawan Baru (Onboarding)</h3>
+          <div class="spec">Lanyard + ID Card + Tumbler + Agenda</div>
+          <p>Paket terpadu menyambut anggota tim baru untuk menumbuhkan rasa bangga dan loyalitas perusahaan.</p>
+        </div>
+        <div class="prod-foot">
+          <span class="prod-moq">Min. Order: 30 Box</span>
+          <span class="prod-tag">HR Solution</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <span>CorporateGifts.ID &bull; E-Katalog Pengadaan Korporat</span>
+      <span>Halaman 3 dari 4</span>
+    </div>
+  </div>
+
+  <!-- ==================== PAGE 4: ALUR PEMESANAN & KONTAK ==================== -->
+  <div class="page">
+    <div class="page-header">
+      <span class="brand">CorporateGifts.ID</span>
+      <span class="doc-title">Alur Pemesanan B2B &amp; Kontak Resmi</span>
+    </div>
+
+    <div class="section-headline">
+      <h2>03. Alur Pemesanan &amp; <span>Standar Layanan B2B</span></h2>
+      <p>Prosedur pengadaan profesional, transparan, dan tepat waktu untuk kepuasan instansi Anda.</p>
+    </div>
+
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-num">1</div>
+        <h4>Konsultasi / RFQ</h4>
+        <p>Sampaikan item, jumlah, budget, dan deadline acara via form atau WhatsApp.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">2</div>
+        <h4>Penawaran &amp; Mockup</h4>
+        <p>Kami terbitkan surat penawaran resmi (Quotation) dan digital mockup gratis.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">3</div>
+        <h4>Sample &amp; PO</h4>
+        <p>Persetujuan sampel dummy fisik dan penerbitan PO/SPK untuk mulai produksi.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">4</div>
+        <h4>QC &amp; Kirim</h4>
+        <p>Quality control berlapis dan ekspedisi kargo aman ke lokasi kantor Anda.</p>
+      </div>
+    </div>
+
+    <div class="info-boxes">
+      <div class="info-box">
+        <h3>Jaminan Mutu &amp; Garansi 100%</h3>
+        <p>Setiap pesanan dijamin bebas dari cacat pabrik atau kesalahan cetak. Penggantian retur 100% tanpa biaya tambahan untuk menjaga reputasi brand Anda.</p>
+      </div>
+      <div class="info-box">
+        <h3>Kepatuhan Legalitas &amp; Pajak</h3>
+        <p>Melayani mekanisme pembelian korporat resmi dengan kelengkapan invoice, kuitansi bermaterai, NPWP perusahaan, dan penerbitan Faktur Pajak resmi (PPN).</p>
+      </div>
+    </div>
+
+    <div class="cta-banner">
+      <h2>Siap Memulai Pengadaan Souvenir Kantor Anda?</h2>
+      <p>Hubungi tim spesialis kami hari ini untuk konsultasi gratis dan proposal harga terbaik.</p>
+      <div class="cta-contacts">
+        <span>WhatsApp: +62 895-6390-68080</span>
+        <span>Website: corporategifts.id</span>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <span>CorporateGifts.ID &bull; Dedicated Corporate Merchandising Partner</span>
+      <span>Halaman 4 dari 4</span>
+    </div>
+  </div>
+
+</body>
+</html>

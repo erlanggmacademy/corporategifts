@@ -64,8 +64,8 @@
     }
 
     .hero-description {
-      font-size: 1.05rem;
-      line-height: 1.7;
+      font-size: 0.95rem;
+      line-height: 1.65;
       color: color-mix(in srgb, var(--default-color), transparent 28%);
       margin-bottom: 22px;
       max-width: 560px;
@@ -78,13 +78,17 @@
 
       li {
         display: flex;
-        align-items: center;
-        gap: 10px;
-        margin-bottom: 10px;
+        align-items: flex-start;
+        gap: 12px;
+        margin-bottom: 12px;
         color: color-mix(in srgb, var(--default-color), transparent 20%);
+        line-height: 1.5;
 
         i {
           color: var(--accent-color);
+          font-size: 18px;
+          margin-top: 2px;
+          flex-shrink: 0;
         }
       }
     }
@@ -98,13 +102,19 @@
       .btn-primary {
         background: var(--accent-color);
         color: var(--contrast-color);
-        padding: 14px 30px;
+        padding: 13px 26px;
+        border: 1.5px solid transparent;
         border-radius: 8px;
-        font-weight: 500;
+        font-weight: 600;
+        font-size: 15px;
+        min-width: 210px;
+        min-height: 52px;
         transition: 0.3s;
         display: inline-flex;
         align-items: center;
         justify-content: center;
+        gap: 8px;
+        box-sizing: border-box;
 
         &:hover {
           background: color-mix(in srgb, var(--accent-color), black 12%);
@@ -114,13 +124,21 @@
       }
 
       .btn-ghost {
-        border: 1px solid color-mix(in srgb, var(--default-color), transparent 75%);
+        border: 1.5px solid color-mix(in srgb, var(--default-color), transparent 75%);
         color: var(--heading-color);
-        padding: 13px 28px;
+        padding: 13px 26px;
         border-radius: 8px;
-        font-weight: 500;
+        font-weight: 600;
+        font-size: 15px;
+        min-width: 210px;
+        min-height: 52px;
         transition: 0.3s;
         background: var(--surface-color);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        box-sizing: border-box;
 
         &:hover {
           border-color: var(--accent-color);
@@ -258,6 +276,10 @@
 
   @media (max-width: 992px) {
     padding: 40px 0 60px 0;
+
+    .hero-list {
+      display: none !important;
+    }
   }
 
   @media (max-width: 768px) {
@@ -268,13 +290,26 @@
     }
 
     .hero-description {
+      font-size: 0.9rem;
+      line-height: 1.6;
       margin-left: auto;
       margin-right: auto;
+      max-width: 480px;
     }
+  }
 
-    .hero-list {
-      li {
-        justify-content: center;
+  @media (max-width: 576px) {
+    .hero-actions {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+
+      .btn-primary,
+      .btn-ghost {
+        width: 100%;
+        max-width: 280px;
+        min-width: 0;
       }
     }
   }

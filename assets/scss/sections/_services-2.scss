@@ -19,23 +19,27 @@
     }
 
     h2 {
-      font-size: 40px;
+      font-size: 38px;
       font-weight: 700;
-      line-height: 1.2;
-      margin-bottom: 24px;
-      max-width: 560px;
+      line-height: 1.3;
+      margin-bottom: 20px;
+      max-width: 960px;
       margin-left: auto;
       margin-right: auto;
 
+      @media (max-width: 992px) {
+        font-size: 32px;
+      }
+
       @media (max-width: 768px) {
-        font-size: 28px;
+        font-size: 26px;
       }
     }
 
     p {
       font-size: 17px;
       line-height: 1.8;
-      max-width: 520px;
+      max-width: 780px;
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 32px;
@@ -64,7 +68,15 @@
 
   .cards-slider {
     .swiper-wrapper {
+      display: flex !important;
+      align-items: stretch !important;
       height: auto !important;
+    }
+
+    .swiper-slide {
+      height: auto !important;
+      display: flex !important;
+      flex-direction: column !important;
     }
   }
 
@@ -74,9 +86,11 @@
     border: 1px solid color-mix(in srgb, var(--default-color), transparent 92%);
     border-radius: 0;
     position: relative;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+    height: 100% !important;
+    width: 100%;
+    display: flex !important;
+    flex-direction: column !important;
+    flex: 1 1 auto;
     transition: border-color 0.3s;
 
     .step-num {
@@ -115,10 +129,11 @@
       line-height: 1.7;
       color: color-mix(in srgb, var(--default-color), transparent 30%);
       margin-bottom: 24px;
-      flex-grow: 1;
+      flex-grow: 1 !important;
     }
 
     .read-link {
+      margin-top: auto !important;
       display: inline-flex;
       align-items: center;
       gap: 6px;

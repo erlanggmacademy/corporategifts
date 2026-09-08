@@ -3,7 +3,18 @@
 # Testimonials 2 Section
 --------------------------------------------------------------*/
 .testimonials-2 {
+  .testimonials-slider {
+    overflow: hidden;
+    padding-bottom: 20px;
+  }
+
+  .swiper-slide {
+    height: auto;
+    display: flex;
+  }
+
   .q-card {
+    width: 100%;
     height: 100%;
     margin: 0;
     padding: 32px;
@@ -12,6 +23,9 @@
     border: 1px solid color-mix(in srgb, var(--default-color) 8%, transparent);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     .rating {
       display: flex;
@@ -28,21 +42,24 @@
       margin: 0 0 24px;
       padding: 0;
       border: none;
-      font-size: 16px;
+      font-size: 15.5px;
       line-height: 1.7;
       color: var(--default-color);
+      flex-grow: 1;
     }
 
     figcaption {
       display: flex;
       align-items: center;
       gap: 14px;
+      margin-top: auto;
 
       img {
         width: 52px;
         height: 52px;
         border-radius: 50%;
         object-fit: cover;
+        flex-shrink: 0;
       }
 
       .name {
@@ -62,6 +79,34 @@
     &:hover {
       transform: translateY(-6px);
       box-shadow: 0 16px 36px rgba(0, 0, 0, 0.09);
+    }
+  }
+
+  .swiper-pagination {
+    position: relative;
+    margin-top: 25px;
+    text-align: center;
+
+    .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+      background-color: color-mix(in srgb, var(--default-color), transparent 75%);
+      opacity: 1;
+      transition: all 0.3s ease;
+      display: inline-block;
+      margin: 0 4px;
+    }
+
+    .swiper-pagination-bullet-active {
+      background-color: var(--accent-color);
+      width: 26px;
+      border-radius: 10px;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .swiper-pagination {
+      display: none;
     }
   }
 }

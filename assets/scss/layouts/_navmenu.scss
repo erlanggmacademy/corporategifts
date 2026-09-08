@@ -138,6 +138,18 @@
   }
 }
 
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .navmenu a,
+  .navmenu a:focus {
+    padding: 14px 10px !important;
+    font-size: 14.5px !important;
+  }
+
+  .navmenu li {
+    margin: 0 1px !important;
+  }
+}
+
 /* Navmenu - Mobile */
 @media (max-width: 1199px) {
   .mobile-nav-toggle {

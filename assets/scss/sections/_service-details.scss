@@ -76,9 +76,16 @@
       background: color-mix(in srgb, var(--accent-color) 8%, transparent);
       text-align: center;
 
-      i {
+      > i {
         font-size: 32px;
         color: var(--accent-color);
+      }
+
+      .btn-main i,
+      a i {
+        font-size: 18px;
+        color: #ffffff !important;
+        margin-right: 6px;
       }
 
       h4 {
