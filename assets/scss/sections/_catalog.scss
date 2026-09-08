@@ -1,0 +1,44 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Catalog Section
+--------------------------------------------------------------*/
+.catalog {
+  .catalog-item {
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+
+    img {
+      transition: 0.3s;
+    }
+
+    .catalog-info {
+      padding: 25px 20px;
+      background-color: var(--surface-color);
+      border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+
+      h4 {
+        font-size: 16px;
+        margin: 0;
+        font-weight: 600;
+        padding-right: 50px;
+
+        a {
+          color: var(--heading-color);
+          transition: 0.3s;
+
+          &:hover {
+            color: var(--accent-color);
+          }
+        }
+      }
+    }
+
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

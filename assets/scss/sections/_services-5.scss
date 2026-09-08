@@ -1,0 +1,124 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Services 5 Section
+--------------------------------------------------------------*/
+.services-5 {
+  .service-tile {
+    display: grid;
+    grid-template-columns: 42% 58%;
+    gap: 0;
+    background: var(--surface-color);
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid color-mix(in srgb, var(--default-color) 10%, transparent);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+
+    .tile-media {
+      position: relative;
+      min-height: 220px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .tile-content {
+      padding: 28px 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .tile-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: color-mix(in srgb, var(--accent-color) 15%, transparent);
+      color: var(--accent-color);
+      font-size: 22px;
+    }
+
+    .text-block {
+      h3 {
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 8px;
+      }
+
+      p {
+        font-size: 15px;
+        line-height: 1.6;
+        color: color-mix(in srgb, var(--default-color) 80%, transparent);
+        margin: 0;
+      }
+    }
+
+    .tile-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 6px;
+
+      li {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 14px;
+        color: color-mix(in srgb, var(--default-color) 85%, transparent);
+
+        i {
+          color: var(--accent-color);
+        }
+      }
+    }
+
+    .tile-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 600;
+      font-size: 14px;
+      color: var(--accent-color);
+      transition: color 0.3s ease, transform 0.3s ease;
+
+      &:after {
+        content: "→";
+        transition: transform 0.3s ease;
+      }
+    }
+
+    &:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 36px color-mix(in srgb, var(--default-color) 12%, transparent);
+
+      .tile-link:after {
+        transform: translateX(4px);
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    .service-tile {
+      grid-template-columns: 1fr;
+
+      .tile-media {
+        min-height: 200px;
+      }
+    }
+  }
+
+  @media (max-width: 576px) {
+    .service-tile {
+      .tile-content {
+        padding: 22px;
+      }
+    }
+  }
+}

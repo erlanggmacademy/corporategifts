@@ -1,0 +1,103 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Floating WhatsApp Button
+--------------------------------------------------------------*/
+.floating-wa {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 99999;
+  background-color: #25D366;
+  color: #ffffff;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  box-shadow: 0 4px 18px rgba(37, 211, 102, 0.45);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  text-decoration: none;
+
+  i {
+    font-size: 28px;
+    color: #ffffff;
+    line-height: 1;
+  }
+
+  &:hover {
+    transform: scale(1.08);
+    background-color: #20ba59;
+    color: #ffffff;
+    box-shadow: 0 6px 24px rgba(37, 211, 102, 0.6);
+  }
+
+  .wa-tooltip {
+    position: absolute;
+    right: 64px;
+    top: 50%;
+    transform: translateY(-50%) translateX(10px);
+    background-color: #1c1917;
+    color: #ffffff;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: -5px;
+      top: 50%;
+      transform: translateY(-50%);
+      border-width: 5px 0 5px 6px;
+      border-style: solid;
+      border-color: transparent transparent transparent #1c1917;
+    }
+  }
+
+  &:hover .wa-tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-50%) translateX(0);
+  }
+}
+
+/*--------------------------------------------------------------
+# Scroll Top Button
+--------------------------------------------------------------*/
+.scroll-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 24px;
+  bottom: 82px;
+  z-index: 99998;
+  background-color: var(--accent-color);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  transition: all 0.4s ease;
+
+  i {
+    font-size: 26px;
+    color: var(--contrast-color);
+    line-height: 0;
+  }
+
+  &:hover {
+    background-color: color-mix(in srgb, var(--accent-color), black 12%);
+    color: var(--contrast-color);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  }
+
+  &.active {
+    visibility: visible;
+    opacity: 1;
+  }
+}
