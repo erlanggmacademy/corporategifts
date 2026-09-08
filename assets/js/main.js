@@ -130,41 +130,58 @@
     });
   }
 
-  window.addEventListener("load", initSwiper);
+  if (document.readyState === 'complete') {
+    setTimeout(initSwiper, 100);
+  } else {
+    window.addEventListener("load", function() {
+      setTimeout(initSwiper, 100);
+    });
+  }
 
   /**
    * Init isotope layout and filters
    */
-  document.querySelectorAll('.isotope-layout').forEach(function(isotopeItem) {
-    if (typeof Isotope === 'undefined' || typeof imagesLoaded === 'undefined') return;
-    let layout = isotopeItem.getAttribute('data-layout') ?? 'masonry';
-    let filter = isotopeItem.getAttribute('data-default-filter') ?? '*';
-    let sort = isotopeItem.getAttribute('data-sort') ?? 'original-order';
+  function initIsotopeLayout() {
+    document.querySelectorAll('.isotope-layout').forEach(function(isotopeItem) {
+      if (typeof Isotope === 'undefined' || typeof imagesLoaded === 'undefined') return;
+      let layout = isotopeItem.getAttribute('data-layout') ?? 'masonry';
+      let filter = isotopeItem.getAttribute('data-default-filter') ?? '*';
+      let sort = isotopeItem.getAttribute('data-sort') ?? 'original-order';
 
-    let initIsotope;
-    imagesLoaded(isotopeItem.querySelector('.isotope-container'), function() {
-      initIsotope = new Isotope(isotopeItem.querySelector('.isotope-container'), {
-        itemSelector: '.isotope-item',
-        layoutMode: layout,
-        filter: filter,
-        sortBy: sort
+      let initIsotope;
+      imagesLoaded(isotopeItem.querySelector('.isotope-container'), function() {
+        initIsotope = new Isotope(isotopeItem.querySelector('.isotope-container'), {
+          itemSelector: '.isotope-item',
+          layoutMode: layout,
+          filter: filter,
+          sortBy: sort
+        });
+      });
+
+      isotopeItem.querySelectorAll('.isotope-filters li').forEach(function(filters) {
+        filters.addEventListener('click', function() {
+          isotopeItem.querySelector('.isotope-filters .filter-active').classList.remove('filter-active');
+          this.classList.add('filter-active');
+          if (initIsotope) {
+            initIsotope.arrange({
+              filter: this.getAttribute('data-filter')
+            });
+          }
+          if (typeof aosInit === 'function') {
+            aosInit();
+          }
+        }, false);
       });
     });
+  }
 
-    isotopeItem.querySelectorAll('.isotope-filters li').forEach(function(filters) {
-      filters.addEventListener('click', function() {
-        isotopeItem.querySelector('.isotope-filters .filter-active').classList.remove('filter-active');
-        this.classList.add('filter-active');
-        initIsotope.arrange({
-          filter: this.getAttribute('data-filter')
-        });
-        if (typeof aosInit === 'function') {
-          aosInit();
-        }
-      }, false);
+  if (document.readyState === 'complete') {
+    setTimeout(initIsotopeLayout, 200);
+  } else {
+    window.addEventListener("load", function() {
+      setTimeout(initIsotopeLayout, 200);
     });
-
-  });
+  }
 
   /**
    * Initiate glightbox

@@ -1,4 +1,33 @@
+# robots.txt for https://corporategifts.id
+# Updated: 2026-09-08
+
 User-agent: *
 Allow: /
 
+# AI Search & Answer Engine Crawlers (AEO / GEO Optimization)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Sitemap Location
 Sitemap: https://corporategifts.id/sitemap.xml
