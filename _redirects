@@ -1,0 +1,26 @@
+# ==============================================================================
+# Cloudflare Pages 301 Permanent Redirects
+# Syntax: /source-path /destination-path [status-code]
+# ==============================================================================
+
+# Artikel 1: Panduan Lengkap Menyusun Seminar Kit Profesional
+/2025/09/panduan-menyusun-seminar-kit.html /blog/panduan-menyusun-seminar-kit.html 301
+/panduan-menyusun-seminar-kit /blog/panduan-menyusun-seminar-kit.html 301
+/panduan-menyusun-seminar-kit/* /blog/panduan-menyusun-seminar-kit.html 301
+
+# Artikel 2: 5 Souvenir Dosen Penguji Skripsi Hemat tapi Tetap Elegan
+/2026/07/souvenir-dosen-penguji-skripsi-hemat.html /blog/souvenir-dosen-penguji-skripsi-hemat.html 301
+/souvenir-dosen-penguji-skripsi-hemat /blog/souvenir-dosen-penguji-skripsi-hemat.html 301
+/souvenir-dosen-penguji-skripsi-hemat/* /blog/souvenir-dosen-penguji-skripsi-hemat.html 301
+
+# Artikel 3: Proses Custom Apparel Perusahaan Desain Sampai Produksi
+/2026/06/proses-custom-apparel-perusahaan.html /blog/proses-custom-apparel-perusahaan.html 301
+/proses-custom-apparel-perusahaan /blog/proses-custom-apparel-perusahaan.html 301
+/proses-custom-apparel-perusahaan/* /blog/proses-custom-apparel-perusahaan.html 301
+
+# Artikel 4: Souvenir Seminar Panduan Lengkap untuk Acara Profesional
+/2025/09/souvenir-seminar-panduan-lengkap-jenis-dan-manfaat.html /blog/souvenir-seminar-panduan-lengkap-jenis-dan-manfaat.html 301
+/souvenir-seminar-panduan-lengkap-jenis-dan-manfaat /blog/souvenir-seminar-panduan-lengkap-jenis-dan-manfaat.html 301
+/souvenir-seminar-panduan-lengkap-jenis-dan-manfaat/* /blog/souvenir-seminar-panduan-lengkap-jenis-dan-manfaat.html 301
+
+
