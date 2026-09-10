@@ -143,11 +143,10 @@ Dilarang memodifikasi class name, menghapus wrapper, mengganti format font, atau
 
 ---
 
-## 3. Mandatory 6-Step Synchronization Checklist
+## 3. Mandatory 5-Step Synchronization Checklist
 Setiap kali artikel baru dibuat:
 1. `blog/<slug>.html` dibuat sesuai blueprint di atas.
-2. `blog.html` disisipkan card artikel di grid dengan badge, thumbnail, excerpt, dan metadata.
-3. `penulis.html` ditambahkan link artikel ke daftar penulis terkait dengan format `<li>` yang rapi.
-4. `sitemap.xml` ditambahkan URL artikel lengkap dengan `<lastmod>` dan `<priority>0.8</priority>`.
-5. `_redirects` ditambahkan rule 301 redirect dari URL Blogger lama.
-6. `llms.txt` ditambahkan rangkuman 1 baris di bawah seksi `Blog & Artikel`.
+2. `blog.html` disisipkan card artikel di grid dengan badge, thumbnail, excerpt, dan metadata (kapasitas 30 artikel per halaman).
+3. `sitemap.xml` ditambahkan URL artikel lengkap dengan `<lastmod>` dan `<priority>0.8</priority>`.
+4. `_redirects` ditambahkan rule 301 redirect dari URL Blogger lama.
+5. `llms.txt` ditambahkan rangkuman 1 baris di bawah seksi `Blog & Artikel`.

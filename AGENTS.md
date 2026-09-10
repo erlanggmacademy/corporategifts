@@ -24,4 +24,5 @@ The reference baseline implementation is `blog/cara-mengukur-efektivitas-program
     - `Article (Ringkasan Eksekutif)`: `@id` with `#summary`, paired summary article schema for Google rich snippets and AI Overview.
     - `BreadcrumbList`: 3 hierarchical levels (`Beranda` -> `Blog` -> `{Article Title}`).
     - `FAQPage`: Array of `Question` & `Answer` mirroring the body accordion FAQ.
-15. **Full 6-Step Sync**: Simultaneously update `blog/<slug>.html`, `blog.html`, `penulis.html`, `sitemap.xml`, `_redirects`, and `llms.txt`.
+15. **Full 5-Step Sync**: Simultaneously update `blog/<slug>.html`, `blog.html` (30 articles per page capacity), `sitemap.xml`, `_redirects`, and `llms.txt`.
+16. **Pagination Standard**: `blog.html` uses 3-column grid layout with 30 articles per page (10 rows × 3 columns) before pagination triggers.

@@ -179,7 +179,7 @@ Setiap kali data artikel (baris Excel + HTML Blogger) dikirimkan, proses migrasi
 
 ### 2. Update Indeks Blog (`blog.html`)
 
-* Tambahkan atau perbarui kartu artikel pada grid postingan blog:
+* Tambahkan atau perbarui kartu artikel pada grid postingan blog (kapasitas standar: **30 artikel per halaman** / 10 baris $\times$ 3 kolom sebelum pagination aktif):
   - Gambar cover WEBP dari `assets/img/blog/`.
   - Badge kategori artikel.
   - Judul `<h2>` yang nge-link ke `blog/[slug-baru].html`.
@@ -190,21 +190,7 @@ Setiap kali data artikel (baris Excel + HTML Blogger) dikirimkan, proses migrasi
 
 ---
 
-### 3. Update Halaman Tim Penulis (`penulis.html`)
-
-* Tambahkan tautan judul artikel dalam boks `📑 Artikel & Panduan yang Disusun` di profil penulis:
-  ```html
-  <li class="d-flex align-items-start gap-2">
-    <span class="text-success fw-bold">→</span>
-    <a href="blog/[slug-baru].html" class="text-dark text-decoration-none fw-medium hover-green" style="font-size: 0.95rem;">
-      [Judul Lengkap Artikel]
-    </a>
-  </li>
-  ```
-
----
-
-### 4. Update Sitemap XML (`sitemap.xml`)
+### 3. Update Sitemap XML (`sitemap.xml`)
 
 Tambahkan entri URL artikel baru ke dalam `sitemap.xml`:
 ```xml
@@ -218,7 +204,7 @@ Tambahkan entri URL artikel baru ke dalam `sitemap.xml`:
 
 ---
 
-### 5. Update Aturan Redirect Cloudflare Pages (`_redirects`)
+### 4. Update Aturan Redirect Cloudflare Pages (`_redirects`)
 
 Tambahkan aturan 301 Permanent Redirect dari URL Blogger lama ke URL baru di file `_redirects`:
 ```text
@@ -230,7 +216,7 @@ Tambahkan aturan 301 Permanent Redirect dari URL Blogger lama ke URL baru di fil
 
 ---
 
-### 6. Update Indeks Pengetahuan LLM (`llms.txt`)
+### 5. Update Indeks Pengetahuan LLM (`llms.txt`)
 
 Tambahkan entri artikel di bagian `## Blog & Artikel` pada file `llms.txt`:
 ```markdown
@@ -239,7 +225,7 @@ Tambahkan entri artikel di bagian `## Blog & Artikel` pada file `llms.txt`:
 
 ---
 
-### 7. Verifikasi Kualitas Otomatis (Quality Check)
+### 6. Verifikasi Kualitas Otomatis (Quality Check)
 
 Sebelum menyatakan selesai, lakukan validasi berikut:
 1. **Heading Hierarchy**: Pastikan urutan heading runtut (H1 $\rightarrow$ H2 $\rightarrow$ H3 $\rightarrow$ H4).
