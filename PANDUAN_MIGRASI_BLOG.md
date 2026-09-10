@@ -65,11 +65,12 @@ Tag body wajib menggunakan class:
       </div>
     </div>
     <div class="text-muted ms-auto">
-      <i class="bi bi-calendar3 me-1"></i> [Tanggal Publikasi] &nbsp;|&nbsp; 
+      <i class="bi bi-calendar3 me-1"></i> [Tanggal Update dari Excel] &nbsp;|&nbsp; 
       <i class="bi bi-clock me-1"></i> [N] Menit Baca
     </div>
   </div>
 </div>
+*(Catatan: Tanggal yang digunakan selalu mengambil nilai dari kolom **Tanggal Update** / kolom sebelah kanan di Excel).*
 ```
 
 ### 5. Table of Contents (TOC) Standar
@@ -156,16 +157,17 @@ Setiap kali data artikel (baris Excel + HTML Blogger) dikirimkan, proses migrasi
   3. **Featured Image**: Gambar cover WEBP lokal dari `assets/img/blog/` dengan caption teks miring di bawahnya.
   4. **Table of Contents (TOC)**: Komponen TOC interaktif dengan tombol toggle Buka/Tutup.
   5. **Article Body**:
-     - **Teks 100% Asli**: Menggunakan redaksi kata demi kata dari HTML Blogger tanpa parafrase.
+     - **Teks 100% Asli & Diperkaya**: Menggunakan redaksi kata demi kata dari HTML Blogger, diperkaya jika konten awal terlalu ringkas/thin content.
      - **Bebas Em Dash**: Ganti semua simbol em dash (`—` dan `&mdash;`) menjadi tanda hubung standar (`-`) atau koma.
-     - **Internal Linking**: Pasang tautan internal natural sesuai angka di kolom Excel `Jumlah Link` menuju halaman `../produk/*.html`, `../layanan/*.html`, atau `../index.html`.
+     - **HTML Semantik Murni (Bebas Markdown Asterisk)**: Dilarang meninggalkan karakter markdown `*` (*italic*) atau `**` (**bold**). Wajib dikonversi ke tag HTML semantik `<em>...</em>` atau `<strong>...</strong>`.
+     - **Internal Linking**: Pasang tautan internal natural sesuai angka di kolom Excel `Jumlah Link` menuju halaman `../produk/*.html`, `../layanan/*.html`, `../katalog.html`, `../minta-penawaran.html`, atau artikel blog relevan.
   6. **Kotak "Baca Juga" (In-Article Callout)**: Pasang boks rekomendasi artikel internal di tengah naskah (`article-baca-juga`) dengan badge hijau.
   7. **Blog CTA Banner**: Banner RFQ standar artikel (`blog-cta-banner`) dengan tombol formulir penawaran dan WhatsApp.
-  8. **FAQ Section (Bootstrap Accordion)**: Menggunakan accordion flush sesuai standar di atas.
-  9. **Author Box**: Kotak profil penulis (`article-author-box`) dengan avatar bulat, jabatan, ringkasan keahlian, dan tombol menuju `../penulis.html#[slug-penulis]`.
+  8. **FAQ Section (Bootstrap Accordion)**: Menggunakan accordion flush sesuai standar di atas (minimal 5-6 FAQ relevan).
+  9. **Author Box**: Kotak profil penulis (`article-author-box`) dengan avatar bulat 90x90, jabatan, ringkasan keahlian, dan tombol menuju `../penulis.html#[slug-penulis]`.
   10. **Share Bar**: Tombol share ke WhatsApp, LinkedIn, Facebook, dan Salin Link.
   11. **Sidebar Kanan**: 3 widget standar (Kategori Produk Kami, Bantuan Pengadaan Cepat via WA, dan Unduh E-Katalog PDF).
-  12. **Section Artikel Terkait (3 Rekomendasi)**: Menampilkan grid 3 kartu artikel rekomendasi sebelum `</main>`.
+  12. **Section Artikel Terkait (3 Rekomendasi)**: Menampilkan grid 3 kartu artikel rekomendasi sebelum `</main>` dengan verifikasi ketat bahwa file gambar di `assets/img/blog/` benar-benar ada di disk.
   13. **Footer 4 Kolom**: `footer-about`, `<h3>Halaman</h3>` (8 links), `<h3>Produk</h3>` (6 links), `<h3>Hubungi Kami</h3>`, bar Partner Network, dan Copyright.
   14. **Floating WhatsApp & Scroll-Top**: Tombol floating WA dengan tooltip dan tombol scroll-top.
 * **Structured Data (JSON-LD) Lengkap**:
