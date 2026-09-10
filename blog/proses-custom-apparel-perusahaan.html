@@ -51,27 +51,98 @@
   <link href="../assets/img/favicon.png" rel="icon">
   <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Fonts -->
+    <!-- Fonts Preconnect & DNS-Prefetch -->
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </noscript>
 
   <!-- Vendor CSS Files -->
+  <link rel="preload" href="../assets/vendor/bootstrap/css/bootstrap.min.css" as="style">
+  <link rel="preload" href="../assets/css/main.min.css" as="style">
   <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/css/main.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" media="print"
+    onload="this.media='all'">
+  <noscript>
+    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  </noscript>
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript>
+    <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  </noscript>
   <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
-  <!-- Main CSS File -->
-  <link href="../assets/css/main.css" rel="stylesheet">
+  <!-- Schema.org: LocalBusiness & Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://corporategifts.id/#localbusiness",
+    "name": "CorporateGifts.ID",
+    "alternateName": "Vendor Corporate Gift & Souvenir Perusahaan",
+    "url": "https://corporategifts.id/",
+    "logo": "https://corporategifts.id/assets/img/logo-header.png",
+    "image": "https://corporategifts.id/assets/img/services/vendor-souvenir-perusahaan.webp",
+    "description": "Vendor corporate gift, souvenir perusahaan premium, merchandise kantor eksklusif, hampers, dan seminar kit dengan kustomisasi logo di Surabaya, melayani seluruh Indonesia.",
+    "telephone": "+62895639068080",
+    "email": "info@corporategifts.id",
+    "priceRange": "Rp15.000 - Rp750.000",
+    "paymentAccepted": "Cash, Bank Transfer, Invoice B2B",
+    "currenciesAccepted": "IDR",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Jl. Basuki Rahmat No. 12-18, Tegalsari",
+      "addressLocality": "Surabaya",
+      "addressRegion": "Jawa Timur",
+      "postalCode": "60261",
+      "addressCountry": "ID"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -7.2575,
+      "longitude": 112.7521
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:30",
+        "closes": "17:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday"],
+        "opens": "09:00",
+        "closes": "15:00"
+      }
+    ],
+    "areaServed": {
+      "@type": "Country",
+      "name": "Indonesia"
+    },
+    "sameAs": [
+      "https://wa.me/62895639068080",
+      "https://www.instagram.com/corporategifts.id",
+      "https://www.facebook.com/corporategiftsid",
+      "https://www.tiktok.com/@corporategifts.id",
+      "https://www.souvenirkantor.biz.id",
+      "https://corporategifts.biz.id"
+    ]
+  }
+  </script>
 
-  <!-- Structured Data: Article (JSON-LD) -->
+  <!-- Schema.org: Article (Utama) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Article",
+    "@id": "https://corporategifts.id/blog/proses-custom-apparel-perusahaan.html#article",
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https://corporategifts.id/blog/proses-custom-apparel-perusahaan.html"
@@ -86,21 +157,55 @@
     "author": {
       "@type": "Person",
       "name": "Arinda Zakia",
+      "url": "https://corporategifts.id/penulis.html#arinda-zakia",
       "jobTitle": "Senior Corporate Gifting Specialist & Content Strategist",
-      "url": "https://corporategifts.id/penulis.html#arinda-zakia"
+      "sameAs": "https://corporategifts.id/penulis.html#arinda-zakia"
     },
     "publisher": {
       "@type": "Organization",
+      "@id": "https://corporategifts.id/#localbusiness",
       "name": "CorporateGifts.ID",
+      "url": "https://corporategifts.id/",
       "logo": {
         "@type": "ImageObject",
         "url": "https://corporategifts.id/assets/img/logo-header.png"
       }
-    }
+    },
+    "articleSection": "Merchandise Perusahaan",
+    "inLanguage": "id-ID"
   }
   </script>
 
-  <!-- Structured Data: BreadcrumbList (JSON-LD) -->
+  <!-- Schema.org: Article (Ringkasan Eksekutif) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://corporategifts.id/blog/proses-custom-apparel-perusahaan.html#summary",
+    "headline": "Ringkasan: Alur & Tahapan Produksi Custom Apparel Perusahaan",
+    "description": "Rangkuman alur 4 tahapan pembuatan custom apparel korporat: konsultasi kebutuhan, desain dan mockup approval 3D, pemilihan bahan (katun combed/lacoste) & MOQ, hingga produksi massal dan quality control ketat.",
+    "abstract": "Rangkuman alur 4 tahapan pembuatan custom apparel korporat: konsultasi kebutuhan, desain dan mockup approval 3D, pemilihan bahan (katun combed/lacoste) & MOQ, hingga produksi massal dan quality control ketat.",
+    "image": [
+      "https://corporategifts.id/assets/img/blog/presentasi-proses-custom-apparel-corporate-gifts.webp"
+    ],
+    "datePublished": "2026-06-20T03:55:00+07:00",
+    "dateModified": "2026-06-20T08:36:00+07:00",
+    "author": {
+      "@type": "Person",
+      "name": "Arinda Zakia",
+      "url": "https://corporategifts.id/penulis.html#arinda-zakia"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "@id": "https://corporategifts.id/#localbusiness",
+      "name": "CorporateGifts.ID",
+      "url": "https://corporategifts.id/"
+    },
+    "inLanguage": "id-ID"
+  }
+  </script>
+
+  <!-- Schema.org: BreadcrumbList -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -121,226 +226,13 @@
       {
         "@type": "ListItem",
         "position": 3,
-        "name": "Proses Custom Apparel Perusahaan",
+        "name": "Proses Custom Apparel Perusahaan: Desain Sampai Produksi",
         "item": "https://corporategifts.id/blog/proses-custom-apparel-perusahaan.html"
       }
     ]
   }
   </script>
 
-  <style>
-    /* Styling khusus konten artikel */
-    .article-header {
-      margin-bottom: 25px;
-    }
-    .article-header h1 {
-      font-size: 2.15rem;
-      font-weight: 700;
-      color: #1e293b;
-      line-height: 1.35;
-      margin-top: 15px;
-      margin-bottom: 15px;
-    }
-    .article-meta-bar {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 15px;
-      padding: 12px 0;
-      border-top: 1px solid #e2e8f0;
-      border-bottom: 1px solid #e2e8f0;
-      font-size: 0.88rem;
-    }
-    .article-featured-img {
-      margin: 25px 0 35px;
-    }
-    .article-featured-img img {
-      width: 100%;
-      height: auto;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
-    }
-    .table-of-contents {
-      background: #f8fafc;
-      border: 1px solid #e2e8f0;
-      border-radius: 12px;
-      padding: 20px 24px;
-      margin-bottom: 35px;
-    }
-    .table-of-contents h2 {
-      font-size: 1.1rem;
-      font-weight: 700;
-      color: #0f172a;
-      margin-bottom: 0;
-    }
-    .table-of-contents ol {
-      padding-left: 20px;
-      margin-top: 12px;
-    }
-    .table-of-contents li {
-      margin-bottom: 8px;
-      font-size: 0.95rem;
-    }
-    .table-of-contents a {
-      color: #334155;
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-    .table-of-contents a:hover {
-      color: var(--accent-color, #16a34a);
-      font-weight: 500;
-    }
-    .article-body {
-      color: #334155;
-      font-size: 1.05rem;
-      line-height: 1.85;
-    }
-    .article-body h2 {
-      font-size: 1.45rem;
-      font-weight: 700;
-      color: #0f172a;
-      margin-top: 35px;
-      margin-bottom: 16px;
-      padding-bottom: 8px;
-      border-bottom: 2px solid #f1f5f9;
-    }
-    .article-body p {
-      margin-bottom: 18px;
-    }
-    .article-body ul, .article-body ol {
-      margin-bottom: 22px;
-      padding-left: 24px;
-    }
-    .article-body li {
-      margin-bottom: 10px;
-    }
-    .article-faq-compact {
-      background: #f8fafc;
-      border: 1px solid #e2e8f0;
-      border-radius: 12px;
-      padding: 24px;
-      margin: 35px 0;
-    }
-    .article-faq-compact h2 {
-      font-size: 1.3rem;
-      font-weight: 700;
-      color: #0f172a;
-      margin-top: 0;
-      margin-bottom: 20px;
-      border-bottom: none;
-      padding-bottom: 0;
-    }
-    .faq-item-custom {
-      background: #ffffff;
-      border: 1px solid #e2e8f0;
-      border-radius: 8px;
-      margin-bottom: 12px;
-      overflow: hidden;
-    }
-    .faq-question-custom {
-      font-weight: 600;
-      font-size: 0.98rem;
-      color: #1e293b;
-      padding: 14px 18px;
-      margin: 0;
-      cursor: pointer;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      user-select: none;
-    }
-    .faq-answer-custom {
-      padding: 0 18px 14px;
-      font-size: 0.95rem;
-      color: #475569;
-      line-height: 1.7;
-      display: block;
-    }
-    .article-author-box {
-      background: #ffffff;
-      border: 1px solid #e2e8f0;
-      border-radius: 12px;
-      padding: 24px;
-      margin: 35px 0 25px;
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.03);
-    }
-    .article-share-bar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 16px 20px;
-      background: #f8fafc;
-      border-radius: 10px;
-      margin-top: 30px;
-    }
-    .article-share-buttons {
-      display: flex;
-      gap: 10px;
-    }
-    .btn-share {
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      color: #ffffff;
-      text-decoration: none;
-      font-size: 0.9rem;
-      transition: opacity 0.2s, transform 0.2s;
-    }
-    .btn-share:hover {
-      opacity: 0.9;
-      transform: translateY(-2px);
-      color: #ffffff;
-    }
-    .btn-wa { background: #25D366; }
-    .btn-li { background: #0A66C2; }
-    .btn-fb { background: #1877F2; }
-    .btn-copy { background: #64748b; }
-    .blog-cta-banner {
-      background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
-      border: 1px solid #bbf7d0;
-      border-radius: 16px;
-      padding: 30px;
-    }
-    .blog-cta-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-    @media (max-width: 768px) {
-      .article-header h1 { font-size: 1.65rem; }
-      .article-author-box { flex-direction: column; text-align: center; }
-      .blog-cta-actions { width: 100%; justify-content: center; }
-    }
-    .article-baca-juga {
-      background: #f0fdf4;
-      border-left: 4px solid var(--accent-color, #16a34a);
-      border-radius: 8px;
-      padding: 14px 18px;
-      margin: 28px 0;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-    .article-baca-juga a {
-      color: #1e293b;
-      font-weight: 600;
-      font-size: 0.98rem;
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-    .article-baca-juga a:hover {
-      color: var(--accent-color, #16a34a);
-    }
-    .hover-green:hover {
-      color: var(--accent-color, #16a34a) !important;
-    }
-  </style>
 </head>
 
 <body class="blog-detail-page">
