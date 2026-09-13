@@ -203,6 +203,79 @@
   <noscript><link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet"></noscript>
 
   
+  <style>
+    /* Dynamic Client-Side Pagination Styles - Aligned with Project Color Scheme */
+    .blog-pagination-wrapper {
+      margin-top: 3.5rem;
+    }
+    .btn-pagination-pill {
+      background-color: #ffffff;
+      border: 1px solid #d1d5db;
+      color: #374151;
+      font-weight: 600;
+      font-size: 0.9rem;
+      padding: 8px 20px;
+      border-radius: 999px;
+      transition: all 0.25s ease;
+      cursor: pointer;
+    }
+    .btn-pagination-pill:hover:not(:disabled) {
+      background-color: #f0fdf4;
+      color: var(--accent-color, #15803d);
+      border-color: var(--accent-color, #15803d);
+      transform: translateY(-1px);
+    }
+    .btn-pagination-pill:disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+      background-color: #f9fafb;
+      border-color: #e5e7eb;
+      color: #9ca3af;
+    }
+    .btn-pagination-num {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      font-size: 0.95rem;
+      border: 1px solid #d1d5db;
+      background-color: #ffffff;
+      color: #374151;
+      transition: all 0.25s ease;
+      cursor: pointer;
+      padding: 0;
+    }
+    .btn-pagination-num:hover:not(.active) {
+      background-color: #f0fdf4;
+      border-color: var(--accent-color, #15803d);
+      color: var(--accent-color, #15803d);
+      transform: translateY(-1px);
+    }
+    .btn-pagination-num.active {
+      background: var(--accent-color, #15803d);
+      background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
+      border-color: var(--accent-color, #15803d);
+      color: #ffffff;
+      box-shadow: 0 4px 14px rgba(21, 128, 61, 0.35);
+      cursor: default;
+    }
+    .pagination-ellipsis {
+      color: #9ca3af;
+      font-weight: 600;
+      font-size: 1.1rem;
+      padding: 0 4px;
+      user-select: none;
+    }
+    #blog-pagination-info {
+      color: #4b5563;
+      font-size: 0.92rem;
+      font-weight: 500;
+      letter-spacing: 0.2px;
+    }
+  </style>
 </head>
 
 <body class="blog-page">
@@ -323,7 +396,40 @@
             </article>
           </div>
 
-          <!-- ARTIKEL 2: 30 Ide Merchandise Kantor 2026 untuk Branding Perusahaan (1 September 2026) -->
+          <!-- ARTIKEL 2: 17+ Souvenir Event Perusahaan Jakarta untuk Skala Bisnis (5 September 2026) -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="105">
+            <article>
+              <div class="post-img">
+                <span class="post-badge">Souvenir Jakarta</span>
+                <img src="assets/img/blog/souvenir-event-perusahaan-jakarta-1.webp"
+                  alt="17+ Souvenir Event Perusahaan Jakarta untuk Skala Bisnis - CorporateGifts.ID"
+                  class="img-fluid" loading="lazy" width="400" height="225" style="height: 225px; object-fit: cover;">
+              </div>
+              <p class="post-category">Souvenir Kantor &amp; Promosi</p>
+              <h2 class="title">
+                <a href="blog/souvenir-event-perusahaan-jakarta.html">17+ Souvenir Event Perusahaan Jakarta untuk Skala Bisnis</a>
+              </h2>
+              <p class="post-excerpt">
+                Cari souvenir event perusahaan Jakarta yang profesional? Corporate Gifts menyediakan merchandise siap pakai untuk setiap acara bisnis Anda.
+              </p>
+              <div class="post-footer d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                  <a href="penulis.html#arinda-zakia" class="d-inline-flex me-2">
+                    <img src="assets/img/penulis/arinda-zakia.webp" alt="Arinda Zakia - CorporateGifts.ID"
+                      class="img-fluid post-author-img flex-shrink-0 rounded-circle" loading="lazy" width="36" height="36" style="object-fit:cover;">
+                  </a>
+                  <div class="post-meta">
+                    <p class="post-author mb-0"><a href="penulis.html#arinda-zakia" class="text-dark fw-bold text-decoration-none">Arinda Zakia</a></p>
+                    <p class="post-date"><time datetime="2026-09-05">5 September 2026</time></p>
+                  </div>
+                </div>
+                <a href="blog/souvenir-event-perusahaan-jakarta.html" class="read-more"
+                  aria-label="Baca artikel 17+ Souvenir Event Perusahaan Jakarta untuk Skala Bisnis">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <!-- ARTIKEL 3: 30 Ide Merchandise Kantor 2026 untuk Branding Perusahaan (1 September 2026) -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="105">
             <article>
               <div class="post-img">
@@ -352,6 +458,72 @@
                 </div>
                 <a href="blog/rekomendasi-merchandise-kantor.html" class="read-more"
                   aria-label="Baca artikel 30 Ide Merchandise Kantor 2026 untuk Branding Perusahaan">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <!-- ARTIKEL 3: Koleksi Souvenir VIP Premium untuk Klien Perusahaan (1 September 2026) -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="110">
+            <article>
+              <div class="post-img">
+                <span class="post-badge">Souvenir VIP</span>
+                <img src="assets/img/blog/Koleksi%20hadiah%20eksklusif%20untuk%20klien%20bisnis%20kelas%20atas.webp"
+                  alt="Koleksi Souvenir VIP Premium untuk Klien Perusahaan - CorporateGifts.ID"
+                  class="img-fluid" loading="lazy" width="400" height="225" style="height: 225px; object-fit: cover;">
+              </div>
+              <p class="post-category">Souvenir Kantor &amp; Promosi</p>
+              <h2 class="title">
+                <a href="blog/koleksi-souvenir-vip-premium-perusahaan.html">Koleksi Souvenir VIP Premium untuk Klien Perusahaan</a>
+              </h2>
+              <p class="post-excerpt">
+                Ketahui kategori souvenir VIP yang tepat untuk klien eksekutif dan cara memilihnya. Cek katalog eksklusif Corporate Gifts sekarang.
+              </p>
+              <div class="post-footer d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                  <a href="penulis.html#arinda-zakia" class="d-inline-flex me-2">
+                    <img src="assets/img/penulis/arinda-zakia.webp" alt="Arinda Zakia - CorporateGifts.ID"
+                      class="img-fluid post-author-img flex-shrink-0 rounded-circle" loading="lazy" width="36" height="36" style="object-fit:cover;">
+                  </a>
+                  <div class="post-meta">
+                    <p class="post-author mb-0"><a href="penulis.html#arinda-zakia" class="text-dark fw-bold text-decoration-none">Arinda Zakia</a></p>
+                    <p class="post-date"><time datetime="2026-09-01">1 September 2026</time></p>
+                  </div>
+                </div>
+                <a href="blog/koleksi-souvenir-vip-premium-perusahaan.html" class="read-more"
+                  aria-label="Baca artikel Koleksi Souvenir VIP Premium untuk Klien Perusahaan">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <!-- ARTIKEL: Memilih Souvenir untuk Komisaris dengan Kesan Professional (31 Agustus 2026) -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="108">
+            <article>
+              <div class="post-img">
+                <span class="post-badge">Souvenir Komisaris</span>
+                <img src="assets/img/blog/Hadiah%20premium%20korporat%20untuk%20jajaran%20komisaris.webp"
+                  alt="Memilih Souvenir untuk Komisaris dengan Kesan Professional - CorporateGifts.ID"
+                  class="img-fluid" loading="lazy" width="400" height="225" style="height: 225px; object-fit: cover;">
+              </div>
+              <p class="post-category">Souvenir Eksekutif &amp; VIP</p>
+              <h2 class="title">
+                <a href="blog/cara-memilih-souvenir-untuk-komisaris.html">Memilih Souvenir untuk Komisaris dengan Kesan Professional</a>
+              </h2>
+              <p class="post-excerpt">
+                Souvenir komisaris bukan sekadar hadiah, tapi representasi citra perusahaan. Cek koleksi eksklusif Corporate Gifts sekarang.
+              </p>
+              <div class="post-footer d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                  <a href="penulis.html#arinda-zakia" class="d-inline-flex me-2">
+                    <img src="assets/img/penulis/arinda-zakia.webp" alt="Arinda Zakia - CorporateGifts.ID"
+                      class="img-fluid post-author-img flex-shrink-0 rounded-circle" loading="lazy" width="36" height="36" style="object-fit:cover;">
+                  </a>
+                  <div class="post-meta">
+                    <p class="post-author mb-0"><a href="penulis.html#arinda-zakia" class="text-dark fw-bold text-decoration-none">Arinda Zakia</a></p>
+                    <p class="post-date"><time datetime="2026-08-31">31 Agustus 2026</time></p>
+                  </div>
+                </div>
+                <a href="blog/cara-memilih-souvenir-untuk-komisaris.html" class="read-more"
+                  aria-label="Baca artikel Memilih Souvenir untuk Komisaris dengan Kesan Professional">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
               </div>
             </article>
           </div>
@@ -385,6 +557,72 @@
                 </div>
                 <a href="blog/cara-memilih-souvenir-vip-untuk-perusahaan-profesional.html" class="read-more"
                   aria-label="Baca artikel Souvenir VIP Perusahaan: Rahasia di Balik Kesan Eksklusif">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <!-- ARTIKEL: Souvenir Kantor Pajak Premium untuk Kebutuhan Resmi Instansi (19 Agustus 2026) -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="112">
+            <article>
+              <div class="post-img">
+                <span class="post-badge">Souvenir Kantor Pajak</span>
+                <img src="assets/img/blog/souvenir-kantor-pajak-1.webp"
+                  alt="Souvenir Kantor Pajak Premium untuk Kebutuhan Resmi Instansi - CorporateGifts.ID"
+                  class="img-fluid" loading="lazy" width="400" height="225" style="height: 225px; object-fit: cover;">
+              </div>
+              <p class="post-category">Souvenir Kantor</p>
+              <h2 class="title">
+                <a href="blog/souvenir-kantor-pajak.html">Souvenir Kantor Pajak Premium untuk Kebutuhan Resmi Instansi</a>
+              </h2>
+              <p class="post-excerpt">
+                Pesan souvenir kantor pajak custom logo, kualitas premium, proses cepat. Konsultasi gratis dengan Corporate Gifts sekarang.
+              </p>
+              <div class="post-footer d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                  <a href="penulis.html#arinda-zakia" class="d-inline-flex me-2">
+                    <img src="assets/img/penulis/arinda-zakia.webp" alt="Arinda Zakia - CorporateGifts.ID"
+                      class="img-fluid post-author-img flex-shrink-0 rounded-circle" loading="lazy" width="36" height="36" style="object-fit:cover;">
+                  </a>
+                  <div class="post-meta">
+                    <p class="post-author mb-0"><a href="penulis.html#arinda-zakia" class="text-dark fw-bold text-decoration-none">Arinda Zakia</a></p>
+                    <p class="post-date"><time datetime="2026-08-19">19 Agustus 2026</time></p>
+                  </div>
+                </div>
+                <a href="blog/souvenir-kantor-pajak.html" class="read-more"
+                  aria-label="Baca artikel Souvenir Kantor Pajak Premium untuk Kebutuhan Resmi Instansi">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <!-- ARTIKEL 6: Souvenir Meeting Custom Logo untuk Kesan Profesional Perusahaan (11 Agustus 2026) -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="115">
+            <article>
+              <div class="post-img">
+                <span class="post-badge">Souvenir Meeting</span>
+                <img src="assets/img/blog/unnamed.webp"
+                  alt="Souvenir Meeting Custom Logo untuk Kesan Profesional Perusahaan - CorporateGifts.ID"
+                  class="img-fluid" loading="lazy" width="400" height="225" style="height: 225px; object-fit: cover;">
+              </div>
+              <p class="post-category">Souvenir Kantor &amp; Promosi</p>
+              <h2 class="title">
+                <a href="blog/souvenir-meeting.html">Souvenir Meeting Custom Logo untuk Kesan Profesional Perusahaan</a>
+              </h2>
+              <p class="post-excerpt">
+                Cari souvenir meeting elegan dan tahan lama untuk rapat kantor? Corporate Gifts sedia paket custom logo, siap kirim cepat.
+              </p>
+              <div class="post-footer d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                  <a href="penulis.html#arinda-zakia" class="d-inline-flex me-2">
+                    <img src="assets/img/penulis/arinda-zakia.webp" alt="Arinda Zakia - CorporateGifts.ID"
+                      class="img-fluid post-author-img flex-shrink-0 rounded-circle" loading="lazy" width="36" height="36" style="object-fit:cover;">
+                  </a>
+                  <div class="post-meta">
+                    <p class="post-author mb-0"><a href="penulis.html#arinda-zakia" class="text-dark fw-bold text-decoration-none">Arinda Zakia</a></p>
+                    <p class="post-date"><time datetime="2026-08-11">11 Agustus 2026</time></p>
+                  </div>
+                </div>
+                <a href="blog/souvenir-meeting.html" class="read-more"
+                  aria-label="Baca artikel Souvenir Meeting Custom Logo untuk Kesan Profesional Perusahaan">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
               </div>
             </article>
           </div>
@@ -455,7 +693,40 @@
             </article>
           </div>
 
-          <!-- ARTIKEL 6: 5 Souvenir Dosen Penguji Skripsi Hemat tapi Tetap Elegan (3 Juli 2026) -->
+          <!-- ARTIKEL 6: Momen Tepat Pemberian Souvenir Tea Set Kantor (10 Juli 2026) -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <article>
+              <div class="post-img">
+                <span class="post-badge">Souvenir Kantor</span>
+                <img src="assets/img/blog/momen-tepat-pemberian-souvenir-tea-set-kantor-1.webp"
+                  alt="Momen Tepat Pemberian Souvenir Tea Set Kantor - CorporateGifts.ID"
+                  class="img-fluid" loading="lazy" width="400" height="225" style="height: 225px; object-fit: cover;">
+              </div>
+              <p class="post-category">Souvenir Kantor &amp; Promosi</p>
+              <h2 class="title">
+                <a href="blog/momen-tepat-pemberian-souvenir-tea-set-kantor.html">Momen Tepat Pemberian Souvenir Tea Set Kantor</a>
+              </h2>
+              <p class="post-excerpt">
+                Ketahui momen terbaik memberikan souvenir tea set kantor, dari acara internal hingga pertemuan bisnis dengan klien.
+              </p>
+              <div class="post-footer d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                  <a href="penulis.html#arinda-zakia" class="d-inline-flex me-2">
+                    <img src="assets/img/penulis/arinda-zakia.webp" alt="Arinda Zakia - CorporateGifts.ID"
+                      class="img-fluid post-author-img flex-shrink-0 rounded-circle" loading="lazy" width="36" height="36" style="object-fit:cover;">
+                  </a>
+                  <div class="post-meta">
+                    <p class="post-author mb-0"><a href="penulis.html#arinda-zakia" class="text-dark fw-bold text-decoration-none">Arinda Zakia</a></p>
+                    <p class="post-date"><time datetime="2026-07-10">10 Juli 2026</time></p>
+                  </div>
+                </div>
+                <a href="blog/momen-tepat-pemberian-souvenir-tea-set-kantor.html" class="read-more"
+                  aria-label="Baca artikel Momen Tepat Pemberian Souvenir Tea Set Kantor">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <!-- ARTIKEL 7: 5 Souvenir Dosen Penguji Skripsi Hemat tapi Tetap Elegan (3 Juli 2026) -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <article>
               <div class="post-img">
@@ -521,6 +792,39 @@
             </article>
           </div>
 
+          <!-- ARTIKEL: Cara Memilih Vendor Seminar Kit Terpercaya (26 Juni 2026) -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <article>
+              <div class="post-img">
+                <span class="post-badge">Vendor Seminar Kit</span>
+                <img src="assets/img/blog/seminar-kit-eksekutif.webp"
+                  alt="Cara Memilih Vendor Seminar Kit Terpercaya - CorporateGifts.ID"
+                  class="img-fluid" loading="lazy" width="400" height="225" style="height: 225px; object-fit: cover;">
+              </div>
+              <p class="post-category">Paket Seminar Kit</p>
+              <h2 class="title">
+                <a href="blog/vendor-seminar-kit.html">Cara Memilih Vendor Seminar Kit Terpercaya</a>
+              </h2>
+              <p class="post-excerpt">
+                Panduan lengkap kriteria vendor seminar kit terpercaya, tabel perbandingan red flag, dan pertanyaan wajib saat negosiasi pengadaan B2B.
+              </p>
+              <div class="post-footer d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                  <a href="penulis.html#arinda-zakia" class="d-inline-flex me-2">
+                    <img src="assets/img/penulis/arinda-zakia.webp" alt="Arinda Zakia - CorporateGifts.ID"
+                      class="img-fluid post-author-img flex-shrink-0 rounded-circle" loading="lazy" width="36" height="36" style="object-fit:cover;">
+                  </a>
+                  <div class="post-meta">
+                    <p class="post-author mb-0"><a href="penulis.html#arinda-zakia" class="text-dark fw-bold text-decoration-none">Arinda Zakia</a></p>
+                    <p class="post-date"><time datetime="2026-06-26">26 Juni 2026</time></p>
+                  </div>
+                </div>
+                <a href="blog/vendor-seminar-kit.html" class="read-more"
+                  aria-label="Baca artikel Cara Memilih Vendor Seminar Kit Terpercaya">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+
           <!-- ARTIKEL 8: Proses Custom Apparel Perusahaan: Desain Sampai Produksi (20 Juni 2026) -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="140">
             <article>
@@ -554,7 +858,238 @@
             </article>
           </div>
 
-          <!-- ARTIKEL 9: Panduan Memilih Isi Goodie Bag Seminar Perusahaan (22 April 2026) -->
+          <!-- ARTIKEL 9: Momen Penting Pemberian Souvenir Mitra Kampus Swasta (13 Juni 2026) -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="130">
+            <article>
+              <div class="post-img">
+                <span class="post-badge">Kemitraan Kampus</span>
+                <img src="assets/img/blog/momen-penting-pemberian-souvenir-mitra-kampus-swasta-1.webp"
+                  alt="Momen Penting Pemberian Souvenir Mitra Kampus Swasta - CorporateGifts.ID"
+                  class="img-fluid" loading="lazy" width="400" height="225" style="height: 225px; object-fit: cover;">
+              </div>
+              <p class="post-category">Souvenir Kantor &amp; Promosi</p>
+              <h2 class="title">
+                <a href="blog/momen-penting-pemberian-souvenir-mitra-kampus-swasta.html">Momen Penting Pemberian Souvenir Mitra Kampus Swasta</a>
+              </h2>
+              <p class="post-excerpt">
+                Kapan dan kenapa memberi souvenir mitra kampus swasta: panduan momen MoU, kunjungan kerja, dan seremoni akademik.
+              </p>
+              <div class="post-footer d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                  <a href="penulis.html#arinda-zakia" class="d-inline-flex me-2">
+                    <img src="assets/img/penulis/arinda-zakia.webp" alt="Arinda Zakia - CorporateGifts.ID"
+                      class="img-fluid post-author-img flex-shrink-0 rounded-circle" loading="lazy" width="36" height="36" style="object-fit:cover;">
+                  </a>
+                  <div class="post-meta">
+                    <p class="post-author mb-0"><a href="penulis.html#arinda-zakia" class="text-dark fw-bold text-decoration-none">Arinda Zakia</a></p>
+                    <p class="post-date"><time datetime="2026-06-13">13 Juni 2026</time></p>
+                  </div>
+                </div>
+                <a href="blog/momen-penting-pemberian-souvenir-mitra-kampus-swasta.html" class="read-more"
+                  aria-label="Baca artikel Momen Penting Pemberian Souvenir Mitra Kampus Swasta">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <!-- ARTIKEL: Souvenir Mitra Kampus Swasta Pilihan dan Tips Pesan (8 Juni 2026) -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="135">
+            <article>
+              <div class="post-img">
+                <span class="post-badge">Kemitraan Kampus</span>
+                <img src="assets/img/blog/souvenir-mitra-kampus-swasta-pilihan-tips-pesan-1.webp"
+                  alt="Souvenir Mitra Kampus Swasta Pilihan dan Tips Pesan - CorporateGifts.ID"
+                  class="img-fluid" loading="lazy" width="400" height="225" style="height: 225px; object-fit: cover;">
+              </div>
+              <p class="post-category">Souvenir Kampus &amp; Kemitraan</p>
+              <h2 class="title">
+                <a href="blog/souvenir-mitra-kampus-swasta-pilihan-tips-pesan.html">Souvenir Mitra Kampus Swasta Pilihan dan Tips Pesan</a>
+              </h2>
+              <p class="post-excerpt">
+                Temukan pilihan souvenir mitra kampus swasta terbaik 2026: jenis produk eksklusif, tips kustomisasi, dan cara memilih vendor yang tepat.
+              </p>
+              <div class="post-footer d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                  <a href="penulis.html#arinda-zakia" class="d-inline-flex me-2">
+                    <img src="assets/img/penulis/arinda-zakia.webp" alt="Arinda Zakia - CorporateGifts.ID"
+                      class="img-fluid post-author-img flex-shrink-0 rounded-circle" loading="lazy" width="36" height="36" style="object-fit:cover;">
+                  </a>
+                  <div class="post-meta">
+                    <p class="post-author mb-0"><a href="penulis.html#arinda-zakia" class="text-dark fw-bold text-decoration-none">Arinda Zakia</a></p>
+                    <p class="post-date"><time datetime="2026-06-08">8 Juni 2026</time></p>
+                  </div>
+                </div>
+                <a href="blog/souvenir-mitra-kampus-swasta-pilihan-tips-pesan.html" class="read-more"
+                  aria-label="Baca artikel Souvenir Mitra Kampus Swasta Pilihan dan Tips Pesan">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <!-- ARTIKEL: Panduan Souvenir Mitra Sekolah untuk Lembaga dan Instansi (3 Juni 2026) -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <article>
+              <div class="post-img">
+                <span class="post-badge">Souvenir Mitra</span>
+                <img src="assets/img/blog/plakat-eksklusif-souvenir-mitra-sekolah.webp"
+                  alt="Panduan Souvenir Mitra Sekolah untuk Lembaga dan Instansi - CorporateGifts.ID"
+                  class="img-fluid" loading="lazy" width="400" height="225" style="height: 225px; object-fit: cover;">
+              </div>
+              <p class="post-category">Souvenir Kemitraan &amp; Instansi</p>
+              <h2 class="title">
+                <a href="blog/panduan-souvenir-mitra-sekolah-untuk-lembaga-dan-instansi.html">Panduan Souvenir Mitra Sekolah untuk Lembaga dan Instansi</a>
+              </h2>
+              <p class="post-excerpt">
+                Panduan lengkap souvenir mitra sekolah: jenis, manfaat, cara memilih, dan tips terbaik untuk instansi dan lembaga mitra.
+              </p>
+              <div class="post-footer d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                  <a href="penulis.html#arinda-zakia" class="d-inline-flex me-2">
+                    <img src="assets/img/penulis/arinda-zakia.webp" alt="Arinda Zakia - CorporateGifts.ID"
+                      class="img-fluid post-author-img flex-shrink-0 rounded-circle" loading="lazy" width="36" height="36" style="object-fit:cover;">
+                  </a>
+                  <div class="post-meta">
+                    <p class="post-author mb-0"><a href="penulis.html#arinda-zakia" class="text-dark fw-bold text-decoration-none">Arinda Zakia</a></p>
+                    <p class="post-date"><time datetime="2026-06-03">3 Juni 2026</time></p>
+                  </div>
+                </div>
+                <a href="blog/panduan-souvenir-mitra-sekolah-untuk-lembaga-dan-instansi.html" class="read-more"
+                  aria-label="Baca artikel Panduan Souvenir Mitra Sekolah untuk Lembaga dan Instansi">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <!-- ARTIKEL: Inspirasi Tren Seminar Kit Korporat Terbaru 2026 (23 Mei 2026) -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <article>
+              <div class="post-img">
+                <span class="post-badge">Seminar Kit 2026</span>
+                <img src="assets/img/blog/tren-seminar-kit-korporat-terbaru-2026-1.webp"
+                  alt="Inspirasi Tren Seminar Kit Korporat Terbaru 2026 - CorporateGifts.ID"
+                  class="img-fluid" loading="lazy" width="400" height="225" style="height: 225px; object-fit: cover;">
+              </div>
+              <p class="post-category">Seminar Kit</p>
+              <h2 class="title">
+                <a href="blog/tren-seminar-kit-korporat-terbaru-2026.html">Inspirasi Tren Seminar Kit Korporat Terbaru 2026</a>
+              </h2>
+              <p class="post-excerpt">
+                Pelajari tren seminar kit korporat terbaru 2026, dari produk ramah lingkungan, personalisasi peserta, hingga integrasi elemen digital dalam kit.
+              </p>
+              <div class="post-footer d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                  <a href="penulis.html#arinda-zakia" class="d-inline-flex me-2">
+                    <img src="assets/img/penulis/arinda-zakia.webp" alt="Arinda Zakia - CorporateGifts.ID"
+                      class="img-fluid post-author-img flex-shrink-0 rounded-circle" loading="lazy" width="36" height="36" style="object-fit:cover;">
+                  </a>
+                  <div class="post-meta">
+                    <p class="post-author mb-0"><a href="penulis.html#arinda-zakia" class="text-dark fw-bold text-decoration-none">Arinda Zakia</a></p>
+                    <p class="post-date"><time datetime="2026-05-23">23 Mei 2026</time></p>
+                  </div>
+                </div>
+                <a href="blog/tren-seminar-kit-korporat-terbaru-2026.html" class="read-more"
+                  aria-label="Baca artikel Inspirasi Tren Seminar Kit Korporat Terbaru 2026">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <!-- ARTIKEL: Inspirasi Souvenir Perpisahan Kantor yang Berkesan 2026 (2 Mei 2026) -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <article>
+              <div class="post-img">
+                <span class="post-badge">Perpisahan Kantor</span>
+                <img src="assets/img/blog/souvenir-perpisahan-kantor-1.webp"
+                  alt="Inspirasi Souvenir Perpisahan Kantor yang Berkesan 2026 - CorporateGifts.ID"
+                  class="img-fluid" loading="lazy" width="400" height="225" style="height: 225px; object-fit: cover;">
+              </div>
+              <p class="post-category">Souvenir Kantor &amp; Recognition</p>
+              <h2 class="title">
+                <a href="blog/souvenir-perpisahan-kantor.html">Inspirasi Souvenir Perpisahan Kantor yang Berkesan 2026</a>
+              </h2>
+              <p class="post-excerpt">
+                Panduan memilih souvenir perpisahan kantor untuk acara massal maupun perorangan. Temukan ide terbaik, tips memesan, dan estimasi anggarannya.
+              </p>
+              <div class="post-footer d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                  <a href="penulis.html#arinda-zakia" class="d-inline-flex me-2">
+                    <img src="assets/img/penulis/arinda-zakia.webp" alt="Arinda Zakia - CorporateGifts.ID"
+                      class="img-fluid post-author-img flex-shrink-0 rounded-circle" loading="lazy" width="36" height="36" style="object-fit:cover;">
+                  </a>
+                  <div class="post-meta">
+                    <p class="post-author mb-0"><a href="penulis.html#arinda-zakia" class="text-dark fw-bold text-decoration-none">Arinda Zakia</a></p>
+                    <p class="post-date"><time datetime="2026-05-02">2 Mei 2026</time></p>
+                  </div>
+                </div>
+                <a href="blog/souvenir-perpisahan-kantor.html" class="read-more"
+                  aria-label="Baca artikel Inspirasi Souvenir Perpisahan Kantor yang Berkesan 2026">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <!-- ARTIKEL: Goodie Bag Seminar Pemerintah dan Instansi 2026 (29 April 2026) -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <article>
+              <div class="post-img">
+                <span class="post-badge">Instansi Pemerintah</span>
+                <img src="assets/img/blog/goodie-bag-seminar-pemerintah-instansi-1.webp"
+                  alt="Goodie Bag Seminar Pemerintah dan Instansi 2026 - CorporateGifts.ID"
+                  class="img-fluid" loading="lazy" width="400" height="225" style="height: 225px; object-fit: cover;">
+              </div>
+              <p class="post-category">Paket Seminar Kit</p>
+              <h2 class="title">
+                <a href="blog/goodie-bag-seminar-pemerintah-instansi.html">Goodie Bag Seminar Pemerintah dan Instansi 2026</a>
+              </h2>
+              <p class="post-excerpt">
+                Panduan lengkap goodie bag seminar pemerintah: isi standar, estimasi anggaran DIPA/RKA, dan tips memilih vendor resmi LKPP 2026.
+              </p>
+              <div class="post-footer d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                  <a href="penulis.html#arinda-zakia" class="d-inline-flex me-2">
+                    <img src="assets/img/penulis/arinda-zakia.webp" alt="Arinda Zakia - CorporateGifts.ID"
+                      class="img-fluid post-author-img flex-shrink-0 rounded-circle" loading="lazy" width="36" height="36" style="object-fit:cover;">
+                  </a>
+                  <div class="post-meta">
+                    <p class="post-author mb-0"><a href="penulis.html#arinda-zakia" class="text-dark fw-bold text-decoration-none">Arinda Zakia</a></p>
+                    <p class="post-date"><time datetime="2026-04-29">29 April 2026</time></p>
+                  </div>
+                </div>
+                <a href="blog/goodie-bag-seminar-pemerintah-instansi.html" class="read-more"
+                  aria-label="Baca artikel Goodie Bag Seminar Pemerintah dan Instansi 2026">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <!-- ARTIKEL 10: Pulpen Branded dan Buku Catatan Goodie Bag Seminar (24 April 2026) -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="110">
+            <article>
+              <div class="post-img">
+                <span class="post-badge">Alat Tulis Seminar</span>
+                <img src="assets/img/blog/pulpen-branded-buku-catatan-goodie-bag-seminar-korporat-1.webp"
+                  alt="Pulpen Branded dan Buku Catatan Goodie Bag Seminar - CorporateGifts.ID"
+                  class="img-fluid" loading="lazy" width="400" height="225" style="height: 225px; object-fit: cover;">
+              </div>
+              <p class="post-category">Souvenir Seminar &amp; Promosi</p>
+              <h2 class="title">
+                <a href="blog/pulpen-branded-buku-catatan-goodie-bag-seminar-korporat.html">Pulpen Branded dan Buku Catatan Goodie Bag Seminar</a>
+              </h2>
+              <p class="post-excerpt">
+                Panduan memilih pulpen branded dan buku catatan berlogo untuk goodie bag seminar korporat. Tips kualitas, teknik cetak, dan spesifikasi terbaik 2026.
+              </p>
+              <div class="post-footer d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                  <a href="penulis.html#arinda-zakia" class="d-inline-flex me-2">
+                    <img src="assets/img/penulis/arinda-zakia.webp" alt="Arinda Zakia - CorporateGifts.ID"
+                      class="img-fluid post-author-img flex-shrink-0 rounded-circle" loading="lazy" width="36" height="36" style="object-fit:cover;">
+                  </a>
+                  <div class="post-meta">
+                    <p class="post-author mb-0"><a href="penulis.html#arinda-zakia" class="text-dark fw-bold text-decoration-none">Arinda Zakia</a></p>
+                    <p class="post-date"><time datetime="2026-04-24">24 April 2026</time></p>
+                  </div>
+                </div>
+                <a href="blog/pulpen-branded-buku-catatan-goodie-bag-seminar-korporat.html" class="read-more"
+                  aria-label="Baca artikel Pulpen Branded dan Buku Catatan Goodie Bag Seminar">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <!-- ARTIKEL 11: Panduan Memilih Isi Goodie Bag Seminar Perusahaan (22 April 2026) -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="120">
             <article>
               <div class="post-img">
@@ -686,7 +1221,73 @@
             </article>
           </div>
 
-          <!-- ARTIKEL 13: Jangan Salah! Hampers Lebaran untuk Loyalitas Karyawan (28 Februari 2026) -->
+          <!-- ARTIKEL: Anggaran Souvenir Kickoff Meeting: Panduan Biaya 2026 (6 April 2026) -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="125">
+            <article>
+              <div class="post-img">
+                <span class="post-badge">Corporate Gift</span>
+                <img src="assets/img/blog/gift-box-eksklusif-souvenir-kickoff-meeting.webp"
+                  alt="Anggaran Souvenir Kickoff Meeting: Panduan Biaya 2026 - CorporateGifts.ID"
+                  class="img-fluid" loading="lazy" width="400" height="225" style="height: 225px; object-fit: cover;">
+              </div>
+              <p class="post-category">Corporate Gift &amp; Budgeting</p>
+              <h2 class="title">
+                <a href="blog/anggaran-souvenir-kickoff-meeting-panduan-biaya.html">Anggaran Souvenir Kickoff Meeting: Panduan Biaya 2026</a>
+              </h2>
+              <p class="post-excerpt">
+                Rencanakan anggaran souvenir kickoff meeting dengan tepat. Panduan biaya per orang, estimasi total, dan tips efisiensi pengadaan souvenir korporat.
+              </p>
+              <div class="post-footer d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                  <a href="penulis.html#arinda-zakia" class="d-inline-flex me-2">
+                    <img src="assets/img/penulis/arinda-zakia.webp" alt="Arinda Zakia - CorporateGifts.ID"
+                      class="img-fluid post-author-img flex-shrink-0 rounded-circle" loading="lazy" width="36" height="36" style="object-fit:cover;">
+                  </a>
+                  <div class="post-meta">
+                    <p class="post-author mb-0"><a href="penulis.html#arinda-zakia" class="text-dark fw-bold text-decoration-none">Arinda Zakia</a></p>
+                    <p class="post-date"><time datetime="2026-04-06">6 April 2026</time></p>
+                  </div>
+                </div>
+                <a href="blog/anggaran-souvenir-kickoff-meeting-panduan-biaya.html" class="read-more"
+                  aria-label="Baca artikel Anggaran Souvenir Kickoff Meeting: Panduan Biaya 2026">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <!-- ARTIKEL 13: Souvenir Halalbihalal Kantor Mewah? Tumbler Stainless Custom (18 Maret 2026) -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="130">
+            <article>
+              <div class="post-img">
+                <span class="post-badge">Tumbler Stainless</span>
+                <img src="assets/img/blog/Souvenir%20Halalbihalal%20Kantor%20Tumblr%20Stainless%20Custom.webp"
+                  alt="Souvenir Halalbihalal Kantor Mewah? Tumbler Stainless Custom - CorporateGifts.ID"
+                  class="img-fluid" loading="lazy" width="400" height="225" style="height: 225px; object-fit: cover;">
+              </div>
+              <p class="post-category">Souvenir Kantor &amp; Promosi</p>
+              <h2 class="title">
+                <a href="blog/tumbler-stainless-custom-souvenir-halalbihalal-kantor.html">Souvenir Halalbihalal Kantor Mewah? Tumbler Stainless Custom</a>
+              </h2>
+              <p class="post-excerpt">
+                Tumbler Stainless Custom SUS 304 tahan karat, insulasi vakum 18 jam, pilihan souvenir halalbihalal kantor untuk branding dan apresiasi karyawan.
+              </p>
+              <div class="post-footer d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                  <a href="penulis.html#arinda-zakia" class="d-inline-flex me-2">
+                    <img src="assets/img/penulis/arinda-zakia.webp" alt="Arinda Zakia - CorporateGifts.ID"
+                      class="img-fluid post-author-img flex-shrink-0 rounded-circle" loading="lazy" width="36" height="36" style="object-fit:cover;">
+                  </a>
+                  <div class="post-meta">
+                    <p class="post-author mb-0"><a href="penulis.html#arinda-zakia" class="text-dark fw-bold text-decoration-none">Arinda Zakia</a></p>
+                    <p class="post-date"><time datetime="2026-03-18">18 Maret 2026</time></p>
+                  </div>
+                </div>
+                <a href="blog/tumbler-stainless-custom-souvenir-halalbihalal-kantor.html" class="read-more"
+                  aria-label="Baca artikel Souvenir Halalbihalal Kantor Mewah? Tumbler Stainless Custom">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <!-- ARTIKEL 14: Jangan Salah! Hampers Lebaran untuk Loyalitas Karyawan (28 Februari 2026) -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="140">
             <article>
               <div class="post-img">
@@ -719,7 +1320,7 @@
             </article>
           </div>
 
-          <!-- ARTIKEL 14: Wajib Paham! 7 Tips Hampers Lebaran Kantor Tepat Waktu (17 Februari 2026) -->
+          <!-- ARTIKEL 15: Wajib Paham! 7 Tips Hampers Lebaran Kantor Tepat Waktu (17 Februari 2026) -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="140">
             <article>
               <div class="post-img">
@@ -752,7 +1353,7 @@
             </article>
           </div>
 
-          <!-- ARTIKEL 15: Strategi Budgeting Welcome Kit, Awas Dana Terbuang! (13 Februari 2026) -->
+          <!-- ARTIKEL 16: Strategi Budgeting Welcome Kit, Awas Dana Terbuang! (13 Februari 2026) -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <article>
               <div class="post-img">
@@ -785,7 +1386,172 @@
             </article>
           </div>
 
-          <!-- ARTIKEL 16: Ide New Year Souvenir Kantor yang Fungsional dan Berkesan (27 Oktober 2025) -->
+          <!-- ARTIKEL: Stop Buang Budget! Pilih Corporate Gifts yang Berdampak (6 Februari 2026) -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <article>
+              <div class="post-img">
+                <span class="post-badge">Corporate Gift</span>
+                <img src="assets/img/blog/panduan-lengkap-corporate-gifts-1.webp"
+                  alt="Stop Buang Budget! Pilih Corporate Gifts yang Berdampak - CorporateGifts.ID"
+                  class="img-fluid" loading="lazy" width="400" height="225" style="height: 225px; object-fit: cover;">
+              </div>
+              <p class="post-category">Corporate Gift &amp; Souvenir</p>
+              <h2 class="title">
+                <a href="blog/panduan-lengkap-corporate-gifts.html">Stop Buang Budget! Pilih Corporate Gifts yang Berdampak</a>
+              </h2>
+              <p class="post-excerpt">
+                Pelajari strategi memilih corporate gifts yang tepat, mulai dari tumbler hingga apparel untuk menjaga loyalitas klien dan karyawan.
+              </p>
+              <div class="post-footer d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                  <a href="penulis.html#arinda-zakia" class="d-inline-flex me-2">
+                    <img src="assets/img/penulis/arinda-zakia.webp" alt="Arinda Zakia - CorporateGifts.ID"
+                      class="img-fluid post-author-img flex-shrink-0 rounded-circle" loading="lazy" width="36" height="36" style="object-fit:cover;">
+                  </a>
+                  <div class="post-meta">
+                    <p class="post-author mb-0"><a href="penulis.html#arinda-zakia" class="text-dark fw-bold text-decoration-none">Arinda Zakia</a></p>
+                    <p class="post-date"><time datetime="2026-02-06">6 Februari 2026</time></p>
+                  </div>
+                </div>
+                <a href="blog/panduan-lengkap-corporate-gifts.html" class="read-more"
+                  aria-label="Baca artikel Stop Buang Budget! Pilih Corporate Gifts yang Berdampak">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <!-- ARTIKEL: Rekomendasi Vendor Souvenir untuk Komisaris Perusahaan (17 November 2025) -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <article>
+              <div class="post-img">
+                <span class="post-badge">Souvenir Komisaris</span>
+                <img src="assets/img/blog/rekomendasi-vendor-souvenir-komisaris-perusahaan-1.webp"
+                  alt="Rekomendasi Vendor Souvenir untuk Komisaris Perusahaan - CorporateGifts.ID"
+                  class="img-fluid" loading="lazy" width="400" height="225" style="height: 225px; object-fit: cover;">
+              </div>
+              <p class="post-category">Souvenir Eksklusif &amp; VIP</p>
+              <h2 class="title">
+                <a href="blog/rekomendasi-vendor-souvenir-komisaris-perusahaan.html">Rekomendasi Vendor Souvenir untuk Komisaris Perusahaan</a>
+              </h2>
+              <p class="post-excerpt">
+                Temukan rekomendasi vendor souvenir eksklusif untuk komisaris perusahaan yang menyediakan hadiah premium, elegan, dan profesional.
+              </p>
+              <div class="post-footer d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                  <a href="penulis.html#arinda-zakia" class="d-inline-flex me-2">
+                    <img src="assets/img/penulis/arinda-zakia.webp" alt="Arinda Zakia - CorporateGifts.ID"
+                      class="img-fluid post-author-img flex-shrink-0 rounded-circle" loading="lazy" width="36" height="36" style="object-fit:cover;">
+                  </a>
+                  <div class="post-meta">
+                    <p class="post-author mb-0"><a href="penulis.html#arinda-zakia" class="text-dark fw-bold text-decoration-none">Arinda Zakia</a></p>
+                    <p class="post-date"><time datetime="2025-11-17">17 November 2025</time></p>
+                  </div>
+                </div>
+                <a href="blog/rekomendasi-vendor-souvenir-komisaris-perusahaan.html" class="read-more"
+                  aria-label="Baca artikel Rekomendasi Vendor Souvenir untuk Komisaris Perusahaan">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <!-- ARTIKEL 17: 10 Inspirasi Souvenir Untuk Pejabat yang Eksklusif & Unik (14 November 2025) -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="105">
+            <article>
+              <div class="post-img">
+                <span class="post-badge">Souvenir Pejabat</span>
+                <img src="assets/img/blog/Souvenir%20rapat%20kerja%20unik%20dan%20bermanfaat.webp"
+                  alt="10 Inspirasi Souvenir Untuk Pejabat yang Eksklusif &amp; Unik - CorporateGifts.ID"
+                  class="img-fluid" loading="lazy" width="400" height="225" style="height: 225px; object-fit: cover;">
+              </div>
+              <p class="post-category">Souvenir Eksklusif &amp; VIP</p>
+              <h2 class="title">
+                <a href="blog/inspirasi-souvenir-untuk-pejabat.html">10 Inspirasi Souvenir Untuk Pejabat yang Eksklusif &amp; Unik</a>
+              </h2>
+              <p class="post-excerpt">
+                Temukan 10 inspirasi souvenir eksklusif dan unik untuk pejabat, cocok untuk acara resmi, rapat kerja, dan meningkatkan citra profesional perusahaan.
+              </p>
+              <div class="post-footer d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                  <a href="penulis.html#arinda-zakia" class="d-inline-flex me-2">
+                    <img src="assets/img/penulis/arinda-zakia.webp" alt="Arinda Zakia - CorporateGifts.ID"
+                      class="img-fluid post-author-img flex-shrink-0 rounded-circle" loading="lazy" width="36" height="36" style="object-fit:cover;">
+                  </a>
+                  <div class="post-meta">
+                    <p class="post-author mb-0"><a href="penulis.html#arinda-zakia" class="text-dark fw-bold text-decoration-none">Arinda Zakia</a></p>
+                    <p class="post-date"><time datetime="2025-11-14">14 November 2025</time></p>
+                  </div>
+                </div>
+                <a href="blog/inspirasi-souvenir-untuk-pejabat.html" class="read-more"
+                  aria-label="Baca artikel 10 Inspirasi Souvenir Untuk Pejabat yang Eksklusif &amp; Unik">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <!-- ARTIKEL 18: Inspirasi Souvenir VIP Eksklusif untuk Klien Perusahaan yang Berkesan (10 November 2025) -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="110">
+            <article>
+              <div class="post-img">
+                <span class="post-badge">Souvenir VIP</span>
+                <img src="assets/img/blog/Souvenir%20premium%20perusahaan%20untuk%20relasi%20penting.webp"
+                  alt="Inspirasi Souvenir VIP Eksklusif untuk Klien Perusahaan yang Berkesan - CorporateGifts.ID"
+                  class="img-fluid" loading="lazy" width="400" height="225" style="height: 225px; object-fit: cover;">
+              </div>
+              <p class="post-category">Souvenir Eksklusif &amp; VIP</p>
+              <h2 class="title">
+                <a href="blog/inspirasi-souvenir-vip-eksklusif-untuk-klien.html">Inspirasi Souvenir VIP Eksklusif untuk Klien Perusahaan yang Berkesan</a>
+              </h2>
+              <p class="post-excerpt">
+                Inspirasi souvenir VIP eksklusif untuk klien dan pimpinan perusahaan yang memberi kesan profesional, meningkatkan citra, dan memperkuat hubungan bisnis.
+              </p>
+              <div class="post-footer d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                  <a href="penulis.html#arinda-zakia" class="d-inline-flex me-2">
+                    <img src="assets/img/penulis/arinda-zakia.webp" alt="Arinda Zakia - CorporateGifts.ID"
+                      class="img-fluid post-author-img flex-shrink-0 rounded-circle" loading="lazy" width="36" height="36" style="object-fit:cover;">
+                  </a>
+                  <div class="post-meta">
+                    <p class="post-author mb-0"><a href="penulis.html#arinda-zakia" class="text-dark fw-bold text-decoration-none">Arinda Zakia</a></p>
+                    <p class="post-date"><time datetime="2025-11-10">10 November 2025</time></p>
+                  </div>
+                </div>
+                <a href="blog/inspirasi-souvenir-vip-eksklusif-untuk-klien.html" class="read-more"
+                  aria-label="Baca artikel Inspirasi Souvenir VIP Eksklusif untuk Klien Perusahaan yang Berkesan">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <!-- ARTIKEL 19: Souvenir Kantor: Strategi Cerdas Meningkatkan Branding dan Loyalitas Perusahaan (9 November 2025) -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="115">
+            <article>
+              <div class="post-img">
+                <span class="post-badge">Souvenir Kantor</span>
+                <img src="assets/img/blog/Strategi Cerdas Meningkatkan Branding (2)-min.webp"
+                  alt="Souvenir Kantor: Strategi Cerdas Meningkatkan Branding dan Loyalitas Perusahaan - CorporateGifts.ID"
+                  class="img-fluid" loading="lazy" width="400" height="225" style="height: 225px; object-fit: cover;">
+              </div>
+              <p class="post-category">Souvenir Kantor &amp; Promosi</p>
+              <h2 class="title">
+                <a href="blog/souvenir-kantor-strategi-branding-loyalitas.html">Souvenir Kantor: Strategi Cerdas Meningkatkan Branding dan Loyalitas Perusahaan</a>
+              </h2>
+              <p class="post-excerpt">
+                Souvenir kantor sebagai investasi branding. Temukan jenis, strategi penggunaan, dan rekomendasi vendor profesional untuk event perusahaan Anda.
+              </p>
+              <div class="post-footer d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                  <a href="penulis.html#vendor-souvenir-kantor" class="d-inline-flex me-2">
+                    <img src="assets/img/penulis/vendor-souvenir-kantor.png" alt="Vendor Souvenir Kantor - CorporateGifts.ID"
+                      class="img-fluid post-author-img flex-shrink-0 rounded-circle bg-light p-1" loading="lazy" width="36" height="36" style="object-fit:contain;">
+                  </a>
+                  <div class="post-meta">
+                    <p class="post-author mb-0"><a href="penulis.html#vendor-souvenir-kantor" class="text-dark fw-bold text-decoration-none">Vendor Souvenir Kantor</a></p>
+                    <p class="post-date"><time datetime="2025-11-09">9 November 2025</time></p>
+                  </div>
+                </div>
+                <a href="blog/souvenir-kantor-strategi-branding-loyalitas.html" class="read-more"
+                  aria-label="Baca artikel Souvenir Kantor: Strategi Cerdas Meningkatkan Branding dan Loyalitas Perusahaan">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <!-- ARTIKEL 20: Ide New Year Souvenir Kantor yang Fungsional dan Berkesan (27 Oktober 2025) -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="120">
             <article>
               <div class="post-img">
@@ -818,7 +1584,7 @@
             </article>
           </div>
 
-          <!-- ARTIKEL 17: Manfaat Souvenir Seminar Bagi Peserta dan Penyelenggara (19 Oktober 2025) -->
+          <!-- ARTIKEL 20: Manfaat Souvenir Seminar Bagi Peserta dan Penyelenggara (19 Oktober 2025) -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="140">
             <article>
               <div class="post-img">
@@ -851,7 +1617,106 @@
             </article>
           </div>
 
-          <!-- ARTIKEL 18: (Update 2026) Inspirasi Souvenir Wisuda Unik dan Kekinian (7 Oktober 2025) -->
+          <!-- ARTIKEL: Jenis-Jenis Merchandise Perusahaan yang Paling Diminati Klien dan Karyawan (16 Oktober 2025) -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <article>
+              <div class="post-img">
+                <span class="post-badge">Merchandise</span>
+                <img src="assets/img/blog/Merchandise%20karyawan%20akhir%20tahun.webp"
+                  alt="Jenis-Jenis Merchandise Perusahaan yang Paling Diminati Klien dan Karyawan - CorporateGifts.ID"
+                  class="img-fluid" loading="lazy" width="400" height="225" style="height: 225px; object-fit: cover;">
+              </div>
+              <p class="post-category">Merchandise Perusahaan</p>
+              <h2 class="title">
+                <a href="blog/jenis-merchandise-perusahaan.html">Jenis-Jenis Merchandise Perusahaan yang Paling Diminati Klien dan Karyawan</a>
+              </h2>
+              <p class="post-excerpt">
+                Cari tahu jenis-jenis merchandise perusahaan yang paling diminati klien dan karyawan di tahun 2026. Inspirasi produk eksklusif untuk branding dan loyalitas bisnis.
+              </p>
+              <div class="post-footer d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                  <a href="penulis.html#arinda-zakia" class="d-inline-flex me-2">
+                    <img src="assets/img/penulis/arinda-zakia.webp" alt="Arinda Zakia - CorporateGifts.ID"
+                      class="img-fluid post-author-img flex-shrink-0 rounded-circle" loading="lazy" width="36" height="36" style="object-fit:cover;">
+                  </a>
+                  <div class="post-meta">
+                    <p class="post-author mb-0"><a href="penulis.html#arinda-zakia" class="text-dark fw-bold text-decoration-none">Arinda Zakia</a></p>
+                    <p class="post-date"><time datetime="2025-10-16">16 Oktober 2025</time></p>
+                  </div>
+                </div>
+                <a href="blog/jenis-merchandise-perusahaan.html" class="read-more"
+                  aria-label="Baca artikel Jenis-Jenis Merchandise Perusahaan yang Paling Diminati Klien dan Karyawan">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <!-- ARTIKEL 21: Souvenir Pisah Sambut yang Berkesan untuk Kantor dan Acara (11 Oktober 2025) -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <article>
+              <div class="post-img">
+                <span class="post-badge">Pisah Sambut</span>
+                <img src="assets/img/blog/souvenir-pisah-sambut-kantor-1.webp"
+                  alt="Souvenir Pisah Sambut yang Berkesan untuk Kantor dan Acara - CorporateGifts.ID"
+                  class="img-fluid" loading="lazy" width="400" height="225" style="height: 225px; object-fit: cover;">
+              </div>
+              <p class="post-category">Souvenir Kantor &amp; Promosi</p>
+              <h2 class="title">
+                <a href="blog/souvenir-pisah-sambut-kantor.html">Souvenir Pisah Sambut yang Berkesan untuk Kantor dan Acara</a>
+              </h2>
+              <p class="post-excerpt">
+                Temukan inspirasi souvenir pisah sambut kantor yang elegan dan berkesan. Pilihan eksklusif untuk acara perpisahan karyawan atau pergantian pimpinan.
+              </p>
+              <div class="post-footer d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                  <a href="penulis.html#arinda-zakia" class="d-inline-flex me-2">
+                    <img src="assets/img/penulis/arinda-zakia.webp" alt="Arinda Zakia - CorporateGifts.ID"
+                      class="img-fluid post-author-img flex-shrink-0 rounded-circle" loading="lazy" width="36" height="36" style="object-fit:cover;">
+                  </a>
+                  <div class="post-meta">
+                    <p class="post-author mb-0"><a href="penulis.html#arinda-zakia" class="text-dark fw-bold text-decoration-none">Arinda Zakia</a></p>
+                    <p class="post-date"><time datetime="2025-10-11">11 Oktober 2025</time></p>
+                  </div>
+                </div>
+                <a href="blog/souvenir-pisah-sambut-kantor.html" class="read-more"
+                  aria-label="Baca artikel Souvenir Pisah Sambut yang Berkesan untuk Kantor dan Acara">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <!-- ARTIKEL 22: Tips Negosiasi Harga dengan Vendor Souvenir Wisuda (8 Oktober 2025) -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <article>
+              <div class="post-img">
+                <span class="post-badge">Vendor Souvenir</span>
+                <img src="assets/img/blog/Tips%20Negosiasi%20Harga%20dengan%20Vendor%20Souvenir%20Wisuda.webp"
+                  alt="Tips Negosiasi Harga dengan Vendor Souvenir Wisuda - CorporateGifts.ID"
+                  class="img-fluid" loading="lazy" width="400" height="225" style="height: 225px; object-fit: cover;">
+              </div>
+              <p class="post-category">Souvenir Wisuda &amp; Akademik</p>
+              <h2 class="title">
+                <a href="blog/tips-negosiasi-harga-vendor-souvenir-wisuda.html">Tips Negosiasi Harga dengan Vendor Souvenir Wisuda</a>
+              </h2>
+              <p class="post-excerpt">
+                Pelajari cara cerdas negosiasi harga dengan vendor souvenir wisuda agar dapat produk berkualitas, harga efisien, dan hasil yang profesional.
+              </p>
+              <div class="post-footer d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                  <a href="penulis.html#amelia" class="d-inline-flex me-2">
+                    <img src="assets/img/penulis/amelia.webp" alt="Amelia - CorporateGifts.ID"
+                      class="img-fluid post-author-img flex-shrink-0 rounded-circle" loading="lazy" width="36" height="36" style="object-fit:cover;">
+                  </a>
+                  <div class="post-meta">
+                    <p class="post-author mb-0"><a href="penulis.html#amelia" class="text-dark fw-bold text-decoration-none">Amelia</a></p>
+                    <p class="post-date"><time datetime="2025-10-08">8 Oktober 2025</time></p>
+                  </div>
+                </div>
+                <a href="blog/tips-negosiasi-harga-vendor-souvenir-wisuda.html" class="read-more"
+                  aria-label="Baca artikel Tips Negosiasi Harga dengan Vendor Souvenir Wisuda">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <!-- ARTIKEL 22: (Update 2026) Inspirasi Souvenir Wisuda Unik dan Kekinian (7 Oktober 2025) -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <article>
               <div class="post-img">
@@ -884,7 +1749,73 @@
             </article>
           </div>
 
-          <!-- ARTIKEL 19: Strategi Branding 2026 dengan Merchandise Perusahaan (29 September 2025) -->
+          <!-- ARTIKEL: Gift Set Premium untuk Acara Wisuda dan Sidang Skripsi yang Mewah (7 Oktober 2025) -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <article>
+              <div class="post-img">
+                <span class="post-badge">Gift Set Wisuda</span>
+                <img src="assets/img/blog/hadiah%20premium%20sidang%20skripsi.webp"
+                  alt="Gift Set Premium untuk Acara Wisuda dan Sidang Skripsi yang Mewah - CorporateGifts.ID"
+                  class="img-fluid" loading="lazy" width="400" height="225" style="height: 225px; object-fit: cover;">
+              </div>
+              <p class="post-category">Souvenir Wisuda &amp; Akademik</p>
+              <h2 class="title">
+                <a href="blog/gift-set-wisuda-dan-sidang-skripsi.html">Gift Set Premium untuk Acara Wisuda dan Sidang Skripsi yang Mewah</a>
+              </h2>
+              <p class="post-excerpt">
+                Rayakan momen wisuda dan sidang skripsi dengan gift set premium dari corporategifts.id. Desain elegan, isi eksklusif, dan siap jadi hadiah penuh kesan.
+              </p>
+              <div class="post-footer d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                  <a href="penulis.html#arinda-zakia" class="d-inline-flex me-2">
+                    <img src="assets/img/penulis/arinda-zakia.webp" alt="Arinda Zakia - CorporateGifts.ID"
+                      class="img-fluid post-author-img flex-shrink-0 rounded-circle" loading="lazy" width="36" height="36" style="object-fit:cover;">
+                  </a>
+                  <div class="post-meta">
+                    <p class="post-author mb-0"><a href="penulis.html#arinda-zakia" class="text-dark fw-bold text-decoration-none">Arinda Zakia</a></p>
+                    <p class="post-date"><time datetime="2025-10-07">7 Oktober 2025</time></p>
+                  </div>
+                </div>
+                <a href="blog/gift-set-wisuda-dan-sidang-skripsi.html" class="read-more"
+                  aria-label="Baca artikel Gift Set Premium untuk Acara Wisuda dan Sidang Skripsi yang Mewah">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <!-- ARTIKEL: Souvenir Perusahaan BNI Payung Lipat Eksklusif (4 Oktober 2025) -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <article>
+              <div class="post-img">
+                <span class="post-badge">Souvenir Eksklusif</span>
+                <img src="assets/img/blog/Souvenir%20payung%20lipat%20BNI%20elegan%20untuk%20mitra%20bisnis%20dan%20event.webp"
+                  alt="Souvenir Perusahaan BNI Payung Lipat Eksklusif - CorporateGifts.ID"
+                  class="img-fluid" loading="lazy" width="400" height="225" style="height: 225px; object-fit: cover;">
+              </div>
+              <p class="post-category">Souvenir Perusahaan</p>
+              <h2 class="title">
+                <a href="blog/souvenir-perusahaan-bni-payung-lipat.html">Souvenir Perusahaan BNI Payung Lipat Eksklusif untuk Nasabah atau Mitra Bisnis</a>
+              </h2>
+              <p class="post-excerpt">
+                Souvenir perusahaan BNI berupa payung lipat eksklusif cocok untuk acara resmi dan hadiah mitra bisnis. Elegan, premium, dan efektif meningkatkan citra brand.
+              </p>
+              <div class="post-footer d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                  <a href="penulis.html#arinda-zakia" class="d-inline-flex me-2">
+                    <img src="assets/img/penulis/arinda-zakia.webp" alt="Arinda Zakia - CorporateGifts.ID"
+                      class="img-fluid post-author-img flex-shrink-0 rounded-circle" loading="lazy" width="36" height="36" style="object-fit:cover;">
+                  </a>
+                  <div class="post-meta">
+                    <p class="post-author mb-0"><a href="penulis.html#arinda-zakia" class="text-dark fw-bold text-decoration-none">Arinda Zakia</a></p>
+                    <p class="post-date"><time datetime="2025-10-04">4 Oktober 2025</time></p>
+                  </div>
+                </div>
+                <a href="blog/souvenir-perusahaan-bni-payung-lipat.html" class="read-more"
+                  aria-label="Baca artikel Souvenir Perusahaan BNI Payung Lipat Eksklusif">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <!-- ARTIKEL 23: Strategi Branding 2026 dengan Merchandise Perusahaan (29 September 2025) -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <article>
               <div class="post-img">
@@ -917,7 +1848,40 @@
             </article>
           </div>
 
-          <!-- ARTIKEL 20: Inspirasi Souvenir Kantor Kekinian 2026 untuk Branding (27 September 2025) -->
+          <!-- ARTIKEL 24: Paket Gift Set Eksklusif untuk Perusahaan Besar dan Startup (29 September 2025) -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="105">
+            <article>
+              <div class="post-img">
+                <span class="post-badge">Gift Set</span>
+                <img src="assets/img/blog/Paket%20Gift%20Set%20Eksklusif%20untuk%20Perusahaan%20Besar%20dan%20Startup.webp"
+                  alt="Paket Gift Set Eksklusif untuk Perusahaan Besar dan Startup - CorporateGifts.ID"
+                  class="img-fluid" loading="lazy" width="400" height="225" style="height: 225px; object-fit: cover;">
+              </div>
+              <p class="post-category">Corporate Gift &amp; Eksklusif</p>
+              <h2 class="title">
+                <a href="blog/paket-gift-set-eksklusif-perusahaan-startup.html">Paket Gift Set Eksklusif untuk Perusahaan Besar dan Startup</a>
+              </h2>
+              <p class="post-excerpt">
+                Paket gift set eksklusif jadi pilihan perusahaan besar dan startup untuk apresiasi premium. Hadiah elegan ini efektif memperkuat branding dan hubungan bisnis.
+              </p>
+              <div class="post-footer d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                  <a href="penulis.html#amelia" class="d-inline-flex me-2">
+                    <img src="assets/img/penulis/amelia.webp" alt="Amelia - CorporateGifts.ID"
+                      class="img-fluid post-author-img flex-shrink-0 rounded-circle" loading="lazy" width="36" height="36" style="object-fit:cover;">
+                  </a>
+                  <div class="post-meta">
+                    <p class="post-author mb-0"><a href="penulis.html#amelia" class="text-dark fw-bold text-decoration-none">Amelia</a></p>
+                    <p class="post-date"><time datetime="2025-09-29">29 September 2025</time></p>
+                  </div>
+                </div>
+                <a href="blog/paket-gift-set-eksklusif-perusahaan-startup.html" class="read-more"
+                  aria-label="Baca artikel Paket Gift Set Eksklusif untuk Perusahaan Besar dan Startup">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <!-- ARTIKEL 25: Inspirasi Souvenir Kantor Kekinian 2026 untuk Branding (27 September 2025) -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <article>
               <div class="post-img">
@@ -950,7 +1914,7 @@
             </article>
           </div>
 
-          <!-- ARTIKEL 21: Souvenir Seminar Digital Modern untuk Acara yang Inovatif (24 September 2025) -->
+          <!-- ARTIKEL 25: Souvenir Seminar Digital Modern untuk Acara yang Inovatif (24 September 2025) -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="105">
             <article>
               <div class="post-img">
@@ -983,7 +1947,7 @@
             </article>
           </div>
 
-          <!-- ARTIKEL 22: 5 Inspirasi Souvenir Seminar Eksklusif untuk Nilai Acara (22 September 2025) -->
+          <!-- ARTIKEL 26: 5 Inspirasi Souvenir Seminar Eksklusif untuk Nilai Acara (22 September 2025) -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <article>
               <div class="post-img">
@@ -1016,7 +1980,7 @@
             </article>
           </div>
 
-          <!-- ARTIKEL 23: Tips Cerdas Memilih Seminar Kit Sesuai Budget: Standar atau Eksklusif? (21 September 2025) -->
+          <!-- ARTIKEL 27: Tips Cerdas Memilih Seminar Kit Sesuai Budget: Standar atau Eksklusif? (21 September 2025) -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="110">
             <article>
               <div class="post-img">
@@ -1049,7 +2013,7 @@
             </article>
           </div>
 
-          <!-- ARTIKEL 24: Souvenir Seminar: Panduan Lengkap untuk Acara Profesional (19 September 2025) -->
+          <!-- ARTIKEL 28: Souvenir Seminar: Panduan Lengkap untuk Acara Profesional (19 September 2025) -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="120">
             <article>
               <div class="post-img">
@@ -1082,7 +2046,7 @@
             </article>
           </div>
 
-          <!-- ARTIKEL 25: Panduan Lengkap Menyusun Seminar Kit Profesional: Ide Isi &amp; Tipsnya (16 September 2025) -->
+          <!-- ARTIKEL 29: Panduan Lengkap Menyusun Seminar Kit Profesional: Ide Isi &amp; Tipsnya (16 September 2025) -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="140">
             <article>
               <div class="post-img">
@@ -1115,7 +2079,40 @@
             </article>
           </div>
 
-          <!-- ARTIKEL 26: Souvenir Eksklusif vs Souvenir Biasa untuk Branding Kantor (15 September 2025) -->
+          <!-- ARTIKEL: Pulpen Eksklusif Custom Logo Pilihan Souvenir Elegan untuk Branding (16 September 2025) -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="145">
+            <article>
+              <div class="post-img">
+                <span class="post-badge">Pulpen Eksklusif</span>
+                <img src="assets/img/blog/souvenir-pulpen-alat-tulis-premium-1.webp"
+                  alt="Pulpen Eksklusif Custom Logo Pilihan Souvenir Elegan untuk Branding - CorporateGifts.ID"
+                  class="img-fluid" loading="lazy" width="400" height="225" style="height: 225px; object-fit: cover;">
+              </div>
+              <p class="post-category">Souvenir Kantor &amp; Alat Tulis</p>
+              <h2 class="title">
+                <a href="blog/souvenir-pulpen-alat-tulis-premium.html">Pulpen Eksklusif Custom Logo Pilihan Souvenir Elegan untuk Branding</a>
+              </h2>
+              <p class="post-excerpt">
+                Pulpen eksklusif dan alat tulis premium adalah souvenir kantor eksklusif efektif untuk branding profesional dan memperkuat citra perusahaan.
+              </p>
+              <div class="post-footer d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                  <a href="penulis.html#arinda-zakia" class="d-inline-flex me-2">
+                    <img src="assets/img/penulis/arinda-zakia.webp" alt="Arinda Zakia - CorporateGifts.ID"
+                      class="img-fluid post-author-img flex-shrink-0 rounded-circle" loading="lazy" width="36" height="36" style="object-fit:cover;">
+                  </a>
+                  <div class="post-meta">
+                    <p class="post-author mb-0"><a href="penulis.html#arinda-zakia" class="text-dark fw-bold text-decoration-none">Arinda Zakia</a></p>
+                    <p class="post-date"><time datetime="2025-09-16">16 September 2025</time></p>
+                  </div>
+                </div>
+                <a href="blog/souvenir-pulpen-alat-tulis-premium.html" class="read-more"
+                  aria-label="Baca artikel Pulpen Eksklusif Custom Logo Pilihan Souvenir Elegan untuk Branding">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <!-- ARTIKEL 30: Souvenir Eksklusif vs Souvenir Biasa untuk Branding Kantor (15 September 2025) -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <article>
               <div class="post-img">
@@ -1148,7 +2145,139 @@
             </article>
           </div>
 
-          <!-- ARTIKEL 27: Souvenir Premium vs Standar: Mana yang Efektif untuk Bisnis? (7 September 2025) -->
+          <!-- ARTIKEL: 50+ Ide Souvenir Kantor Unik dan Kreatif Sesuai Budget (14 September 2025) -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <article>
+              <div class="post-img">
+                <span class="post-badge">Souvenir Unik</span>
+                <img src="assets/img/blog/ide-souvenir-kantor-unik-kreatif-sesuai-budget-1.webp"
+                  alt="50+ Ide Souvenir Kantor Unik dan Kreatif Sesuai Budget - CorporateGifts.ID"
+                  class="img-fluid" loading="lazy" width="400" height="225" style="height: 225px; object-fit: cover;">
+              </div>
+              <p class="post-category">Souvenir Kantor &amp; Merchandise</p>
+              <h2 class="title">
+                <a href="blog/ide-souvenir-kantor-unik-kreatif-sesuai-budget.html">50+ Ide Souvenir Kantor Unik dan Kreatif Sesuai Budget</a>
+              </h2>
+              <p class="post-excerpt">
+                Dapatkan inspirasi 50+ ide souvenir kantor unik dan kreatif sesuai budget untuk branding perusahaan dan kepuasan klien.
+              </p>
+              <div class="post-footer d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                  <a href="penulis.html#arinda-zakia" class="d-inline-flex me-2">
+                    <img src="assets/img/penulis/arinda-zakia.webp" alt="Arinda Zakia - CorporateGifts.ID"
+                      class="img-fluid post-author-img flex-shrink-0 rounded-circle" loading="lazy" width="36" height="36" style="object-fit:cover;">
+                  </a>
+                  <div class="post-meta">
+                    <p class="post-author mb-0"><a href="penulis.html#arinda-zakia" class="text-dark fw-bold text-decoration-none">Arinda Zakia</a></p>
+                    <p class="post-date"><time datetime="2025-09-14">14 September 2025</time></p>
+                  </div>
+                </div>
+                <a href="blog/ide-souvenir-kantor-unik-kreatif-sesuai-budget.html" class="read-more"
+                  aria-label="Baca artikel 50+ Ide Souvenir Kantor Unik dan Kreatif Sesuai Budget">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <!-- ARTIKEL: 7 Ide Souvenir Perusahaan Unik untuk Klien dan Karyawan (14 September 2025) -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="105">
+            <article>
+              <div class="post-img">
+                <span class="post-badge">Souvenir Unik</span>
+                <img src="assets/img/blog/ide-souvenir-perusahaan-unik-1.webp"
+                  alt="7 Ide Souvenir Perusahaan Unik untuk Klien dan Karyawan - CorporateGifts.ID"
+                  class="img-fluid" loading="lazy" width="400" height="225" style="height: 225px; object-fit: cover;">
+              </div>
+              <p class="post-category">Souvenir Perusahaan &amp; Merchandise</p>
+              <h2 class="title">
+                <a href="blog/ide-souvenir-perusahaan-unik.html">7 Ide Souvenir Perusahaan Unik untuk Klien dan Karyawan</a>
+              </h2>
+              <p class="post-excerpt">
+                Bosan dengan souvenir biasa? Temukan 7 ide souvenir perusahaan unik dan berkesan, dari teknologi hingga produk ramah lingkungan.
+              </p>
+              <div class="post-footer d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                  <a href="penulis.html#vendor-souvenir-kantor" class="d-inline-flex me-2">
+                    <img src="assets/img/penulis/vendor-souvenir-kantor.png" alt="Vendor Souvenir Kantor - CorporateGifts.ID"
+                      class="img-fluid post-author-img flex-shrink-0 rounded-circle bg-light p-1" loading="lazy" width="36" height="36" style="object-fit:contain;">
+                  </a>
+                  <div class="post-meta">
+                    <p class="post-author mb-0"><a href="penulis.html#vendor-souvenir-kantor" class="text-dark fw-bold text-decoration-none">Vendor Souvenir Kantor</a></p>
+                    <p class="post-date"><time datetime="2025-09-14">14 September 2025</time></p>
+                  </div>
+                </div>
+                <a href="blog/ide-souvenir-perusahaan-unik.html" class="read-more"
+                  aria-label="Baca artikel 7 Ide Souvenir Perusahaan Unik untuk Klien dan Karyawan">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <!-- ARTIKEL 31: Souvenir Premium untuk Klien dan Mitra Bisnis (12 September 2025) -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="110">
+            <article>
+              <div class="post-img">
+                <span class="post-badge">Souvenir Premium</span>
+                <img src="assets/img/blog/Strategi%20branding%20perusahaan%20dengan%20souvenir%20premium%20untuk%20loyalitas.webp"
+                  alt="Souvenir Premium untuk Klien dan Mitra Bisnis - CorporateGifts.ID"
+                  class="img-fluid" loading="lazy" width="400" height="225" style="height: 225px; object-fit: cover;">
+              </div>
+              <p class="post-category">Souvenir Premium &amp; B2B</p>
+              <h2 class="title">
+                <a href="blog/souvenir-premium-klien-mitra-bisnis-strategi-branding-loyalitas.html">Souvenir Premium untuk Klien dan Mitra Bisnis</a>
+              </h2>
+              <p class="post-excerpt">
+                Souvenir premium untuk klien dan mitra bisnis dapat menjadi strategi branding efektif yang meningkatkan loyalitas serta citra perusahaan.
+              </p>
+              <div class="post-footer d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                  <a href="penulis.html#arinda-zakia" class="d-inline-flex me-2">
+                    <img src="assets/img/penulis/arinda-zakia.webp" alt="Arinda Zakia - CorporateGifts.ID"
+                      class="img-fluid post-author-img flex-shrink-0 rounded-circle" loading="lazy" width="36" height="36" style="object-fit:cover;">
+                  </a>
+                  <div class="post-meta">
+                    <p class="post-author mb-0"><a href="penulis.html#arinda-zakia" class="text-dark fw-bold text-decoration-none">Arinda Zakia</a></p>
+                    <p class="post-date"><time datetime="2025-09-12">12 September 2025</time></p>
+                  </div>
+                </div>
+                <a href="blog/souvenir-premium-klien-mitra-bisnis-strategi-branding-loyalitas.html" class="read-more"
+                  aria-label="Baca artikel Souvenir Premium untuk Klien dan Mitra Bisnis">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <!-- ARTIKEL: Perbedaan Souvenir Kantor Premium dan Standar (12 September 2025) -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="115">
+            <article>
+              <div class="post-img">
+                <span class="post-badge">Souvenir Kantor</span>
+                <img src="assets/img/blog/perbedaan-souvenir-kantor-premium-dan-standar-1.webp"
+                  alt="Perbedaan Souvenir Kantor Premium dan Standar - CorporateGifts.ID"
+                  class="img-fluid" loading="lazy" width="400" height="225" style="height: 225px; object-fit: cover;">
+              </div>
+              <p class="post-category">Souvenir Kantor &amp; Promosi</p>
+              <h2 class="title">
+                <a href="blog/perbedaan-souvenir-kantor-premium-dan-standar.html">Perbedaan Souvenir Kantor Premium dan Standar</a>
+              </h2>
+              <p class="post-excerpt">
+                Ketahui perbedaan souvenir kantor premium dan standar, lengkap dengan tips memilih yang tepat agar citra bisnis semakin profesional.
+              </p>
+              <div class="post-footer d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                  <a href="penulis.html#arinda-zakia" class="d-inline-flex me-2">
+                    <img src="assets/img/penulis/arinda-zakia.webp" alt="Arinda Zakia - CorporateGifts.ID"
+                      class="img-fluid post-author-img flex-shrink-0 rounded-circle" loading="lazy" width="36" height="36" style="object-fit:cover;">
+                  </a>
+                  <div class="post-meta">
+                    <p class="post-author mb-0"><a href="penulis.html#arinda-zakia" class="text-dark fw-bold text-decoration-none">Arinda Zakia</a></p>
+                    <p class="post-date"><time datetime="2025-09-12">12 September 2025</time></p>
+                  </div>
+                </div>
+                <a href="blog/perbedaan-souvenir-kantor-premium-dan-standar.html" class="read-more"
+                  aria-label="Baca artikel Perbedaan Souvenir Kantor Premium dan Standar">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <!-- ARTIKEL 32: Souvenir Premium vs Standar: Mana yang Efektif untuk Bisnis? (7 September 2025) -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="120">
             <article>
               <div class="post-img">
@@ -1177,6 +2306,72 @@
                 </div>
                 <a href="blog/memilih-souvenir-perusahaan-premium-standar.html" class="read-more"
                   aria-label="Baca artikel Souvenir Premium vs Standar: Mana yang Efektif untuk Bisnis?">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <!-- ARTIKEL 33: 7 Souvenir Eksklusif untuk Klien VIP yang Lebih dari Sekadar Hadiah (6 September 2025) -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <article>
+              <div class="post-img">
+                <span class="post-badge">Souvenir VIP</span>
+                <img src="assets/img/blog/Souvenir%20Eksklusif%20untuk%20Klien%20VIP.webp"
+                  alt="7 Souvenir Eksklusif untuk Klien VIP yang Lebih dari Sekadar Hadiah - CorporateGifts.ID"
+                  class="img-fluid" loading="lazy" width="400" height="225" style="height: 225px; object-fit: cover;">
+              </div>
+              <p class="post-category">Souvenir Kantor &amp; Promosi</p>
+              <h2 class="title">
+                <a href="blog/souvenir-eksklusif-untuk-klien-vip.html">7 Souvenir Eksklusif untuk Klien VIP yang Lebih dari Sekadar Hadiah</a>
+              </h2>
+              <p class="post-excerpt">
+                Souvenir eksklusif untuk klien VIP adalah hadiah korporat premium yang dipersonalisasi. Simak 7 ide corporate gift terbaik beserta strategi dan etiket pemberiannya.
+              </p>
+              <div class="post-footer d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                  <a href="penulis.html#vendor-souvenir-kantor" class="d-inline-flex me-2">
+                    <img src="assets/img/penulis/vendor-souvenir-kantor.png" alt="Vendor Souvenir Kantor - CorporateGifts.ID"
+                      class="img-fluid post-author-img flex-shrink-0 rounded-circle bg-light p-1" loading="lazy" width="36" height="36" style="object-fit:contain;">
+                  </a>
+                  <div class="post-meta">
+                    <p class="post-author mb-0"><a href="penulis.html#vendor-souvenir-kantor" class="text-dark fw-bold text-decoration-none">Vendor Souvenir Kantor</a></p>
+                    <p class="post-date"><time datetime="2025-09-06">6 September 2025</time></p>
+                  </div>
+                </div>
+                <a href="blog/souvenir-eksklusif-untuk-klien-vip.html" class="read-more"
+                  aria-label="Baca artikel 7 Souvenir Eksklusif untuk Klien VIP yang Lebih dari Sekadar Hadiah">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <!-- ARTIKEL 34: Mengenal Souvenir dan Merchandise Perusahaan: Cara Tepat Meningkatkan Citra Brand (5 September 2025) -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <article>
+              <div class="post-img">
+                <span class="post-badge">Merchandise</span>
+                <img src="assets/img/blog/Mengenal%20Souvenir%20dan%20Merchandise%20Perusahaan.webp"
+                  alt="Mengenal Souvenir dan Merchandise Perusahaan: Cara Tepat Meningkatkan Citra Brand - CorporateGifts.ID"
+                  class="img-fluid" loading="lazy" width="400" height="225" style="height: 225px; object-fit: cover;">
+              </div>
+              <p class="post-category">Merchandise &amp; Souvenir Perusahaan</p>
+              <h2 class="title">
+                <a href="blog/souvenir-dan-merchandise-corporate-branding.html">Mengenal Souvenir dan Merchandise Perusahaan: Cara Tepat Meningkatkan Citra Brand</a>
+              </h2>
+              <p class="post-excerpt">
+                Perbedaan souvenir dan merchandise perusahaan untuk strategi branding bisnis. Temukan panduan memilih hadiah korporat yang tepat untuk loyalitas dan promosi.
+              </p>
+              <div class="post-footer d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                  <a href="penulis.html#vendor-souvenir-kantor" class="d-inline-flex me-2">
+                    <img src="assets/img/penulis/vendor-souvenir-kantor.png" alt="Vendor Souvenir Kantor - CorporateGifts.ID"
+                      class="img-fluid post-author-img flex-shrink-0 rounded-circle bg-light p-1" loading="lazy" width="36" height="36" style="object-fit:contain;">
+                  </a>
+                  <div class="post-meta">
+                    <p class="post-author mb-0"><a href="penulis.html#vendor-souvenir-kantor" class="text-dark fw-bold text-decoration-none">Vendor Souvenir Kantor</a></p>
+                    <p class="post-date"><time datetime="2025-09-05">5 September 2025</time></p>
+                  </div>
+                </div>
+                <a href="blog/souvenir-dan-merchandise-corporate-branding.html" class="read-more"
+                  aria-label="Baca artikel Mengenal Souvenir dan Merchandise Perusahaan: Cara Tepat Meningkatkan Citra Brand">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
               </div>
             </article>
           </div>
@@ -1302,6 +2497,154 @@
 
   <!-- Auto-update copyright year -->
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+  <!-- Blog Posts Dynamic Client-Side Pagination Script -->
+  <script>
+    (function() {
+      function initBlogPagination() {
+        var postsContainer = document.querySelector("#blog-posts .container");
+        var postsGrid = document.querySelector("#blog-posts .row.gy-4");
+        if (!postsContainer || !postsGrid) return;
+
+        // Select all direct article column cards
+        var items = Array.prototype.filter.call(postsGrid.children, function(el) {
+          return el.classList.contains("col-lg-4") || el.classList.contains("col-md-6");
+        });
+
+        var totalItems = items.length;
+        if (totalItems === 0) return;
+
+        var itemsPerPage = 30; // 30 artikel per halaman
+        var totalPages = Math.ceil(totalItems / itemsPerPage);
+        var currentPage = 1;
+
+        // Create pagination wrapper
+        var paginationWrapper = document.createElement("div");
+        paginationWrapper.className = "blog-pagination-wrapper mt-5";
+        paginationWrapper.id = "blog-pagination-wrapper";
+
+        var paginationNav = document.createElement("div");
+        paginationNav.className = "d-flex justify-content-center align-items-center flex-wrap gap-2";
+        paginationNav.id = "blog-pagination-nav";
+
+        var paginationInfo = document.createElement("div");
+        paginationInfo.className = "text-center mt-3";
+        paginationInfo.id = "blog-pagination-info";
+
+        paginationWrapper.appendChild(paginationNav);
+        paginationWrapper.appendChild(paginationInfo);
+        postsContainer.appendChild(paginationWrapper);
+
+        function renderPage(page, scrollToTop) {
+          currentPage = page;
+          var start = (page - 1) * itemsPerPage;
+          var end = start + itemsPerPage;
+
+          items.forEach(function(item, index) {
+            if (index >= start && index < end) {
+              item.style.display = "";
+              item.classList.remove("d-none");
+            } else {
+              item.style.display = "none";
+              item.classList.add("d-none");
+            }
+          });
+
+          var displayStart = start + 1;
+          var displayEnd = Math.min(end, totalItems);
+          paginationInfo.textContent = "Menampilkan " + displayStart + " - " + displayEnd + " dari " + totalItems + " artikel";
+
+          renderNavButtons();
+
+          if (scrollToTop) {
+            var sectionTarget = document.getElementById("blog-posts");
+            if (sectionTarget) {
+              var topOffset = sectionTarget.getBoundingClientRect().top + window.pageYOffset - 80;
+              window.scrollTo({ top: topOffset, behavior: "smooth" });
+            }
+          }
+        }
+
+        function renderNavButtons() {
+          paginationNav.innerHTML = "";
+
+          // Prev Button
+          var prevBtn = document.createElement("button");
+          prevBtn.type = "button";
+          prevBtn.className = "btn btn-pagination-pill d-inline-flex align-items-center gap-1";
+          prevBtn.innerHTML = "&lsaquo; Prev";
+          prevBtn.disabled = (currentPage === 1);
+          prevBtn.setAttribute("aria-label", "Halaman Sebelumnya");
+          prevBtn.addEventListener("click", function() {
+            if (currentPage > 1) {
+              renderPage(currentPage - 1, true);
+            }
+          });
+          paginationNav.appendChild(prevBtn);
+
+          // Calculate visible page buttons with ellipsis
+          var pages = [];
+          if (totalPages <= 7) {
+            for (var i = 1; i <= totalPages; i++) {
+              pages.push(i);
+            }
+          } else {
+            if (currentPage <= 4) {
+              pages = [1, 2, 3, 4, 5, "...", totalPages];
+            } else if (currentPage >= totalPages - 3) {
+              pages = [1, "...", totalPages - 4, totalPages - 3, totalPages - 2, totalPages - 1, totalPages];
+            } else {
+              pages = [1, "...", currentPage - 1, currentPage, currentPage + 1, "...", totalPages];
+            }
+          }
+
+          pages.forEach(function(p) {
+            if (p === "...") {
+              var span = document.createElement("span");
+              span.className = "pagination-ellipsis";
+              span.textContent = "...";
+              paginationNav.appendChild(span);
+            } else {
+              var pageBtn = document.createElement("button");
+              pageBtn.type = "button";
+              pageBtn.className = "btn btn-pagination-num" + (p === currentPage ? " active" : "");
+              pageBtn.textContent = p;
+              pageBtn.setAttribute("aria-label", "Halaman " + p);
+              pageBtn.addEventListener("click", function() {
+                if (p !== currentPage) {
+                  renderPage(p, true);
+                }
+              });
+              paginationNav.appendChild(pageBtn);
+            }
+          });
+
+          // Next Button
+          var nextBtn = document.createElement("button");
+          nextBtn.type = "button";
+          nextBtn.className = "btn btn-pagination-pill d-inline-flex align-items-center gap-1";
+          nextBtn.innerHTML = "Next &rsaquo;";
+          nextBtn.disabled = (currentPage === totalPages);
+          nextBtn.setAttribute("aria-label", "Halaman Berikutnya");
+          nextBtn.addEventListener("click", function() {
+            if (currentPage < totalPages) {
+              renderPage(currentPage + 1, true);
+            }
+          });
+          paginationNav.appendChild(nextBtn);
+        }
+
+        // Initialize Page 1
+        renderPage(1, false);
+      }
+
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", initBlogPagination);
+      } else {
+        initBlogPagination();
+      }
+    })();
+  </script>
 
 </body>
 

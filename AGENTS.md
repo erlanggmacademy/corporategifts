@@ -1,42 +1,89 @@
 # AGENTS.md - CorporateGifts.ID Agent Instructions
 
-## Blog Migration Standard Architecture
+## Blog Migration Standard Architecture & Immutable Rules
 All migrated blog detail articles MUST strictly follow the exact HTML blueprint and classes defined in `PANDUAN_MIGRASI_BLOG.md` and `.agents/rules/blog-migration-rules.md`.
-The reference baseline implementation is `blog/cara-mengukur-efektivitas-program-recognition.html`.
+The reference baseline implementation is `blog/souvenir-kantor-pajak.html` (Artikel #56) & `blog/tren-seminar-kit-korporat-terbaru-2026.html` (Artikel #57).
 
-### Key Standards:
-1. **Fonts**: Google Fonts `Poppins` (500, 600, 700) and `Inter` (400, 500, 600, 700).
-2. **Body**: `<body class="blog-detail-page">`.
-3. **Article Wrap**: `<article class="article-detail-wrap">`.
-4. **Header**: `.article-header` + `.article-meta-bar` (Author thumbnail 44x44, name, jobTitle, date, reading time).
-5. **Featured Image**: `.article-featured-img` with image + caption paragraph.
-6. **TOC**: `.table-of-contents` with `#toc-header`, `#toc-toggle-btn`, `#toc-btn-text`, `#toc-btn-icon`, and `#toc-list`.
-7. **Body Content**:
-   - Struktur heading teratur (`h2`, `p`, highlight boxes).
-   - Selipkan callout `.article-baca-juga` dengan link artikel terkait.
-   - **Internal Links**: Wajib menyematkan tautan internal kontekstual ke produk (`../produk/...`), katalog (`../katalog.html`), RFQ (`../minta-penawaran.html`), atau artikel blog relevan.
-   - **HTML Semantik Murni**: Dilarang meninggalkan karakter markdown `*` (*italic*) atau `**` (**bold**). Wajib dikonversi ke tag HTML resmi `<em>...</em>` atau `<strong>...</strong>`.
+### Key Standards & Component Specifications:
+
+1. **Fonts & Preconnect**:
+   - Google Fonts `Poppins` (500, 600, 700) and `Inter` (400, 500, 600, 700) with preload and print media onload fallback.
+
+2. **Body Tag**:
+   - `<body class="blog-detail-page">` (DILARANG menggunakan `blog-details-page`).
+
+3. **Header & Navigation (Wajib Lengkap)**:
+   - Logo: `<a href="/" class="logo d-flex align-items-center me-auto me-xl-0"><img src="../assets/img/logo-header.png" alt="CorporateGifts.ID - Vendor Corporate Gift &amp; Souvenir Perusahaan" style="max-height:40px;width:auto;" width="214" height="40" loading="lazy"></a>`
+   - Menu Nav: `Beranda`, `Tentang Kami`, `Layanan`, `Katalog`, `Portofolio`, `<li class="dropdown"><a href="../produk.html"><span>Produk</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>...` (6 sub-menu produk: Souvenir Kantor, Souvenir Custom, Merchandise Perusahaan, Seminar Kit, Hampers & Parcel, Paket Souvenir Promosi), `Blog` (active), dan `Galeri`.
+   - Header CTA: `<a class="btn-getstarted" href="https://wa.me/62895639068080?text=Halo%2C%20saya%20ingin%20konsultasi%20..." target="_blank" rel="noopener"><i class="bi bi-whatsapp me-1"></i> Hubungi Kami</a>`.
+
+4. **Breadcrumbs Bar**:
+   - `<div class="breadcrumbs-bar py-3 bg-white" style="border-bottom: 1px solid #f1f5f9;"><div class="container"><nav aria-label="breadcrumb" class="m-0 p-0" style="background: transparent;"><ol class="breadcrumb m-0 p-0" style="background: transparent; font-size: 0.88rem;"><li class="breadcrumb-item"><a href="/" style="color: var(--accent-color, #15803d); text-decoration: none; font-weight: 500;">Beranda</a></li><li class="breadcrumb-item"><a href="../blog.html" style="color: var(--accent-color, #15803d); text-decoration: none; font-weight: 500;">Blog</a></li><li class="breadcrumb-item active" aria-current="page" style="color: #64748b; font-weight: 500;">[Topik / Judul]</li></ol></nav></div></div>`.
+
+5. **Article Wrap & Header**:
+   - Wrap: `<section class="py-5"><div class="container" data-aos="fade-up"><div class="row g-5"><div class="col-lg-8"><article class="article-detail-wrap">`
+   - Badge kategori: `<span class="badge px-3 py-2 rounded-pill fw-semibold" style="background: rgba(22, 163, 74, 0.1); color: var(--accent-color, #16a34a); font-size: 0.82rem;"><i class="[icon] me-1"></i> [Kategori]</span>`
+   - Title: `<h1>[Judul Lengkap]</h1>`
+   - Meta bar: Author thumbnail 44x44 (wajib dari `../assets/img/penulis/[slug].webp`), nama penulis link ke `../penulis.html#[slug]`, job title `Senior Corporate Gifting Specialist`, dan tanggal update + waktu baca rata kanan (`<div class="text-muted ms-auto">`).
+
+6. **Featured Image**:
+   - `.article-featured-img` dengan image WebP lokal (`width="1200" height="675" class="img-fluid"`) + caption paragraph italic di bawahnya.
+
+7. **Table of Contents (TOC)**:
+   - Container: `.table-of-contents`
+   - Header: `<div class="d-flex justify-content-between align-items-center" id="toc-header" style="cursor: pointer; user-select: none;"><h2 class="m-0 d-flex align-items-center"><i class="bi bi-list-nested text-success me-2"></i> Daftar Isi Artikel</h2><button type="button" class="btn btn-sm btn-light border px-2 py-1 text-muted d-inline-flex align-items-center gap-1" id="toc-toggle-btn" aria-expanded="true" aria-controls="toc-list" style="border-radius: 6px;"><span id="toc-btn-text">Tutup</span><i class="bi bi-chevron-up" id="toc-btn-icon"></i></button></div>`
+   - List: `<div id="toc-list" class="mt-2"><ol class="mb-0">...</ol></div>`
+
+8. **Body Content, Callouts, & Tables**:
+   - Paragraf pertama diawali: `<strong><a href="../index.html" class="text-success text-decoration-none fw-bold">Corporate Gifts ID</a></strong> - ...`
+   - **Poin Kunci / Highlight**: `<div class="article-key-points"><h3 class="h6 fw-bold text-dark mb-2"><i class="bi bi-lightbulb-fill text-success me-2"></i> Poin Kunci ...:</h3><ul class="mb-0 small text-muted ps-3" style="line-height: 1.7;"><li><strong>Label:</strong> Deskripsi.</li></ul></div>`
+   - **Callout Baca Juga**: `<div class="article-baca-juga"><span class="badge bg-success text-white px-2 py-1 rounded-pill small fw-bold">Baca Juga</span><a href="slug.html" class="hover-green">Judul Artikel <i class="bi bi-arrow-right ms-1"></i></a></div>`
+   - **Tabel Responsif**: Wajib dibungkus `<div class="tbl-wrap"><table class="tbl-corporategifts"><thead>...</thead><tbody><tr><td data-label="Kolom">...</td></tr></tbody></table></div>`. DILARANG menyisipkan inline `<style>` untuk tabel di head.
+   - **HTML Semantik Murni**: Dilarang meninggalkan karakter markdown `*` (*italic*) atau `**` (**bold**). Wajib dikonversi ke tag HTML `<em>...</em>` atau `<strong>...</strong>`.
    - **Zero Em-Dashes**: Dilarang menggunakan karakter em-dash (`—` / `&mdash;`), gunakan tanda strip `-`.
-8. **FAQ Accordion**: `.article-faq-compact my-4` dengan container `#faq-section` dan `#blogFaqAccordion` (Bootstrap accordion-flush), minimal 5-6 item FAQ relevan yang sinkron 1:1 dengan schema `FAQPage`.
-9. **Bottom RFQ CTA**: White card `.card.border-0.mt-5.shadow-sm.text-center.text-md-start.blog-cta-banner` dengan `.blog-cta-actions` (tombol hijau Minta Penawaran & outline hijau WhatsApp CS).
-10. **Author Box**: `.article-author-box` dengan foto 90x90, nama, badge spesialisasi berwarna, bio penulis lengkap, dan tautan ke `penulis.html#[author-anchor]`.
-11. **Share Bar**: `.article-share-bar` dengan tombol share WhatsApp, LinkedIn, Facebook, dan Copy Link.
-12. **Sidebar**: `.sidebar` sticky dengan 3 widget standar resmi:
+   - **Internal Links**: Wajib menyematkan tautan internal natural ke produk (`../produk/...`), katalog (`../katalog.html`), RFQ (`../minta-penawaran.html`), atau artikel blog relevan.
+
+9. **FAQ Accordion**:
+   - `.article-faq-compact my-4` dengan container `#faq-section` dan `#blogFaqAccordion` (`.accordion.accordion-flush`), minimal 5 item FAQ relevan yang sinkron 1:1 dengan schema `FAQPage`.
+   - Tombol item: `<button class="accordion-button collapsed py-2 px-3 fw-semibold text-dark bg-white" type="button" data-bs-toggle="collapse" ...>`
+
+10. **Bottom RFQ CTA Banner**:
+    - `.card.border-0.mt-5.shadow-sm.text-center.text-md-start.blog-cta-banner` dengan `.d-flex.flex-column.flex-md-row.align-items-center.justify-content-between.gap-3` dan `.blog-cta-actions` (tombol hijau Minta Penawaran & outline hijau WhatsApp CS).
+
+11. **Author Box**:
+    - `.article-author-box.mt-4` dengan foto 90x90 dari `../assets/img/penulis/[slug].webp`, nama penulis link ke `../penulis.html#[slug]`, badge spesialisasi berwarna, bio penulis, dan link profil lengkap.
+
+12. **Share Bar**:
+    - `.article-share-bar` dengan tombol share WhatsApp, LinkedIn, Facebook, dan Copy Link dengan alert JS.
+
+13. **Sidebar Kanan (3 Widget Standar Wajib)**:
     - Widget 1: Kategori Produk Kami (6 link produk).
-    - Widget 2: Bantuan Konsultasi Kilat (+62 895-6390-68080 & Chat WhatsApp).
-    - Widget 3: Unduh E-Katalog PDF Resmi 2026.
-13. **Related Section**: Grid 3 kartu rekomendasi artikel terkait dengan verifikasi ketat bahwa file gambar di `assets/img/blog/` benar-benar ada di disk.
-14. **Footer**: 4-column footer standar + Partner Network baris bawah.
-15. **Schemas (5 JSON-LD Blocks)**:
-    - `LocalBusiness & Organization`: Comprehensive fields (`name`, `alternateName`, `url`, `logo`, `image`, `description`, `telephone`, `email`, `priceRange: "Rp15.000 - Rp750.000"`, `paymentAccepted: "Cash, Bank Transfer, Invoice B2B"`, `currenciesAccepted: "IDR"`, `address`, `geo`, `openingHoursSpecification`, `areaServed`, `sameAs`).
-    - `Article (Utama)`: `@id` with `#article`, headline, image array, published/modified dates, author Person link, publisher Org `#localbusiness`.
-    - `Article (Ringkasan Eksekutif)`: `@id` with `#summary`, paired summary article schema for Google rich snippets and AI Overview.
-    - `BreadcrumbList`: 3 hierarchical levels (`Beranda` -> `Blog` -> `{Article Title}`).
-    - `FAQPage`: Array of `Question` & `Answer` mirroring the body accordion FAQ 1:1.
-16. **Full 5-Step Sync**: Secara simultan wajib memperbarui:
+    - Widget 2: Bantuan Konsultasi Kilat (+62 895-6390-68080 & Chat WhatsApp Sekarang).
+    - Widget 3: Unduh E-Katalog PDF Resmi 2026 (`../assets/docs/katalog-corporategifts-id.pdf`).
+
+14. **Section Artikel Terkait (3 Rekomendasi)**:
+    - `<section class="py-5 bg-light border-top"><div class="container" data-aos="fade-up">`
+    - Section header dengan baris "Rekomendasi Wawasan" + "Artikel Terkait Lainnya" + tombol "Lihat Semua Artikel".
+    - 3 Kartu rekomendasi artikel terkait ber-badge kategori pojok kiri atas, excerpt, dan author footer. Verifikasi ketat bahwa file gambar di `assets/img/blog/` benar-benar ada di disk.
+
+15. **Footer & Scripts**:
+    - Footer 4 kolom standar + Partner Network baris bawah + script auto-update tahun copyright.
+    - Floating WhatsApp button + Scroll-Top.
+    - Skrip TOC toggle standar (`toggleTOC`) yang menangani `#toc-header` dan `e.stopPropagation()` pada `#toc-toggle-btn`.
+
+16. **Schemas (5 JSON-LD Blocks)**:
+    - `LocalBusiness & Organization`
+    - `Article (Utama)`: `@id` berakhiran `#article`
+    - `Article (Ringkasan Eksekutif)`: `@id` berakhiran `#summary`
+    - `BreadcrumbList`: 3 tingkat (Beranda > Blog > Judul)
+    - `FAQPage`: Array Question/Answer yang sinkron 1:1 dengan accordion.
+
+17. **Full 5-Step Sync Checklist**:
     - `blog/<slug>.html` (artikel detail).
     - `blog.html` (disisipkan sesuai urutan tanggal update kronologis menurun, kapasitas 30 kartu per halaman).
     - `sitemap.xml` (`<loc>` dan `<lastmod>YYYY-MM-DD</lastmod>`).
     - `_redirects` (rule 301 Blogger url dan clean url).
     - `llms.txt` (ringkasan 1 baris di bawah `Blog & Artikel`).
-17. **Date Source**: Selalu gunakan nilai dari kolom Excel **Tanggal Update** (kolom kanan) untuk tanggal artikel, meta bar, schema JSON-LD, kartu `blog.html`, dan `sitemap.xml`.
+
+18. **Date Source of Truth**:
+    - Selalu gunakan nilai dari kolom Excel **Tanggal Update** (kolom kanan) untuk tanggal artikel, meta bar, schema JSON-LD, kartu `blog.html`, dan `sitemap.xml`.
