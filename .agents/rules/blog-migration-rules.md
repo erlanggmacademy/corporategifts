@@ -14,14 +14,14 @@ Dilarang memodifikasi class name, menghapus wrapper, mengganti format font, meny
 
 ### B. JSON-LD Schemas (5 Blok Wajib & Komprehensif)
 1. **`LocalBusiness & Organization`**: Lengkap dengan `@id: "https://corporategifts.id/#localbusiness"`, `priceRange`, `openingHoursSpecification`, `areaServed`, dan `sameAs`.
-2. **`Article (Utama)`**: `@id` berakhiran `/#article`, `mainEntityOfPage` berakhiran `/`, `headline`, `image` array absolut, `datePublished`, `dateModified`, `author` (Person dengan URL profil penulis `/penulis#[slug]`), `publisher` (Organization link `#localbusiness`), dan `inLanguage: "id-ID"`.
-3. **`Article (Ringkasan Eksekutif)`**: `@id` berakhiran `/#summary`, `about` berakhiran `/#article`, headline diawali `Ringkasan Eksekutif: ...`, rangkuman deskripsi artikel untuk rich snippet Google & AI Overview.
-4. **`BreadcrumbList`**: 3 tingkat: Beranda (`https://corporategifts.id/`) -> Blog (`https://corporategifts.id/blog`) -> Judul Artikel (`https://corporategifts.id/blog<slug>/`).
+2. **`Article (Utama)`**: `@id` berakhiran `#article` (`https://corporategifts.id/blog/<slug>#article`), `mainEntityOfPage` bernilai `https://corporategifts.id/blog/<slug>`, `headline`, `image` array absolut, `datePublished`, `dateModified`, `author` (Person dengan URL profil penulis `/penulis#[slug]`), `publisher` (Organization link `#localbusiness`), dan `inLanguage: "id-ID"`.
+3. **`Article (Ringkasan Eksekutif)`**: `@id` berakhiran `#summary` (`https://corporategifts.id/blog/<slug>#summary`), `about` berakhiran `#article` (`https://corporategifts.id/blog/<slug>#article`), headline diawali `Ringkasan Eksekutif: ...`, rangkuman deskripsi artikel untuk rich snippet Google & AI Overview.
+4. **`BreadcrumbList`**: 3 tingkat: Beranda (`https://corporategifts.id/`) -> Blog (`https://corporategifts.id/blog`) -> Judul Artikel (`https://corporategifts.id/blog/<slug>`).
 5. **`FAQPage`**: Array `Question` dan `Answer` yang sinkron 1:1 dengan konten Accordion FAQ pada body artikel.
 
 ### C. Body, Header Nav & Breadcrumbs
 - Tag Body: `<body class="blog-detail-page">` (Jangan gunakan `blog-details-page`).
-- Header Nav: Memuat logo standard, dropdown produk (6 link ke `/produk...`), link Galeri (`/galeri`), dan tombol WhatsApp CS "Hubungi Kami".
+- Header Nav: Memuat logo standard, dropdown produk (6 link ke `/produk/souvenir-kantor`, `/produk/souvenir-custom`, dll.), link Galeri (`/galeri`), dan tombol WhatsApp CS "Hubungi Kami".
 - Breadcrumbs Bar: Bar putih ramping ber-border bottom `#f1f5f9` (Beranda > Blog > Judul) dengan link ke `/` dan `/blog`.
 
 ### D. Main Article Layout & Elements
@@ -35,31 +35,46 @@ Dilarang memodifikasi class name, menghapus wrapper, mengganti format font, meny
 5. **Body Content & Typography**:
    - Paragraf pertama diawali: `<strong><a href="/" class="text-success text-decoration-none fw-bold">Corporate Gifts ID</a></strong> - ...`
    - **HTML Semantik Murni**: Dilarang menyisakan karakter markdown `*` (*italic*) atau `**` (**bold**). Wajib dikonversi ke tag HTML semantik `<em>...</em>` atau `<strong>...</strong>`.
-   - **Internal Links**: Wajib menyematkan tautan internal natural ke produk (`/produk...`), katalog (`/katalog`), RFQ (`/minta-penawaran`), atau artikel blog relevan (`/blog[slug]`).
+   - **Internal Links**: Wajib menyematkan tautan internal natural ke produk (`/produk/...`), katalog (`/katalog`), RFQ (`/minta-penawaran`), atau artikel blog relevan (`/blog/<slug>`).
    - **Zero Em-Dashes**: Dilarang menggunakan em-dash (`—` / `&mdash;`), gunakan tanda strip `-`.
    - **Kotak Poin Kunci**: `.article-key-points` (multi-line highlight box berlatar hijau lembut dengan ikon dan bullet list).
-   - **Kotak Baca Juga**: `.article-baca-juga` (single-line flex strip dengan badge hijau dan panah link ke `/blog[slug]`).
+   - **Kotak Baca Juga**: `.article-baca-juga` (single-line flex strip dengan badge hijau dan panah link ke `/blog/<slug>`).
    - **Tabel Responsif**: Wajib dibungkus `<div class="tbl-wrap"><table class="tbl-corporategifts">...`.
 6. **FAQ Accordion**: `.article-faq-compact my-4` dengan `#faq-section` dan `#blogFaqAccordion` (Bootstrap flush accordion minimal 5 item).
 7. **Bottom RFQ CTA**: `.card.border-0.mt-5.shadow-sm.text-center.text-md-start.blog-cta-banner` dengan tombol hijau Minta Penawaran (`/minta-penawaran`) dan outline WhatsApp CS.
 8. **Author Box**: `.article-author-box.mt-4` dengan foto 90x90 dari `../assets/img/penulis/[slug].webp`, nama link ke `/penulis#[slug]`, badge spesialisasi berwarna, bio penulis, dan link profil lengkap.
 9. **Share Bar**: `.article-share-bar` (WhatsApp, LinkedIn, Facebook, Copy Link dengan alert).
 10. **Sidebar Sticky**: 3 widget wajib:
-    - Widget 1: Kategori Produk Kami (6 link produk ke `/produk...`).
+    - Widget 1: Kategori Produk Kami (6 link produk ke `/produk/...`).
     - Widget 2: Bantuan Konsultasi Kilat (+62 895-6390-68080 & Chat WhatsApp).
     - Widget 3: Unduh E-Katalog PDF Resmi 2026 (`../assets/docs/katalog-corporategifts-id.pdf`).
-11. **Section Artikel Terkait (3 Rekomendasi)**: Header bar "Rekomendasi Wawasan" + grid 3 kartu artikel rekomendasi ber-badge, excerpt, author footer, dan link ke `/blog[slug]`. Verifikasi ketat file gambar di `assets/img/blog` benar-benar ada di disk.
+11. **Section Artikel Terkait (3 Rekomendasi)**: Header bar "Rekomendasi Wawasan" + grid 3 kartu artikel rekomendasi ber-badge, excerpt, author footer, dan link ke `/blog/<slug>`. Verifikasi ketat file gambar di `assets/img/blog` benar-benar ada di disk.
 12. **Footer**: 4-column footer standar + Partner Network baris bawah + script auto-update tahun copyright + Floating WhatsApp.
 
 ---
 
 ## 3. Mandatory 5-Step Synchronization Checklist
-Setiap kali artikel baru dibuat:
-1. `blog/<slug>.html` dibuat sesuai blueprint lengkap di atas.
-2. `blog.html` disisipkan card artikel di grid dengan badge, thumbnail, excerpt, dan metadata (urut kronologis menurun berdasarkan kolom Tanggal Update, link ke `/blog<slug>/`, kapasitas 30 artikel per halaman).
-3. `sitemap.xml` ditambahkan URL artikel `<loc>https://corporategifts.id/blog<slug>/</loc>` lengkap dengan `<lastmod>` dan `<priority>0.8</priority>`.
-4. `_redirects` ditambahkan rule 301 redirect dari URL Blogger lama dan clean URL.
-5. `llms.txt` ditambahkan rangkuman 1 baris di bawah seksi `Blog & Artikel` dengan URL `https://corporategifts.id/blog<slug>/`.
+Setiap kali artikel baru dibuat / dimigrasikan:
+1. `blog/<slug>.html` dibuat sesuai blueprint lengkap di atas (Clean URLs tanpa ekstensi `.html` dan tanpa trailing slash).
+2. `blog.html` disisipkan card artikel di grid dengan badge, thumbnail, excerpt, dan metadata (urut kronologis menurun berdasarkan kolom Tanggal Update, link ke `/blog/<slug>`, kapasitas 30 artikel per halaman).
+3. `sitemap.xml` ditambahkan URL artikel `<loc>https://corporategifts.id/blog/<slug></loc>` lengkap dengan `<lastmod>YYYY-MM-DD</lastmod>` dan `<priority>0.8</priority>`.
+4. `_redirects` WAJIB diperbarui di 3 bagian:
+   - **Bagian 1 (Blogger 301)**: Tambahkan 3 baris redirect URL Blogger lama:
+     ```
+     # [Judul Artikel]
+     /<YYYY>/<MM>/<slug>.html /blog/<slug> 301
+     /<slug> /blog/<slug> 301
+     /<slug>/* /blog/<slug> 301
+     ```
+   - **Bagian 2 (Legacy .html 301)**: Tambahkan di bawah `# Blog Detail Pages Legacy .html 301`:
+     ```
+     /blog/<slug>.html /blog/<slug> 301
+     ```
+   - **Bagian 3 (Trailing Slash 301)**: Tambahkan di bawah `# Trailing Slash to Non-Trailing Slash 301 Redirects`:
+     ```
+     /blog/<slug>/ /blog/<slug> 301
+     ```
+5. `llms.txt` ditambahkan rangkuman 1 baris di bawah seksi `Blog & Artikel` dengan URL `https://corporategifts.id/blog/<slug>`.
 
 ---
 

@@ -100,42 +100,45 @@ Setiap halaman pada website CorporateGifts.ID memiliki target fokus kata kunci, 
 
 | Halaman URL | Target Keyword Utama | Format Title Tag (Maks. 60 Karakter) | Format Meta Description (Maks. 155 Karakter) |
 | :--- | :--- | :--- | :--- |
-| **`/index.html`** | vendor corporate gift, souvenir kantor | Vendor Corporate Gift & Souvenir Kantor &mdash; CorporateGifts.ID | Vendor resmi pengadaan souvenir kantor, merchandise perusahaan, seminar kit & hampers eksekutif bergaransi di Jawa Timur & seluruh Indonesia. |
-| **`/tentang-kami.html`** | profil vendor corporate gift, legalitas | Tentang Kami & Vendor Souvenir Terpercaya &mdash; CorporateGifts.ID | Profil CorporateGifts.ID, vendor corporate gift & cinderamata perusahaan berpengalaman 10+ tahun dengan legalitas lengkap & jangkauan nasional. |
-| **`/layanan.html`** | layanan pembuatan souvenir kantor | Layanan Kustomisasi Souvenir & Merchandise &mdash; CorporateGifts.ID | Solusi lengkap layanan souvenir kantor, merchandise branding, paket seminar, dan hampers korporat dengan teknik grafir laser, UV print & bordir. |
-| **`/katalog.html`** | katalog souvenir kantor, merchandise | Katalog Produk Souvenir & Merchandise &mdash; CorporateGifts.ID | Download katalog souvenir kantor, tumbler custom, seminar kit & merchandise promosi terbaru dari CorporateGifts.ID. Dapatkan penawaran terbaik! |
-| **`/portofolio.html`** | portofolio souvenir klien perusahaan | Portofolio Klien & Proyek Souvenir &mdash; CorporateGifts.ID | Bukti portofolio pengerjaan corporate gift untuk 500+ perusahaan swasta, BUMN, dan instansi kementerian di seluruh pelosok Indonesia. |
-| **`/galeri.html`** | galeri produksi souvenir merchandise | Galeri Produksi Souvenir & Cinderamata &mdash; CorporateGifts.ID | Dokumentasi hasil produksi souvenir tumbler, payung, agenda, dan hampers korporat berkualitas tinggi dengan hasil finishing presisi. |
-| **`/produk.html`** | kategori produk corporate gift | Kategori Produk Souvenir Kantor & Gift &mdash; CorporateGifts.ID | Eksplorasi 6 kategori produk unggulan: Souvenir Kantor, Gift VIP, Merchandise, Seminar Kit, Hampers Kantor & Paket Promosi Onboarding. |
-| **`/produksouvenir-kantor.html`** | souvenir kantor custom, tumbler stainless | Souvenir Kantor Custom & Perlengkapan Kerja &mdash; CorporateGifts.ID | Pengadaan souvenir kantor custom: tumbler vacuum stainless, notebook agenda kulit, pulpen metal laser grafir & kalender meja. Free mockup! |
-| **`/produksouvenir-custom.html`** | corporate gift eksklusif vip | Corporate Gift Eksklusif VIP & Kado Direksi &mdash; CorporateGifts.ID | Gift set eksekutif VIP dengan hard box mewah finishing hot print gold untuk relasi bisnis prestisius, tamu kehormatan & jajaran direksi. |
-| **`/produkmerchandise.html`** | merchandise perusahaan, apparel kantor | Merchandise Perusahaan & Apparel Promosi &mdash; CorporateGifts.ID | Vendor polo shirt bordir, kemeja kerja, payung golf otomatis, tote bag & topi promosi berkualitas tinggi untuk branding perusahaan Anda. |
-| **`/produkseminar-kit.html`** | paket seminar kit, goodie bag event | Paket Seminar Kit & Event Kit Korporat &mdash; CorporateGifts.ID | Paket seminar kit terlengkap: goodie bag spunbond/kanvas, tali lanyard cetak logo, ID card holder, blocknote & pulpen promosi kilat. |
-| **`/produkhampers.html`** | hampers kantor, parcel perusahaan | Hampers & Parcel Kantor Eksklusif &mdash; CorporateGifts.ID | Penyedia hampers Lebaran, Natal, bingkisan akhir tahun & gift anniversary perusahaan dengan kombinasi kue premium dan tumbler eksklusif. |
-| **`/produksouvenir-promosi.html`** | paket souvenir promosi, welcome kit | Paket Promosi & Onboarding Kit Karyawan &mdash; CorporateGifts.ID | Welcome kit karyawan baru & paket promosi massal expo (powerbank, flashdisk kartu, mug keramik). Praktis, estetik, dan meningkatkan loyalitas. |
+| **`/`** | vendor corporate gift, souvenir kantor | Vendor Corporate Gift & Souvenir Kantor &mdash; CorporateGifts.ID | Vendor resmi pengadaan souvenir kantor, merchandise perusahaan, seminar kit & hampers eksekutif bergaransi di Jawa Timur & seluruh Indonesia. |
+| **`/tentang-kami`** | profil vendor corporate gift, legalitas | Tentang Kami & Vendor Souvenir Terpercaya &mdash; CorporateGifts.ID | Profil CorporateGifts.ID, vendor corporate gift & cinderamata perusahaan berpengalaman 10+ tahun dengan legalitas lengkap & jangkauan nasional. |
+| **`/layanan`** | layanan pembuatan souvenir kantor | Layanan Kustomisasi Souvenir & Merchandise &mdash; CorporateGifts.ID | Solusi lengkap layanan souvenir kantor, merchandise branding, paket seminar, dan hampers korporat dengan teknik grafir laser, UV print & bordir. |
+| **`/katalog`** | katalog souvenir kantor, merchandise | Katalog Produk Souvenir & Merchandise &mdash; CorporateGifts.ID | Download katalog souvenir kantor, tumbler custom, seminar kit & merchandise promosi terbaru dari CorporateGifts.ID. Dapatkan penawaran terbaik! |
+| **`/portofolio`** | portofolio souvenir klien perusahaan | Portofolio Klien & Proyek Souvenir &mdash; CorporateGifts.ID | Bukti portofolio pengerjaan corporate gift untuk 500+ perusahaan swasta, BUMN, dan instansi kementerian di seluruh pelosok Indonesia. |
+| **`/galeri`** | galeri produksi souvenir merchandise | Galeri Produksi Souvenir & Cinderamata &mdash; CorporateGifts.ID | Dokumentasi hasil produksi souvenir tumbler, payung, agenda, dan hampers korporat berkualitas tinggi dengan hasil finishing presisi. |
+| **`/produk`** | kategori produk corporate gift | Kategori Produk Souvenir Kantor & Gift &mdash; CorporateGifts.ID | Eksplorasi 6 kategori produk unggulan: Souvenir Kantor, Gift VIP, Merchandise, Seminar Kit, Hampers Kantor & Paket Promosi Onboarding. |
+| **`/produk/souvenir-kantor`** | souvenir kantor custom, tumbler stainless | Souvenir Kantor Custom & Perlengkapan Kerja &mdash; CorporateGifts.ID | Pengadaan souvenir kantor custom: tumbler vacuum stainless, notebook agenda kulit, pulpen metal laser grafir & kalender meja. Free mockup! |
+| **`/produk/souvenir-custom`** | corporate gift eksklusif vip | Corporate Gift Eksklusif VIP & Kado Direksi &mdash; CorporateGifts.ID | Gift set eksekutif VIP dengan hard box mewah finishing hot print gold untuk relasi bisnis prestisius, tamu kehormatan & jajaran direksi. |
+| **`/produk/merchandise`** | merchandise perusahaan, apparel kantor | Merchandise Perusahaan & Apparel Promosi &mdash; CorporateGifts.ID | Vendor polo shirt bordir, kemeja kerja, payung golf otomatis, tote bag & topi promosi berkualitas tinggi untuk branding perusahaan Anda. |
+| **`/produk/seminar-kit`** | paket seminar kit, goodie bag event | Paket Seminar Kit & Event Kit Korporat &mdash; CorporateGifts.ID | Paket seminar kit terlengkap: goodie bag spunbond/kanvas, tali lanyard cetak logo, ID card holder, blocknote & pulpen promosi kilat. |
+| **`/produk/hampers`** | hampers kantor, parcel perusahaan | Hampers & Parcel Kantor Eksklusif &mdash; CorporateGifts.ID | Penyedia hampers Lebaran, Natal, bingkisan akhir tahun & gift anniversary perusahaan dengan kombinasi kue premium dan tumbler eksklusif. |
+| **`/produk/souvenir-promosi`** | paket souvenir promosi, welcome kit | Paket Promosi & Onboarding Kit Karyawan &mdash; CorporateGifts.ID | Welcome kit karyawan baru & paket promosi massal expo (powerbank, flashdisk kartu, mug keramik). Praktis, estetik, dan meningkatkan loyalitas. |
 
 ---
 
 ## 5. Technical SEO Framework
 
 ### A. Struktur URL & Hirarki Halaman
-Pola URL website terstruktur logis dan berhirarki rapi:
+Pola URL website terstruktur logis dan berhirarki rapi (Clean URLs tanpa .html):
 ```
 https://corporategifts.id/
-├── index.html
-├── tentang-kami.html
-├── layanan.html
-├── katalog.html
-├── portofolio.html
-├── galeri.html
-├── produk.html
-└── produk/
-    ├── souvenir-kantor.html
-    ├── souvenir-custom.html
-    ├── merchandise.html
-    ├── seminar-kit.html
-    ├── hampers.html
-    └── souvenir-promosi.html
+├── /
+├── /tentang-kami
+├── /layanan
+├── /katalog
+├── /portofolio
+├── /galeri
+├── /produk
+│   ├── /produk/souvenir-kantor
+│   ├── /produk/souvenir-custom
+│   ├── /produk/merchandise
+│   ├── /produk/seminar-kit
+│   ├── /produk/hampers
+│   └── /produk/souvenir-promosi
+├── /blog
+│   └── /blog/<slug>
+├── /minta-penawaran
+└── /penulis
 ```
 
 ### B. Heading Hierarchy Rule (Standar H1 - H3)
@@ -162,7 +165,7 @@ Semua gambar wajib:
 ### D. Canonical Tag & Geo-Targeting Tags
 Di setiap tag `<head>`, sertakan:
 ```html
-<link rel="canonical" href="https://corporategifts.id/produksouvenir-kantor">
+<link rel="canonical" href="https://corporategifts.id/produk/souvenir-kantor">
 <meta name="geo.region" content="ID-JI">
 <meta name="geo.placename" content="Jawa Timur, Indonesia">
 <meta name="geo.position" content="-7.257500;112.752100">
@@ -184,8 +187,8 @@ Letakkan script ini di `<head>` atau sebelum penutup `</body>`:
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "CorporateGifts.ID",
-  "image": "https://corporategifts.id/assets/imglogo-header.png",
-  "@id": "https://corporategifts.id/#organization",
+  "image": "https://corporategifts.id/assets/img/logo-header.png",
+  "@id": "https://corporategifts.id/#localbusiness",
   "url": "https://corporategifts.id",
   "telephone": "+62895639068080",
   "priceRange": "$$",
@@ -230,7 +233,7 @@ Contoh implementasi di `produk/souvenir-kantor.html`:
   "@context": "https://schema.org",
   "@type": "Product",
   "name": "Souvenir Kantor Custom & Perlengkapan Kerja",
-  "image": "https://corporategifts.id/assets/img/servicessouvenir-kantor.webp",
+  "image": "https://corporategifts.id/assets/img/services/souvenir-kantor.webp",
   "description": "Pengadaan paket souvenir kantor custom logo perusahaan meliputi tumbler vacuum stainless, buku agenda kulit, pulpen metal grafir, dan kalender meja spiral.",
   "brand": {
     "@type": "Brand",
@@ -244,7 +247,7 @@ Contoh implementasi di `produk/souvenir-kantor.html`:
     "offerCount": "100",
     "availability": "https://schema.org/InStock",
     "seller": {
-      "@id": "https://corporategifts.id/#organization"
+      "@id": "https://corporategifts.id/#localbusiness"
     }
   }
 }
@@ -274,7 +277,7 @@ Contoh implementasi di `produk/souvenir-kantor.html`:
       "@type": "ListItem",
       "position": 3,
       "name": "Souvenir Kantor",
-      "item": "https://corporategifts.id/produksouvenir-kantor"
+      "item": "https://corporategifts.id/produk/souvenir-kantor"
     }
   ]
 }
@@ -288,20 +291,20 @@ Contoh implementasi di `produk/souvenir-kantor.html`:
 Struktur internal link dirancang menggunakan model **Hub-and-Spoke**:
 
 ```
-                  [ index.html (Hub Utama) ]
-                              │
-          ┌───────────────────┼───────────────────┐
-          ▼                   ▼                   ▼
-    [ produk.html ]    [ layanan.html ]    [ katalog.html ]
-          │
-  ┌───────┼───────┬───────────┼───────────┬───────┐
-  ▼       ▼       ▼           ▼           ▼       ▼
+                  [ / (Hub Utama) ]
+                          │
+      ┌───────────────────┼───────────────────┐
+      ▼                   ▼                   ▼
+ [ /produk ]         [ /layanan ]        [ /katalog ]
+      │
+  ┌───┴───┬───────────┬───────────┬───────┬───────────┐
+  ▼       ▼           ▼           ▼       ▼           ▼
 [kantor] [vip] [merchandise] [seminar] [hampers] [promosi]
 ```
 
 ### Aturan Internal Linking:
-1. **Root ke Halaman Produk**: Setiap kartu kategori di `produk.html` memiliki tombol *Lihat Detail Produk* yang mengarah langsung ke `produk/*.html`.
-2. **Halaman Produk ke Hub**: Breadcrumb di setiap sub-halaman produk selalu menyediakan tautan kembali ke `Beranda` dan `Produk`.
+1. **Root ke Halaman Produk**: Setiap kartu kategori di `/produk` memiliki tombol *Lihat Detail Produk* yang mengarah langsung ke `/produk/...`.
+2. **Halaman Produk ke Hub**: Breadcrumb di setiap sub-halaman produk selalu menyediakan tautan kembali ke `Beranda` (`/`) dan `Produk` (`/produk`).
 3. **Cross-Linking Antar Produk**: Di sidebar sticky halaman produk, sediakan navigasi cepat untuk beralih antar 6 kategori produk dengan status aktif yang jelas.
 4. **Anchor Text Variatif & Alami**: Gunakan variasi anchor text yang deskriptif (contoh: *"lihat paket seminar kit lengkap"*, *"katalog tumbler souvenir"* daripada sekadar *"klik di sini"*).
 
@@ -313,16 +316,16 @@ Untuk menangkap traffic *top-of-funnel* (edukasi calon klien sebelum mereka memu
 
 | No | Rencana Judul Artikel Blog | Target Kata Kunci | Search Intent | Halaman Tujuan Konversi |
 | :---: | :--- | :--- | :--- | :--- |
-| 1 | *10 Rekomendasi Souvenir Kantor Elegan untuk Klien VIP & Eksekutif* | souvenir kantor elegan, souvenir klien vip | Komersial | `produk/souvenir-custom.html` |
-| 2 | *Panduan Memilih Tumbler Custom Logo: Jenis Material & Teknik Grafir* | tumbler custom logo, tumbler promosi kantor | Edukasi / Riset | `produk/souvenir-kantor.html` |
-| 3 | *Checklist Persiapan Seminar Kit Lengkap untuk Acara Konferensi & Pelatihan* | checklist seminar kit, ide seminar kit murah | Edukasi | `produk/seminar-kit.html` |
-| 4 | *Tren Welcome Kit Karyawan Baru 2026: Bangun Loyalitas Sejak Hari Pertama* | welcome kit karyawan baru, onboarding kit | Komersial | `produk/souvenir-promosi.html` |
-| 5 | *Tips Memilih Vendor Souvenir Perusahaan Tepercaya di Jawa Timur* | vendor souvenir perusahaan jawa timur | Transaksional | `tentang-kami.html` |
-| 6 | *Inspirasi Hampers Lebaran & Akhir Tahun untuk Relasi Bisnis Korporat* | hampers lebaran kantor, parcel perusahaan | Komersial | `produk/hampers.html` |
-| 7 | *Perbedaan Sablon, Print UV, dan Grafir Laser pada Souvenir Promosi* | perbedaan print uv dan grafir, sablon souvenir | Edukasi | `layanan.html` |
-| 8 | *Bahan Kaos Polo Terbaik untuk Seragam & Merchandise Kantor* | bahan kaos polo seragam, merchandise polo | Edukasi | `produk/merchandise.html` |
-| 9 | *Strategi Efisiensi Anggaran Pengadaan Souvenir Kantor Tanpa Mengorbankan Kualitas* | pengadaan souvenir kantor, souvenir kantor hemat | Edukasi / B2B | `katalog.html` |
-| 10 | *Contoh Surat Permintaan Penawaran (RFQ) Souvenir Kantor untuk Perusahaan* | rfq souvenir kantor, surat penawaran souvenir | B2B Procurement | `index.html#contact` |
+| 1 | *10 Rekomendasi Souvenir Kantor Elegan untuk Klien VIP & Eksekutif* | souvenir kantor elegan, souvenir klien vip | Komersial | `/produk/souvenir-custom` |
+| 2 | *Panduan Memilih Tumbler Custom Logo: Jenis Material & Teknik Grafir* | tumbler custom logo, tumbler promosi kantor | Edukasi / Riset | `/produk/souvenir-kantor` |
+| 3 | *Checklist Persiapan Seminar Kit Lengkap untuk Acara Konferensi & Pelatihan* | checklist seminar kit, ide seminar kit murah | Edukasi | `/produk/seminar-kit` |
+| 4 | *Tren Welcome Kit Karyawan Baru 2026: Bangun Loyalitas Sejak Hari Pertama* | welcome kit karyawan baru, onboarding kit | Komersial | `/produk/souvenir-promosi` |
+| 5 | *Tips Memilih Vendor Souvenir Perusahaan Tepercaya di Jawa Timur* | vendor souvenir perusahaan jawa timur | Transaksional | `/tentang-kami` |
+| 6 | *Inspirasi Hampers Lebaran & Akhir Tahun untuk Relasi Bisnis Korporat* | hampers lebaran kantor, parcel perusahaan | Komersial | `/produk/hampers` |
+| 7 | *Perbedaan Sablon, Print UV, dan Grafir Laser pada Souvenir Promosi* | perbedaan print uv dan grafir, sablon souvenir | Edukasi | `/layanan` |
+| 8 | *Bahan Kaos Polo Terbaik untuk Seragam & Merchandise Kantor* | bahan kaos polo seragam, merchandise polo | Edukasi | `/produk/merchandise` |
+| 9 | *Strategi Efisiensi Anggaran Pengadaan Souvenir Kantor Tanpa Mengorbankan Kualitas* | pengadaan souvenir kantor, souvenir kantor hemat | Edukasi / B2B | `/katalog` |
+| 10 | *Contoh Surat Permintaan Penawaran (RFQ) Souvenir Kantor untuk Perusahaan* | rfq souvenir kantor, surat penawaran souvenir | B2B Procurement | `/minta-penawaran` |
 
 ---
 
@@ -409,37 +412,37 @@ Simpan di root website (`/sitemap.xml`):
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://corporategifts.id/produksouvenir-kantor</loc>
+    <loc>https://corporategifts.id/produk/souvenir-kantor</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://corporategifts.id/produksouvenir-custom</loc>
+    <loc>https://corporategifts.id/produk/souvenir-custom</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://corporategifts.id/produkmerchandise</loc>
+    <loc>https://corporategifts.id/produk/merchandise</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://corporategifts.id/produkseminar-kit</loc>
+    <loc>https://corporategifts.id/produk/seminar-kit</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://corporategifts.id/produkhampers</loc>
+    <loc>https://corporategifts.id/produk/hampers</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://corporategifts.id/produksouvenir-promosi</loc>
+    <loc>https://corporategifts.id/produk/souvenir-promosi</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>

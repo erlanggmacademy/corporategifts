@@ -72,18 +72,33 @@ The reference baseline implementation is `blog/souvenir-kantor-pajak.html` (Arti
     - Skrip TOC toggle standar (`toggleTOC`) yang menangani `#toc-header` dan `e.stopPropagation()` pada `#toc-toggle-btn`.
 
 16. **Schemas (5 JSON-LD Blocks)**:
-    - `LocalBusiness & Organization`
-    - `Article (Utama)`: `@id` berakhiran `/#article`, `mainEntityOfPage` berakhiran `/`
-    - `Article (Ringkasan Eksekutif)`: `@id` berakhiran `/#summary`, `about` berakhiran `/#article`
-    - `BreadcrumbList`: 3 tingkat (Beranda `https://corporategifts.id/` > Blog `https://corporategifts.id/blog` > Judul `https://corporategifts.id/blog<slug>/`)
+    - `LocalBusiness & Organization`: `@id: "https://corporategifts.id/#localbusiness"`
+    - `Article (Utama)`: `@id` berakhiran `#article` (`https://corporategifts.id/blog/<slug>#article`), `mainEntityOfPage` bernilai `https://corporategifts.id/blog/<slug>`
+    - `Article (Ringkasan Eksekutif)`: `@id` berakhiran `#summary` (`https://corporategifts.id/blog/<slug>#summary`), `about` bernilai `https://corporategifts.id/blog/<slug>#article`
+    - `BreadcrumbList`: 3 tingkat (Beranda `https://corporategifts.id/` > Blog `https://corporategifts.id/blog` > Judul `https://corporategifts.id/blog/<slug>`)
     - `FAQPage`: Array Question/Answer yang sinkron 1:1 dengan accordion.
 
 17. **Full 5-Step Sync Checklist**:
-    - `blog/<slug>.html` (artikel detail).
-    - `blog.html` (disisipkan sesuai urutan tanggal update kronologis menurun, link kartu ke `/blog<slug>/`, kapasitas 30 kartu per halaman).
-    - `sitemap.xml` (`<loc>https://corporategifts.id/blog<slug>/</loc>` dan `<lastmod>YYYY-MM-DD</lastmod>`).
-    - `_redirects` (rule 301 Blogger url dan clean url).
-    - `llms.txt` (ringkasan 1 baris di bawah `Blog & Artikel` dengan URL `https://corporategifts.id/blog<slug>/`).).
+    - `blog/<slug>.html` (artikel detail dengan Clean URLs tanpa .html dan tanpa trailing slash).
+    - `blog.html` (disisipkan sesuai urutan tanggal update kronologis menurun, link kartu ke `/blog/<slug>`, kapasitas 30 kartu per halaman).
+    - `sitemap.xml` (`<loc>https://corporategifts.id/blog/<slug></loc>` dan `<lastmod>YYYY-MM-DD</lastmod>`).
+    - `_redirects` (WAJIB update di 3 bagian setiap kali migrasi 1 artikel):
+      1. **Bagian Blogger 301 Redirects** (bagian atas file):
+         ```
+         # [Judul Artikel]
+         /<YYYY>/<MM>/<slug>.html /blog/<slug> 301
+         /<slug> /blog/<slug> 301
+         /<slug>/* /blog/<slug> 301
+         ```
+      2. **Bagian `# Legacy .html to Clean URLs (Non-Trailing Slash) 301 Redirects`** (di bawah header `# Blog Detail Pages Legacy .html 301`):
+         ```
+         /blog/<slug>.html /blog/<slug> 301
+         ```
+      3. **Bagian `# Trailing Slash to Non-Trailing Slash 301 Redirects`** (di bawah header `# Trailing Slash to Non-Trailing Slash 301 Redirects`):
+         ```
+         /blog/<slug>/ /blog/<slug> 301
+         ```
+    - `llms.txt` (ringkasan 1 baris di bawah `Blog & Artikel` dengan URL `https://corporategifts.id/blog/<slug>`).
 
 18. **Date Source of Truth**:
     - Selalu gunakan nilai dari kolom Excel **Tanggal Update** (kolom kanan) untuk tanggal artikel, meta bar, schema JSON-LD, kartu `blog.html`, dan `sitemap.xml`.

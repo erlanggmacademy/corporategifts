@@ -45,23 +45,23 @@ Tag body wajib menggunakan class:
       <nav id="navmenu" class="navmenu mx-xl-auto">
         <ul>
           <li><a href="/">Beranda</a></li>
-          <li><a href="../tentang-kami.html">Tentang Kami</a></li>
-          <li><a href="../layanan.html">Layanan</a></li>
-          <li><a href="../katalog.html">Katalog</a></li>
-          <li><a href="../portofolio.html">Portofolio</a></li>
+          <li><a href="/tentang-kami">Tentang Kami</a></li>
+          <li><a href="/layanan">Layanan</a></li>
+          <li><a href="/katalog">Katalog</a></li>
+          <li><a href="/portofolio">Portofolio</a></li>
           <li class="dropdown">
-            <a href="../produk.html"><span>Produk</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <a href="/produk"><span>Produk</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="../produksouvenir-kantor.html">Souvenir Kantor</a></li>
-              <li><a href="../produksouvenir-custom.html">Souvenir Custom</a></li>
-              <li><a href="../produkmerchandise.html">Merchandise Perusahaan</a></li>
-              <li><a href="../produkseminar-kit.html">Seminar Kit</a></li>
-              <li><a href="../produkhampers.html">Hampers &amp; Parcel</a></li>
-              <li><a href="../produksouvenir-promosi.html">Paket Souvenir Promosi</a></li>
+              <li><a href="/produk/souvenir-kantor">Souvenir Kantor</a></li>
+              <li><a href="/produk/souvenir-custom">Souvenir Custom</a></li>
+              <li><a href="/produk/merchandise">Merchandise Perusahaan</a></li>
+              <li><a href="/produk/seminar-kit">Seminar Kit</a></li>
+              <li><a href="/produk/hampers">Hampers &amp; Parcel</a></li>
+              <li><a href="/produk/souvenir-promosi">Paket Souvenir Promosi</a></li>
             </ul>
           </li>
-          <li><a href="../blog.html" class="active">Blog</a></li>
-          <li><a href="../galeri.html">Galeri</a></li>
+          <li><a href="/blog" class="active">Blog</a></li>
+          <li><a href="/galeri">Galeri</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -83,7 +83,7 @@ Tag body wajib menggunakan class:
     <nav aria-label="breadcrumb" class="m-0 p-0" style="background: transparent;">
       <ol class="breadcrumb m-0 p-0" style="background: transparent; font-size: 0.88rem;">
         <li class="breadcrumb-item"><a href="/" style="color: var(--accent-color, #15803d); text-decoration: none; font-weight: 500;">Beranda</a></li>
-        <li class="breadcrumb-item"><a href="../blog.html" style="color: var(--accent-color, #15803d); text-decoration: none; font-weight: 500;">Blog</a></li>
+        <li class="breadcrumb-item"><a href="/blog" style="color: var(--accent-color, #15803d); text-decoration: none; font-weight: 500;">Blog</a></li>
         <li class="breadcrumb-item active" aria-current="page" style="color: #64748b; font-weight: 500;">[Topik / Judul Singkat]</li>
       </ol>
     </nav>
@@ -101,11 +101,11 @@ Tag body wajib menggunakan class:
   
   <div class="article-meta-bar">
     <div class="d-flex align-items-center">
-      <a href="../penulis.html#[slug-penulis]" class="d-inline-flex me-2">
+      <a href="/penulis#[slug-penulis]" class="d-inline-flex me-2">
         <img src="../assets/img/penulis/[slug-penulis].webp" alt="[Penulis] | CorporateGifts.ID" class="rounded-circle" width="44" height="44" loading="lazy" style="object-fit:cover;">
       </a>
       <div>
-        <a href="../penulis.html#[slug-penulis]" class="text-dark d-block fw-bold text-decoration-none" style="font-size: 0.88rem;">[Nama Penulis]</a>
+        <a href="/penulis#[slug-penulis]" class="text-dark d-block fw-bold text-decoration-none" style="font-size: 0.88rem;">[Nama Penulis]</a>
         <span class="text-muted" style="font-size: 0.76rem;">[Jabatan / Spesialisasi Penulis]</span>
       </div>
     </div>
@@ -153,7 +153,7 @@ Tag body wajib menggunakan class:
 <!-- Strip Callout Baca Juga -->
 <div class="article-baca-juga">
   <span class="badge bg-success text-white px-2 py-1 rounded-pill small fw-bold">Baca Juga</span>
-  <a href="[slug-artikel-terkait].html" class="hover-green">[Judul Artikel Terkait] <i class="bi bi-arrow-right ms-1"></i></a>
+  <a href="/blog/[slug-artikel-terkait]" class="hover-green">[Judul Artikel Terkait] <i class="bi bi-arrow-right ms-1"></i></a>
 </div>
 ```
 
@@ -215,7 +215,7 @@ Tag body wajib menggunakan class:
       <p class="small text-muted mb-0">Dapatkan katalog resmi 2026, sampel mockup digital gratis, dan penawaran harga B2B terbaik yang lengkap dengan faktur pajak.</p>
     </div>
     <div class="blog-cta-actions flex-shrink-0">
-      <a href="../minta-penawaran.html" class="btn btn-success rounded-pill px-4 py-2 fw-semibold" style="background: var(--accent-color, #16a34a); border-color: var(--accent-color, #16a34a);">
+      <a href="/minta-penawaran" class="btn btn-success rounded-pill px-4 py-2 fw-semibold" style="background: var(--accent-color, #16a34a); border-color: var(--accent-color, #16a34a);">
         <i class="bi bi-pencil-square me-1"></i> Minta Penawaran
       </a>
       <a href="https://wa.me/62895639068080?text=Halo%20CorporateGifts.ID,%20saya%20ingin%20konsultasi" target="_blank" rel="noopener" class="btn btn-outline-success rounded-pill px-3 py-2 fw-semibold">
@@ -227,18 +227,18 @@ Tag body wajib menggunakan class:
 
 <!-- Author Box -->
 <div class="article-author-box mt-4">
-  <a href="../penulis.html#[slug-penulis]" class="flex-shrink-0 me-3">
+  <a href="/penulis#[slug-penulis]" class="flex-shrink-0 me-3">
     <img src="../assets/img/penulis/[slug-penulis].webp" alt="[Nama Penulis] | CorporateGifts.ID" width="90" height="90" loading="lazy" class="rounded-circle shadow-sm" style="object-fit:cover;">
   </a>
   <div>
     <h3 class="h6 fw-bold text-dark mb-1">
-      Ditulis oleh: <a href="../penulis.html#[slug-penulis]" class="text-dark text-decoration-none hover-green">[Nama Penulis]</a>
+      Ditulis oleh: <a href="/penulis#[slug-penulis]" class="text-dark text-decoration-none hover-green">[Nama Penulis]</a>
     </h3>
     <span class="badge bg-success-subtle text-success px-2 py-1 rounded-pill small fw-semibold mb-2 d-inline-block">[Spesialisasi]</span>
     <p class="small text-muted mb-2">
       [Bio Penulis]
     </p>
-    <a href="../penulis.html#[slug-penulis]" class="text-success small fw-semibold text-decoration-none">
+    <a href="/penulis#[slug-penulis]" class="text-success small fw-semibold text-decoration-none">
       Lihat Profil Lengkap &amp; Panduan Lainnya <i class="bi bi-arrow-right ms-1"></i>
     </a>
   </div>
@@ -248,9 +248,9 @@ Tag body wajib menggunakan class:
 <div class="article-share-bar">
   <div class="fw-semibold small text-dark">Bagikan Artikel Ini:</div>
   <div class="article-share-buttons">
-    <a href="https://api.whatsapp.com/send?text=[Judul]%20https://corporategifts.id/blog[slug]" target="_blank" rel="noopener" class="btn-share btn-wa" aria-label="Share via WhatsApp"><i class="bi bi-whatsapp"></i></a>
-    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://corporategifts.id/blog[slug]" target="_blank" rel="noopener" class="btn-share btn-li" aria-label="Share on LinkedIn"><i class="bi bi-linkedin"></i></a>
-    <a href="https://www.facebook.com/sharer/sharer.php?u=https://corporategifts.id/blog[slug]" target="_blank" rel="noopener" class="btn-share btn-fb" aria-label="Share on Facebook"><i class="bi bi-facebook"></i></a>
+    <a href="https://api.whatsapp.com/send?text=[Judul]%20https://corporategifts.id/blog/[slug]" target="_blank" rel="noopener" class="btn-share btn-wa" aria-label="Share via WhatsApp"><i class="bi bi-whatsapp"></i></a>
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://corporategifts.id/blog/[slug]" target="_blank" rel="noopener" class="btn-share btn-li" aria-label="Share on LinkedIn"><i class="bi bi-linkedin"></i></a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https://corporategifts.id/blog/[slug]" target="_blank" rel="noopener" class="btn-share btn-fb" aria-label="Share on Facebook"><i class="bi bi-facebook"></i></a>
     <button onclick="navigator.clipboard.writeText(window.location.href); alert('Tautan artikel berhasil disalin!');" class="btn-share btn-copy border-0" aria-label="Copy Link"><i class="bi bi-link-45deg"></i></button>
   </div>
 </div>
@@ -265,12 +265,12 @@ Tag body wajib menggunakan class:
     <div class="card border-0 rounded-4 p-4 shadow-sm bg-white mb-4">
       <h3 class="h6 fw-bold text-dark mb-3"><i class="bi bi-grid-fill text-success me-2"></i> Kategori Produk Kami</h3>
       <ul class="list-unstyled mb-0" style="font-size: 0.92rem;">
-        <li class="py-2 border-bottom"><a href="../produksouvenir-kantor.html" class="text-decoration-none text-dark d-flex justify-content-between"><span>Souvenir Kantor</span> <i class="bi bi-chevron-right text-muted"></i></a></li>
-        <li class="py-2 border-bottom"><a href="../produksouvenir-custom.html" class="text-decoration-none text-dark d-flex justify-content-between"><span>Souvenir Custom VIP</span> <i class="bi bi-chevron-right text-muted"></i></a></li>
-        <li class="py-2 border-bottom"><a href="../produkmerchandise.html" class="text-decoration-none text-dark d-flex justify-content-between"><span>Merchandise Perusahaan</span> <i class="bi bi-chevron-right text-muted"></i></a></li>
-        <li class="py-2 border-bottom"><a href="../produkseminar-kit.html" class="text-decoration-none text-dark d-flex justify-content-between"><span>Paket Seminar Kit</span> <i class="bi bi-chevron-right text-muted"></i></a></li>
-        <li class="py-2 border-bottom"><a href="../produkhampers.html" class="text-decoration-none text-dark d-flex justify-content-between"><span>Hampers &amp; Parcel</span> <i class="bi bi-chevron-right text-muted"></i></a></li>
-        <li class="pt-2"><a href="../produksouvenir-promosi.html" class="text-decoration-none text-dark d-flex justify-content-between"><span>Souvenir Promosi</span> <i class="bi bi-chevron-right text-muted"></i></a></li>
+        <li class="py-2 border-bottom"><a href="/produk/souvenir-kantor" class="text-decoration-none text-dark d-flex justify-content-between"><span>Souvenir Kantor</span> <i class="bi bi-chevron-right text-muted"></i></a></li>
+        <li class="py-2 border-bottom"><a href="/produk/souvenir-custom" class="text-decoration-none text-dark d-flex justify-content-between"><span>Souvenir Custom VIP</span> <i class="bi bi-chevron-right text-muted"></i></a></li>
+        <li class="py-2 border-bottom"><a href="/produk/merchandise" class="text-decoration-none text-dark d-flex justify-content-between"><span>Merchandise Perusahaan</span> <i class="bi bi-chevron-right text-muted"></i></a></li>
+        <li class="py-2 border-bottom"><a href="/produk/seminar-kit" class="text-decoration-none text-dark d-flex justify-content-between"><span>Paket Seminar Kit</span> <i class="bi bi-chevron-right text-muted"></i></a></li>
+        <li class="py-2 border-bottom"><a href="/produk/hampers" class="text-decoration-none text-dark d-flex justify-content-between"><span>Hampers &amp; Parcel</span> <i class="bi bi-chevron-right text-muted"></i></a></li>
+        <li class="pt-2"><a href="/produk/souvenir-promosi" class="text-decoration-none text-dark d-flex justify-content-between"><span>Souvenir Promosi</span> <i class="bi bi-chevron-right text-muted"></i></a></li>
       </ul>
     </div>
 
@@ -310,12 +310,12 @@ Tag body wajib menggunakan class:
         <span class="text-uppercase fw-bold small text-success" style="letter-spacing:1px;">Rekomendasi Wawasan</span>
         <h2 class="h3 fw-bold text-dark mb-0 mt-1">Artikel Terkait Lainnya</h2>
       </div>
-      <a href="../blog.html" class="btn btn-sm btn-outline-success rounded-pill px-3 py-2 fw-semibold">
+      <a href="/blog" class="btn btn-sm btn-outline-success rounded-pill px-3 py-2 fw-semibold">
         Lihat Semua Artikel <i class="bi bi-arrow-right ms-1"></i>
       </a>
     </div>
     <div class="row g-4">
-      <!-- Card 1, 2, 3 dengan badge position-relative, cover img, excerpt, dan author footer -->
+      <!-- Card 1, 2, 3 dengan badge position-relative, cover img, excerpt, author footer, dan link ke /blog/<slug> -->
     </div>
   </div>
 </section>
@@ -325,24 +325,47 @@ Tag body wajib menggunakan class:
 
 ## Alur Kerja Setiap Migrasi Artikel (Checklist 5 Langkah Wajib)
 
+Setiap migrasi 1 artikel baru, jalankan alur 5 langkah berikut secara berurutan:
+
 ```
-[1. Buat blog/<slug>.html] 
+[1. Buat blog/<slug>.html (Clean URL, non-trailing slash)] 
        ↓
-[2. Update blog.html (urut tanggal update kronologis)] 
+[2. Update blog.html (urut tanggal update kronologis menurun, link ke /blog/<slug>)] 
        ↓
-[3. Update sitemap.xml] 
+[3. Update sitemap.xml (<loc>https://corporategifts.id/blog/<slug></loc>)] 
        ↓
-[4. Update _redirects] 
+[4. Update _redirects (Wajib 3 Bagian: Blogger 301, Legacy .html 301, & Trailing Slash 301)] 
        ↓
-[5. Update llms.txt] 
+[5. Update llms.txt (Ringkasan 1 baris ke https://corporategifts.id/blog/<slug>)] 
 ```
+
+### Detail Update `_redirects` pada Langkah 4:
+Untuk setiap artikel yang dimigrasikan, tambahkan baris redirect pada **3 lokasi berbeda di file `_redirects`**:
+
+1. **Bagian Atas (Blogger 301 Redirects)**:
+   ```txt
+   # [Judul Artikel]
+   /<YYYY>/<MM>/<slug>.html /blog/<slug> 301
+   /<slug> /blog/<slug> 301
+   /<slug>/* /blog/<slug> 301
+   ```
+2. **Bagian Tengah (`# Legacy .html to Clean URLs 301 Redirects`)**:
+   Di bawah sub-header `# Blog Detail Pages Legacy .html 301`:
+   ```txt
+   /blog/<slug>.html /blog/<slug> 301
+   ```
+3. **Bagian Bawah (`# Trailing Slash to Non-Trailing Slash 301 Redirects`)**:
+   Di bawah sub-header `# Trailing Slash to Non-Trailing Slash 301 Redirects`:
+   ```txt
+   /blog/<slug>/ /blog/<slug> 301
+   ```
 
 ---
 
 ## Referensi Pemetaan Penulis (Author Mapping)
 
-| Nama Penulis di Excel | Target Anchor di `penulis.html` | Jabatan Standar | Avatar Lokal |
+| Nama Penulis di Excel | Target Anchor di `/penulis` | Jabatan Standar | Avatar Lokal |
 | :--- | :--- | :--- | :--- |
-| **Arinda Zakia** | `penulis.html#arinda-zakia` | Senior Corporate Gifting Specialist & Content Strategist | `../assets/img/penulis/arinda-zakia.webp` |
-| **Amelia** | `penulis.html#amelia` | Creative Product Designer & Bespoke Packaging Consultant | `../assets/img/penulis/amelia.webp` |
-| **Vendor Souvenir Kantor** | `penulis.html#vendor-souvenir-kantor` | Editorial Team & Merchandise Production Specialist | `../assets/img/penulis/vendor-souvenir-kantor.png` |
+| **Arinda Zakia** | `/penulis#arinda-zakia` | Senior Corporate Gifting Specialist & Content Strategist | `../assets/img/penulis/arinda-zakia.webp` |
+| **Amelia** | `/penulis#amelia` | Creative Product Designer & Bespoke Packaging Consultant | `../assets/img/penulis/amelia.webp` |
+| **Vendor Souvenir Kantor** | `/penulis#vendor-souvenir-kantor` | Editorial Team & Merchandise Production Specialist | `../assets/img/penulis/vendor-souvenir-kantor.png` |
