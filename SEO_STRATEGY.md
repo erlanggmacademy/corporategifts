@@ -107,12 +107,12 @@ Setiap halaman pada website CorporateGifts.ID memiliki target fokus kata kunci, 
 | **`/portofolio.html`** | portofolio souvenir klien perusahaan | Portofolio Klien & Proyek Souvenir &mdash; CorporateGifts.ID | Bukti portofolio pengerjaan corporate gift untuk 500+ perusahaan swasta, BUMN, dan instansi kementerian di seluruh pelosok Indonesia. |
 | **`/galeri.html`** | galeri produksi souvenir merchandise | Galeri Produksi Souvenir & Cinderamata &mdash; CorporateGifts.ID | Dokumentasi hasil produksi souvenir tumbler, payung, agenda, dan hampers korporat berkualitas tinggi dengan hasil finishing presisi. |
 | **`/produk.html`** | kategori produk corporate gift | Kategori Produk Souvenir Kantor & Gift &mdash; CorporateGifts.ID | Eksplorasi 6 kategori produk unggulan: Souvenir Kantor, Gift VIP, Merchandise, Seminar Kit, Hampers Kantor & Paket Promosi Onboarding. |
-| **`/produk/souvenir-kantor.html`** | souvenir kantor custom, tumbler stainless | Souvenir Kantor Custom & Perlengkapan Kerja &mdash; CorporateGifts.ID | Pengadaan souvenir kantor custom: tumbler vacuum stainless, notebook agenda kulit, pulpen metal laser grafir & kalender meja. Free mockup! |
-| **`/produk/souvenir-custom.html`** | corporate gift eksklusif vip | Corporate Gift Eksklusif VIP & Kado Direksi &mdash; CorporateGifts.ID | Gift set eksekutif VIP dengan hard box mewah finishing hot print gold untuk relasi bisnis prestisius, tamu kehormatan & jajaran direksi. |
-| **`/produk/merchandise.html`** | merchandise perusahaan, apparel kantor | Merchandise Perusahaan & Apparel Promosi &mdash; CorporateGifts.ID | Vendor polo shirt bordir, kemeja kerja, payung golf otomatis, tote bag & topi promosi berkualitas tinggi untuk branding perusahaan Anda. |
-| **`/produk/seminar-kit.html`** | paket seminar kit, goodie bag event | Paket Seminar Kit & Event Kit Korporat &mdash; CorporateGifts.ID | Paket seminar kit terlengkap: goodie bag spunbond/kanvas, tali lanyard cetak logo, ID card holder, blocknote & pulpen promosi kilat. |
-| **`/produk/hampers.html`** | hampers kantor, parcel perusahaan | Hampers & Parcel Kantor Eksklusif &mdash; CorporateGifts.ID | Penyedia hampers Lebaran, Natal, bingkisan akhir tahun & gift anniversary perusahaan dengan kombinasi kue premium dan tumbler eksklusif. |
-| **`/produk/souvenir-promosi.html`** | paket souvenir promosi, welcome kit | Paket Promosi & Onboarding Kit Karyawan &mdash; CorporateGifts.ID | Welcome kit karyawan baru & paket promosi massal expo (powerbank, flashdisk kartu, mug keramik). Praktis, estetik, dan meningkatkan loyalitas. |
+| **`/produksouvenir-kantor.html`** | souvenir kantor custom, tumbler stainless | Souvenir Kantor Custom & Perlengkapan Kerja &mdash; CorporateGifts.ID | Pengadaan souvenir kantor custom: tumbler vacuum stainless, notebook agenda kulit, pulpen metal laser grafir & kalender meja. Free mockup! |
+| **`/produksouvenir-custom.html`** | corporate gift eksklusif vip | Corporate Gift Eksklusif VIP & Kado Direksi &mdash; CorporateGifts.ID | Gift set eksekutif VIP dengan hard box mewah finishing hot print gold untuk relasi bisnis prestisius, tamu kehormatan & jajaran direksi. |
+| **`/produkmerchandise.html`** | merchandise perusahaan, apparel kantor | Merchandise Perusahaan & Apparel Promosi &mdash; CorporateGifts.ID | Vendor polo shirt bordir, kemeja kerja, payung golf otomatis, tote bag & topi promosi berkualitas tinggi untuk branding perusahaan Anda. |
+| **`/produkseminar-kit.html`** | paket seminar kit, goodie bag event | Paket Seminar Kit & Event Kit Korporat &mdash; CorporateGifts.ID | Paket seminar kit terlengkap: goodie bag spunbond/kanvas, tali lanyard cetak logo, ID card holder, blocknote & pulpen promosi kilat. |
+| **`/produkhampers.html`** | hampers kantor, parcel perusahaan | Hampers & Parcel Kantor Eksklusif &mdash; CorporateGifts.ID | Penyedia hampers Lebaran, Natal, bingkisan akhir tahun & gift anniversary perusahaan dengan kombinasi kue premium dan tumbler eksklusif. |
+| **`/produksouvenir-promosi.html`** | paket souvenir promosi, welcome kit | Paket Promosi & Onboarding Kit Karyawan &mdash; CorporateGifts.ID | Welcome kit karyawan baru & paket promosi massal expo (powerbank, flashdisk kartu, mug keramik). Praktis, estetik, dan meningkatkan loyalitas. |
 
 ---
 
@@ -162,7 +162,7 @@ Semua gambar wajib:
 ### D. Canonical Tag & Geo-Targeting Tags
 Di setiap tag `<head>`, sertakan:
 ```html
-<link rel="canonical" href="https://corporategifts.id/produk/souvenir-kantor.html">
+<link rel="canonical" href="https://corporategifts.id/produksouvenir-kantor">
 <meta name="geo.region" content="ID-JI">
 <meta name="geo.placename" content="Jawa Timur, Indonesia">
 <meta name="geo.position" content="-7.257500;112.752100">
@@ -184,7 +184,7 @@ Letakkan script ini di `<head>` atau sebelum penutup `</body>`:
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "CorporateGifts.ID",
-  "image": "https://corporategifts.id/assets/img/logo-header.png",
+  "image": "https://corporategifts.id/assets/imglogo-header.png",
   "@id": "https://corporategifts.id/#organization",
   "url": "https://corporategifts.id",
   "telephone": "+62895639068080",
@@ -230,7 +230,7 @@ Contoh implementasi di `produk/souvenir-kantor.html`:
   "@context": "https://schema.org",
   "@type": "Product",
   "name": "Souvenir Kantor Custom & Perlengkapan Kerja",
-  "image": "https://corporategifts.id/assets/img/services/souvenir-kantor.webp",
+  "image": "https://corporategifts.id/assets/img/servicessouvenir-kantor.webp",
   "description": "Pengadaan paket souvenir kantor custom logo perusahaan meliputi tumbler vacuum stainless, buku agenda kulit, pulpen metal grafir, dan kalender meja spiral.",
   "brand": {
     "@type": "Brand",
@@ -268,13 +268,13 @@ Contoh implementasi di `produk/souvenir-kantor.html`:
       "@type": "ListItem",
       "position": 2,
       "name": "Produk",
-      "item": "https://corporategifts.id/produk.html"
+      "item": "https://corporategifts.id/produk"
     },
     {
       "@type": "ListItem",
       "position": 3,
       "name": "Souvenir Kantor",
-      "item": "https://corporategifts.id/produk/souvenir-kantor.html"
+      "item": "https://corporategifts.id/produksouvenir-kantor"
     }
   ]
 }
@@ -373,73 +373,73 @@ Simpan di root website (`/sitemap.xml`):
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://corporategifts.id/tentang-kami.html</loc>
+    <loc>https://corporategifts.id/tentang-kami</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://corporategifts.id/layanan.html</loc>
+    <loc>https://corporategifts.id/layanan</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://corporategifts.id/katalog.html</loc>
+    <loc>https://corporategifts.id/katalog</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://corporategifts.id/portofolio.html</loc>
+    <loc>https://corporategifts.id/portofolio</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://corporategifts.id/galeri.html</loc>
+    <loc>https://corporategifts.id/galeri</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://corporategifts.id/produk.html</loc>
+    <loc>https://corporategifts.id/produk</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://corporategifts.id/produk/souvenir-kantor.html</loc>
+    <loc>https://corporategifts.id/produksouvenir-kantor</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://corporategifts.id/produk/souvenir-custom.html</loc>
+    <loc>https://corporategifts.id/produksouvenir-custom</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://corporategifts.id/produk/merchandise.html</loc>
+    <loc>https://corporategifts.id/produkmerchandise</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://corporategifts.id/produk/seminar-kit.html</loc>
+    <loc>https://corporategifts.id/produkseminar-kit</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://corporategifts.id/produk/hampers.html</loc>
+    <loc>https://corporategifts.id/produkhampers</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://corporategifts.id/produk/souvenir-promosi.html</loc>
+    <loc>https://corporategifts.id/produksouvenir-promosi</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>

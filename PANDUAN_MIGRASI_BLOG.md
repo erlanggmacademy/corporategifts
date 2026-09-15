@@ -52,12 +52,12 @@ Tag body wajib menggunakan class:
           <li class="dropdown">
             <a href="../produk.html"><span>Produk</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="../produk/souvenir-kantor.html">Souvenir Kantor</a></li>
-              <li><a href="../produk/souvenir-custom.html">Souvenir Custom</a></li>
-              <li><a href="../produk/merchandise.html">Merchandise Perusahaan</a></li>
-              <li><a href="../produk/seminar-kit.html">Seminar Kit</a></li>
-              <li><a href="../produk/hampers.html">Hampers &amp; Parcel</a></li>
-              <li><a href="../produk/souvenir-promosi.html">Paket Souvenir Promosi</a></li>
+              <li><a href="../produksouvenir-kantor.html">Souvenir Kantor</a></li>
+              <li><a href="../produksouvenir-custom.html">Souvenir Custom</a></li>
+              <li><a href="../produkmerchandise.html">Merchandise Perusahaan</a></li>
+              <li><a href="../produkseminar-kit.html">Seminar Kit</a></li>
+              <li><a href="../produkhampers.html">Hampers &amp; Parcel</a></li>
+              <li><a href="../produksouvenir-promosi.html">Paket Souvenir Promosi</a></li>
             </ul>
           </li>
           <li><a href="../blog.html" class="active">Blog</a></li>
@@ -248,9 +248,9 @@ Tag body wajib menggunakan class:
 <div class="article-share-bar">
   <div class="fw-semibold small text-dark">Bagikan Artikel Ini:</div>
   <div class="article-share-buttons">
-    <a href="https://api.whatsapp.com/send?text=[Judul]%20https://corporategifts.id/blog/[slug].html" target="_blank" rel="noopener" class="btn-share btn-wa" aria-label="Share via WhatsApp"><i class="bi bi-whatsapp"></i></a>
-    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://corporategifts.id/blog/[slug].html" target="_blank" rel="noopener" class="btn-share btn-li" aria-label="Share on LinkedIn"><i class="bi bi-linkedin"></i></a>
-    <a href="https://www.facebook.com/sharer/sharer.php?u=https://corporategifts.id/blog/[slug].html" target="_blank" rel="noopener" class="btn-share btn-fb" aria-label="Share on Facebook"><i class="bi bi-facebook"></i></a>
+    <a href="https://api.whatsapp.com/send?text=[Judul]%20https://corporategifts.id/blog[slug]" target="_blank" rel="noopener" class="btn-share btn-wa" aria-label="Share via WhatsApp"><i class="bi bi-whatsapp"></i></a>
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://corporategifts.id/blog[slug]" target="_blank" rel="noopener" class="btn-share btn-li" aria-label="Share on LinkedIn"><i class="bi bi-linkedin"></i></a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https://corporategifts.id/blog[slug]" target="_blank" rel="noopener" class="btn-share btn-fb" aria-label="Share on Facebook"><i class="bi bi-facebook"></i></a>
     <button onclick="navigator.clipboard.writeText(window.location.href); alert('Tautan artikel berhasil disalin!');" class="btn-share btn-copy border-0" aria-label="Copy Link"><i class="bi bi-link-45deg"></i></button>
   </div>
 </div>
@@ -265,12 +265,12 @@ Tag body wajib menggunakan class:
     <div class="card border-0 rounded-4 p-4 shadow-sm bg-white mb-4">
       <h3 class="h6 fw-bold text-dark mb-3"><i class="bi bi-grid-fill text-success me-2"></i> Kategori Produk Kami</h3>
       <ul class="list-unstyled mb-0" style="font-size: 0.92rem;">
-        <li class="py-2 border-bottom"><a href="../produk/souvenir-kantor.html" class="text-decoration-none text-dark d-flex justify-content-between"><span>Souvenir Kantor</span> <i class="bi bi-chevron-right text-muted"></i></a></li>
-        <li class="py-2 border-bottom"><a href="../produk/souvenir-custom.html" class="text-decoration-none text-dark d-flex justify-content-between"><span>Souvenir Custom VIP</span> <i class="bi bi-chevron-right text-muted"></i></a></li>
-        <li class="py-2 border-bottom"><a href="../produk/merchandise.html" class="text-decoration-none text-dark d-flex justify-content-between"><span>Merchandise Perusahaan</span> <i class="bi bi-chevron-right text-muted"></i></a></li>
-        <li class="py-2 border-bottom"><a href="../produk/seminar-kit.html" class="text-decoration-none text-dark d-flex justify-content-between"><span>Paket Seminar Kit</span> <i class="bi bi-chevron-right text-muted"></i></a></li>
-        <li class="py-2 border-bottom"><a href="../produk/hampers.html" class="text-decoration-none text-dark d-flex justify-content-between"><span>Hampers &amp; Parcel</span> <i class="bi bi-chevron-right text-muted"></i></a></li>
-        <li class="pt-2"><a href="../produk/souvenir-promosi.html" class="text-decoration-none text-dark d-flex justify-content-between"><span>Souvenir Promosi</span> <i class="bi bi-chevron-right text-muted"></i></a></li>
+        <li class="py-2 border-bottom"><a href="../produksouvenir-kantor.html" class="text-decoration-none text-dark d-flex justify-content-between"><span>Souvenir Kantor</span> <i class="bi bi-chevron-right text-muted"></i></a></li>
+        <li class="py-2 border-bottom"><a href="../produksouvenir-custom.html" class="text-decoration-none text-dark d-flex justify-content-between"><span>Souvenir Custom VIP</span> <i class="bi bi-chevron-right text-muted"></i></a></li>
+        <li class="py-2 border-bottom"><a href="../produkmerchandise.html" class="text-decoration-none text-dark d-flex justify-content-between"><span>Merchandise Perusahaan</span> <i class="bi bi-chevron-right text-muted"></i></a></li>
+        <li class="py-2 border-bottom"><a href="../produkseminar-kit.html" class="text-decoration-none text-dark d-flex justify-content-between"><span>Paket Seminar Kit</span> <i class="bi bi-chevron-right text-muted"></i></a></li>
+        <li class="py-2 border-bottom"><a href="../produkhampers.html" class="text-decoration-none text-dark d-flex justify-content-between"><span>Hampers &amp; Parcel</span> <i class="bi bi-chevron-right text-muted"></i></a></li>
+        <li class="pt-2"><a href="../produksouvenir-promosi.html" class="text-decoration-none text-dark d-flex justify-content-between"><span>Souvenir Promosi</span> <i class="bi bi-chevron-right text-muted"></i></a></li>
       </ul>
     </div>
 
